@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Suhalaya Travels</title>
+  
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="/css/style.css?v=3">
+  
+  <style>
+    body {
+      background-color: #f4f9ff;
+    }
+
+    .admin-nav {
+      background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border-bottom: 2px solid var(--color-gold);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .admin-nav-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .admin-nav-left img {
+      height: 40px;
+    }
+
+    .admin-nav-left h1 {
+      font-size: 1.25rem;
+      color: var(--color-obsidian);
+      margin: 0;
+      border-left: 1px solid #e2e8f0;
+      padding-left: 20px;
+    }
+
+    .admin-content {
+      padding: 40px 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .dashboard-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .dashboard-header h2 {
+      font-size: 2rem;
+      color: var(--color-navy);
+      margin: 0;
+    }
+
+    .blog-table-container {
+      background: #ffffff;
+      border-radius: var(--border-radius-md);
+      box-shadow: var(--box-shadow-soft);
+      overflow: hidden;
+      border: 1px solid rgba(1, 90, 132, 0.1);
+    }
+
+    .blog-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .blog-table th, .blog-table td {
+      padding: 20px 24px;
+      text-align: left;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .blog-table th {
+      background: rgba(26, 183, 234, 0.05);
+      font-family: var(--font-headings);
+      font-size: 0.9rem;
+      color: var(--color-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .blog-table tbody tr {
+      transition: background 0.2s ease;
+    }
+
+    .blog-table tbody tr:hover {
+      background: #f8fafc;
+    }
+
+    .blog-title {
+      font-weight: 600;
+      color: var(--color-obsidian);
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .blog-meta {
+      font-size: 0.85rem;
+      color: var(--color-slate-light);
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .status-published {
+      background: var(--color-success-bg);
+      color: var(--color-success);
+    }
+
+    .status-draft {
+      background: rgba(239, 68, 68, 0.1);
+      color: var(--color-error);
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn-action {
+      padding: 8px 16px;
+      font-size: 0.85rem;
+      border-radius: var(--border-radius-sm);
+      cursor: pointer;
+      font-weight: 600;
+      transition: var(--transition-fast);
+      border: none;
+    }
+
+    .btn-toggle {
+      background: #f1f5f9;
+      color: var(--color-navy);
+    }
+
+    .btn-toggle:hover {
+      background: #e2e8f0;
+    }
+
+    .btn-view {
+      background: var(--color-sky-light);
+      color: var(--color-gold);
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-view:hover {
+      background: var(--color-gold-light);
+    }
+
+    .btn-delete {
+      background: #fee2e2;
+      color: #dc2626;
+    }
+
+    .btn-delete:hover {
+      background: #fecaca;
+    }
+
+    /* Modal Styles */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(7, 10, 19, 0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      backdrop-filter: blur(4px);
+    }
+
+    .modal-card {
+      background: #ffffff;
+      padding: 32px;
+      border-radius: var(--border-radius-md);
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+      box-shadow: var(--box-shadow-premium);
+    }
+
+    .modal-card-lg {
+      max-width: 800px;
+      max-height: 90vh;
+      overflow-y: auto;
+      text-align: left;
+    }
+
+    .modal-title {
+      font-size: 1.4rem;
+      color: var(--color-obsidian);
+      margin-bottom: 12px;
+    }
+
+    .modal-desc {
+      color: var(--color-slate);
+      margin-bottom: 24px;
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    /* Mobile Responsiveness for Admin Dashboard */
+    @media (max-width: 768px) {
+      .admin-nav {
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .admin-nav-left h1 {
+        font-size: 1rem;
+        padding-left: 10px;
+      }
+      .admin-nav-left img {
+        height: 32px;
+      }
+      .admin-content {
+        padding: 20px 12px;
+      }
+      .dashboard-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+      }
+      .dashboard-header h2 {
+        font-size: 1.5rem;
+      }
+      .dashboard-header .btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
+      .blog-table-container {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        overflow: visible;
+      }
+      .blog-table, .blog-table tbody, .blog-table tr, .blog-table td {
+        display: block;
+        width: 100%;
+      }
+      .blog-table thead {
+        display: none;
+      }
+      .blog-table tbody tr {
+        background: #ffffff;
+        border-radius: 14px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e2e8f0;
+        margin-bottom: 18px;
+        padding: 18px;
+        box-sizing: border-box;
+      }
+      .blog-table td {
+        padding: 4px 0;
+        border-bottom: none;
+      }
+      .blog-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #0f172a;
+      }
+      .blog-meta {
+        font-size: 0.85rem;
+        color: #00AEEF;
+        margin-bottom: 8px;
+        word-break: break-all;
+      }
+      .action-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        margin-top: 14px;
+        padding-top: 12px;
+        border-top: 1px solid #f1f5f9;
+        width: 100%;
+        min-width: 0;
+      }
+      .btn-action {
+        flex: 1;
+        text-align: center;
+        padding: 10px 4px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal-card-lg {
+        padding: 20px 16px;
+        width: 95%;
+        max-height: 85vh;
+      }
+      #createPostForm > div {
+        grid-template-columns: 1fr !important;
+      }
+      #createPostForm > div > div {
+        grid-column: span 1 !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="admin-nav">
+    <a href="/" class="admin-nav-left" style="text-decoration: none; color: inherit;" title="Go to Suhalaya Travels Home">
+      <img src="/assets/images/logo.png" alt="Suhalaya Travels Logo">
+      <h1>Content Manager</h1>
+    </a>
+    <div style="display: flex; gap: 12px; align-items: center;">
+      <a href="/" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        Visit Website
+      </a>
+      <a href="/admin/index.html" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.85rem; text-decoration: none;">Logout</a>
+    </div>
+  </nav>
+
+  <main class="admin-content">
+    <div class="dashboard-header">
+      <h2>Blog Posts</h2>
+      <button class="btn btn-primary" onclick="openCreateModal()">
+        + Create New Post
+      </button>
+    </div>
+
+    <div class="blog-table-container">
+      <table class="blog-table" id="blogTable">
+        <thead>
+          <tr>
+            <th>Post Details</th>
+            <th>Date Created</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic rows will be injected here -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Delete Confirmation Modal -->
+  <div class="modal-overlay" id="deleteModal">
+    <div class="modal-card">
+      <h3 class="modal-title">Delete Post?</h3>
+      <p class="modal-desc">Are you sure you want to permanently delete this blog post? This action cannot be undone.</p>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+        <button class="btn btn-primary" style="background: #dc2626; border-color: #dc2626;" onclick="executeDelete()">Yes, Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Create Post Modal -->
+  <div class="modal-overlay" id="createModal">
+    <div class="modal-card modal-card-lg">
+      <h3 class="modal-title" style="margin-bottom: 24px; text-align: left;">Create New Blog Post</h3>
+      <form id="createPostForm" onsubmit="submitNewPost(event)">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--color-navy);">Title *</label>
+            <input type="text" id="postTitle" required placeholder="Enter post title" style="width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 6px;" oninput="generateSlug()">
+          </div>
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--color-navy);">Slug *</label>
+            <input type="text" id="postSlug" required placeholder="url-friendly-slug" style="width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 6px; background: #f8fafc;">
+          </div>
+          <div style="grid-column: span 2;">
+            <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--color-navy);">Summary *</label>
+            <textarea id="postSummary" required placeholder="A short summary of the post..." style="width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 6px; resize: vertical; min-height: 80px;"></textarea>
+          </div>
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--color-navy);">Category *</label>
+            <input type="text" id="postCategory" required placeholder="e.g. Corporate Travel" style="width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+          </div>
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--color-navy);">Status</label>
+            <select id="postStatus" style="width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+              <option value="Draft">Draft (Hidden)</option>
+              <option value="Published">Published (Live)</option>
+            </select>
+          </div>
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--color-navy);">Image URL *</label>
+            <input type="url" id="postImageUrl" required placeholder="https://..." style="width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+          </div>
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--color-navy);">Image Alt Text</label>
+            <input type="text" id="postImageAlt" placeholder="Description of image" style="width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 6px;">
+          </div>
+          <div style="grid-column: span 2;">
+            <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--color-navy);">Content (HTML supported) *</label>
+            <textarea id="postContent" required placeholder="<p>Write your blog content here...</p>" style="width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 6px; resize: vertical; min-height: 250px; font-family: monospace;"></textarea>
+          </div>
+        </div>
+        <div style="display: flex; gap: 16px; justify-content: flex-end; border-top: 1px solid #e2e8f0; padding-top: 20px;">
+          <button type="button" class="btn btn-secondary" onclick="closeCreateModal()">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="createSubmitBtn">Save Post</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const SHEET_ID = '1xYrYLrU-8g-PNtEU-8oljpMpZ9ifSaTxomngZAckY94';
+    const GVIZ_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&headers=1&_cb=${Date.now()}`;
+
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchBlogs();
+    });
+
+    // Local Storage sync helpers for instant zero-latency UI updates
+    function getStatusOverrides() {
+      try { return JSON.parse(localStorage.getItem('admin_status_overrides') || '{}'); } catch(e) { return {}; }
+    }
+    function saveStatusOverride(slug, status) {
+      const overrides = getStatusOverrides();
+      overrides[slug] = status;
+      localStorage.setItem('admin_status_overrides', JSON.stringify(overrides));
+    }
+    function getDeletedSlugs() {
+      try { return JSON.parse(localStorage.getItem('admin_deleted_slugs') || '[]'); } catch(e) { return []; }
+    }
+    function saveDeletedSlug(slug) {
+      const deleted = getDeletedSlugs();
+      if (!deleted.includes(slug)) {
+        deleted.push(slug);
+        localStorage.setItem('admin_deleted_slugs', JSON.stringify(deleted));
+      }
+    }
+    function getCreatedPosts() {
+      try { return JSON.parse(localStorage.getItem('admin_created_posts') || '[]'); } catch(e) { return []; }
+    }
+    function saveCreatedPost(postObj) {
+      const posts = getCreatedPosts().filter(p => p.slug !== postObj.slug);
+      posts.unshift(postObj);
+      localStorage.setItem('admin_created_posts', JSON.stringify(posts));
+    }
+
+    async function fetchBlogs() {
+      const tbody = document.querySelector("#blogTable tbody");
+      tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding: 40px;">Loading blogs...</td></tr>';
+      
+      const deletedSlugs = getDeletedSlugs();
+      const statusOverrides = getStatusOverrides();
+      const createdPosts = getCreatedPosts();
+
+      let gvizRows = [];
+      try {
+        const response = await fetch(GVIZ_URL);
+        const text = await response.text();
+        const jsonString = text.match(/google\.visualization\.Query\.setResponse\(([\s\S\w]+)\);/)[1];
+        const data = JSON.parse(jsonString);
+        gvizRows = data.table.rows || [];
+      } catch (error) {
+        console.error("Error fetching sheet:", error);
+      }
+
+      tbody.innerHTML = ""; // Clear loader
+
+      const processedSlugs = new Set();
+      let index = 0;
+
+      // 1. Render Local Created Posts first (if not deleted)
+      createdPosts.forEach((post) => {
+        if (deletedSlugs.includes(post.slug)) return;
+        processedSlugs.add(post.slug);
+        
+        const finalStatus = statusOverrides[post.slug] || post.status || "Draft";
+        const statusClass = finalStatus === "Published" ? "status-published" : "status-draft";
+        const toggleText = finalStatus === "Published" ? "Unpublish" : "Publish";
+
+        const tr = document.createElement("tr");
+        tr.id = `post-${index}`;
+        tr.innerHTML = `
+          <td>
+            <div class="blog-title">${post.title}</div>
+            <div class="blog-meta">/blog/${post.slug}</div>
+          </td>
+          <td>${post.date}</td>
+          <td><span class="status-badge ${statusClass}" id="status-${index}">${finalStatus}</span></td>
+          <td>
+            <div class="action-buttons">
+              <a href="/blog/post.html?slug=${post.slug}" target="_blank" class="btn-action btn-view">View</a>
+              <button class="btn-action btn-toggle" onclick="toggleStatus(${index}, this, '${post.slug}')">${toggleText}</button>
+              <button class="btn-action btn-delete" onclick="confirmDelete(${index}, '${post.slug}')">Delete</button>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(tr);
+        index++;
+      });
+
+      // 2. Render Google Sheets Rows
+      gvizRows.forEach((row) => {
+        const title = row.c[0] ? row.c[0].v : "";
+        if (!title || title.toLowerCase() === "title") return;
+        
+        const slug = row.c[2] ? row.c[2].v : "";
+        if (!slug || deletedSlugs.includes(slug) || processedSlugs.has(slug)) return;
+        processedSlugs.add(slug);
+
+        let date = "Recently Published";
+        if (row.c[7]) {
+          if (row.c[7].f) {
+            date = row.c[7].f;
+          } else if (row.c[7].v) {
+            let dateStr = String(row.c[7].v);
+            const dateMatch = dateStr.match(/Date\((\d+),\s*(\d+),\s*(\d+)\)/);
+            if (dateMatch) {
+              const d = new Date(parseInt(dateMatch[1]), parseInt(dateMatch[2]), parseInt(dateMatch[3]));
+              date = d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+            } else {
+              let cleanStr = dateStr.replace(/(\d+)(st|nd|rd|th)/, '$1').split(',')[0];
+              let parsedDate = new Date(cleanStr);
+              if (!isNaN(parsedDate.getTime())) {
+                date = parsedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+              } else {
+                date = dateStr;
+              }
+            }
+          }
+        }
+        
+        const rawStatus = row.c[8] ? row.c[8].v : "Draft";
+        const finalStatus = statusOverrides[slug] || rawStatus;
+        const statusClass = finalStatus === "Published" ? "status-published" : "status-draft";
+        const toggleText = finalStatus === "Published" ? "Unpublish" : "Publish";
+
+        const tr = document.createElement("tr");
+        tr.id = `post-${index}`;
+        tr.innerHTML = `
+          <td>
+            <div class="blog-title">${title}</div>
+            <div class="blog-meta">/blog/${slug}</div>
+          </td>
+          <td>${date}</td>
+          <td><span class="status-badge ${statusClass}" id="status-${index}">${finalStatus}</span></td>
+          <td>
+            <div class="action-buttons">
+              <a href="/blog/post.html?slug=${slug}" target="_blank" class="btn-action btn-view">View</a>
+              <button class="btn-action btn-toggle" onclick="toggleStatus(${index}, this, '${slug}')">${toggleText}</button>
+              <button class="btn-action btn-delete" onclick="confirmDelete(${index}, '${slug}')">Delete</button>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(tr);
+        index++;
+      });
+
+      if (index === 0) {
+        tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding: 40px;">No blogs found.</td></tr>';
+      }
+    }
+
+    // ==========================================
+    // CRITICAL: You MUST replace this URL with your deployed Apps Script Web App URL
+    // from the blog_cms_setup.md file. Otherwise, the buttons will not save to the sheet!
+    const APPS_SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbym6l8_fURXVIHdBsqa04nQDrcM8L5gYnZBuNhtlRHn9gijXfBRVvIId0-9GXQ5sJvjCg/exec"; 
+    // ==========================================
+
+    let currentDeleteId = null;
+
+    async function toggleStatus(rowIndex, btnElement, slug) {
+      if (!APPS_SCRIPT_WEB_APP_URL) {
+        alert("Action blocked: You MUST deploy the Google Apps Script (from blog_cms_setup.md) and paste the URL in dashboard.html to enable Publishing!");
+        return;
+      }
+
+      const statusSpan = document.getElementById(`status-${rowIndex}`);
+      const isCurrentlyPublished = statusSpan.classList.contains('status-published');
+      const newStatus = isCurrentlyPublished ? "Draft" : "Published";
+      
+      // Visual loading state
+      const originalText = btnElement.textContent;
+      btnElement.textContent = "Saving...";
+      btnElement.disabled = true;
+
+      try {
+        const sheetRowNumber = rowIndex + 2; 
+
+        const response = await fetch(APPS_SCRIPT_WEB_APP_URL, {
+          method: 'POST',
+          mode: 'no-cors', // Used to prevent CORS issues if not fully configured
+          headers: {
+            'Content-Type': 'text/plain;charset=utf-8'
+          },
+          body: JSON.stringify({
+            action: "update_status",
+            rowIndex: sheetRowNumber,
+            slug: slug,
+            status: newStatus
+          })
+        });
+
+        // Save status override locally for zero-latency sync
+        saveStatusOverride(slug, newStatus);
+
+        // Update UI
+        if (newStatus === "Published") {
+          statusSpan.classList.remove('status-draft');
+          statusSpan.classList.add('status-published');
+          statusSpan.textContent = 'Published';
+          btnElement.textContent = 'Unpublish';
+        } else {
+          statusSpan.classList.remove('status-published');
+          statusSpan.classList.add('status-draft');
+          statusSpan.textContent = 'Draft';
+          btnElement.textContent = 'Publish';
+        }
+      } catch (error) {
+        alert("Error saving to Google Sheet. Please check the Apps Script.");
+        btnElement.textContent = originalText;
+      } finally {
+        btnElement.disabled = false;
+      }
+    }
+
+    let currentDeleteSlug = null;
+
+    function confirmDelete(id, slug) {
+      if (!APPS_SCRIPT_WEB_APP_URL) {
+        alert("Action blocked: You MUST deploy the Google Apps Script to enable Deleting!");
+        return;
+      }
+      currentDeleteId = id;
+      currentDeleteSlug = slug;
+      document.getElementById('deleteModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('deleteModal').style.display = 'none';
+      currentDeleteId = null;
+    }
+
+    async function executeDelete() {
+      if (currentDeleteId !== null) {
+        const btnElement = document.querySelector("#deleteModal .btn-primary");
+        btnElement.textContent = "Deleting...";
+        
+        try {
+          const sheetRowNumber = currentDeleteId + 2; 
+
+          // Save deleted slug locally for zero-latency sync
+          if (currentDeleteSlug) {
+            saveDeletedSlug(currentDeleteSlug);
+          }
+
+          await fetch(APPS_SCRIPT_WEB_APP_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+              'Content-Type': 'text/plain;charset=utf-8'
+            },
+            body: JSON.stringify({
+              action: "delete_row",
+              rowIndex: sheetRowNumber,
+              slug: currentDeleteSlug
+            })
+          });
+
+          // Remove from UI
+          const row = document.getElementById(`post-${currentDeleteId}`);
+          if (row) {
+            row.style.opacity = '0';
+            setTimeout(() => {
+              row.remove();
+            }, 300);
+          }
+          closeModal();
+        } catch (error) {
+          alert("Error deleting from Google Sheet.");
+        } finally {
+          btnElement.textContent = "Yes, Delete";
+        }
+      }
+    }
+
+    // --- CREATE POST LOGIC ---
+    function openCreateModal() {
+      if (!APPS_SCRIPT_WEB_APP_URL) {
+        alert("Action blocked: You MUST deploy the Google Apps Script to enable Creating!");
+        return;
+      }
+      document.getElementById('createPostForm').reset();
+      document.getElementById('createModal').style.display = 'flex';
+    }
+
+    function closeCreateModal() {
+      document.getElementById('createModal').style.display = 'none';
+    }
+
+    function generateSlug() {
+      const title = document.getElementById('postTitle').value;
+      const slugInput = document.getElementById('postSlug');
+      slugInput.value = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+    }
+
+    async function submitNewPost(event) {
+      event.preventDefault();
+      
+      const form = document.getElementById('createPostForm');
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      
+      const btn = document.getElementById('createSubmitBtn');
+      const originalText = btn.textContent;
+      btn.textContent = 'Saving...';
+      btn.disabled = true;
+
+      const title = document.getElementById('postTitle').value.trim();
+      const summary = document.getElementById('postSummary').value.trim();
+      const slug = document.getElementById('postSlug').value.trim();
+      const category = document.getElementById('postCategory').value.trim();
+      const content = document.getElementById('postContent').value.trim();
+      const imgUrl = document.getElementById('postImageUrl').value.trim();
+      const imgAlt = document.getElementById('postImageAlt').value.trim() || title;
+      const status = document.getElementById('postStatus').value;
+      
+      const now = new Date();
+      const dateString = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+      // Build row data mapping to exactly how gviz columns are read on the frontend:
+      // c[0]: title, c[1]: summary, c[2]: slug, c[3]: keyword/category, c[4]: body, c[5]: img_alt, c[6]: img_url, c[7]: Date, c[8]: Status
+      const rowData = [title, summary, slug, category, content, imgAlt, imgUrl, dateString, status];
+
+      // Save created post object locally for zero-latency sync across reloads
+      saveCreatedPost({
+        title: title,
+        summary: summary,
+        slug: slug,
+        category: category,
+        content: content,
+        imgUrl: imgUrl,
+        imgAlt: imgAlt,
+        date: dateString,
+        status: status
+      });
+
+      try {
+        await fetch(APPS_SCRIPT_WEB_APP_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({
+            action: "add_row",
+            rowData: rowData
+          })
+        });
+        
+        // Optimistically add to table UI immediately (because Google Sheets sync takes a few minutes)
+        const tbody = document.querySelector("#blogTable tbody");
+        
+        // Remove empty state message if it's there
+        if(tbody.textContent.includes("No blogs found") || tbody.textContent.includes("Loading")) {
+           tbody.innerHTML = "";
+        }
+        
+        // Count current rows to assign an index (for status toggling and deleting)
+        const newIndex = tbody.querySelectorAll("tr").length;
+        const statusClass = status === "Published" ? "status-published" : "status-draft";
+        const toggleText = status === "Published" ? "Unpublish" : "Publish";
+
+        const tr = document.createElement("tr");
+        tr.id = `post-${newIndex}`;
+        tr.style.backgroundColor = "#f0fdf4"; // slight green highlight to show it's new
+        
+        tr.innerHTML = `
+          <td>
+            <div class="blog-title">${title}</div>
+            <div class="blog-meta">/blog/${slug}</div>
+          </td>
+          <td>${dateString}</td>
+          <td><span class="status-badge ${statusClass}" id="status-${newIndex}">${status}</span></td>
+          <td>
+            <div class="action-buttons">
+              <a href="/blog/post.html?slug=${slug}" target="_blank" class="btn-action btn-view">View</a>
+              <button class="btn-action btn-toggle" onclick="toggleStatus(${newIndex}, this, '${slug}')">${toggleText}</button>
+              <button class="btn-action btn-delete" onclick="confirmDelete(${newIndex}, '${slug}')">Delete</button>
+            </div>
+          </td>
+        `;
+        
+        // Add to the top of the table
+        tbody.prepend(tr);
+        
+        setTimeout(() => {
+           tr.style.backgroundColor = ""; // remove highlight after a few seconds
+           tr.style.transition = "background-color 1s ease";
+        }, 3000);
+
+        // Save to localStorage for immediate previewing on post.html
+        const previewData = {
+          title: title,
+          category: category,
+          content: content,
+          imgUrl: imgUrl,
+          imgAlt: imgAlt,
+          date: dateString
+        };
+        localStorage.setItem(`preview_post_${slug}`, JSON.stringify(previewData));
+
+        alert("Post created successfully! It is now visible on the dashboard.");
+        closeCreateModal();
+        // Note: fetchBlogs() is removed here because Google Viz API caches for ~5 mins, 
+        // which makes it look like the row didn't save if it refreshes instantly.
+      } catch (error) {
+        alert("Failed to create post. Check console for details.");
+        console.error("Error creating post:", error);
+      } finally {
+        btn.textContent = originalText;
+        btn.disabled = false;
+      }
+    }
+  </script>
+</body>
+
+</html>

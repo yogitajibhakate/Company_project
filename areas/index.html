@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Tech Parks & Business Areas We Serve | Suhalaya Travels</title>
+  <meta name="description" content="View our complete list of 27+ Bangalore Tech Parks, Industrial Zones, and business locations served by Suhalaya Travels B2B transportation services.">
+  <link rel="canonical" href="https://www.suhalayatravels.com/areas/index.html">
+  <link rel="stylesheet" href="../css/style.css?v=3">
+  <style>
+    .areas-container {
+      margin-top: 40px;
+      margin-bottom: 80px;
+    }
+
+    .areas-search-wrapper {
+      max-width: 600px;
+      margin: -20px auto 50px auto;
+      position: relative;
+    }
+
+    .areas-search-input {
+      width: 100%;
+      padding: 16px 24px 16px 55px;
+      border: 2px solid rgba(26, 183, 234, 0.15);
+      border-radius: 35px;
+      font-size: 1.05rem;
+      outline: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      font-family: inherit;
+    }
+
+    .areas-search-input:focus {
+      border-color: #1AB7EA;
+      box-shadow: 0 4px 25px rgba(26, 183, 234, 0.15);
+    }
+
+    .areas-search-icon {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #64748b;
+    }
+
+    .directory-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    @media (max-width: 992px) {
+      .directory-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .directory-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+
+    /* Ensure card style matches screenshot perfectly */
+    .area-card {
+      background: #ffffff;
+      border: 1px solid rgba(26, 183, 234, 0.15);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .area-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(26, 183, 234, 0.12);
+    }
+
+    .area-img-box {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .area-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .area-card:hover .area-img-box img {
+      transform: scale(1.08);
+    }
+
+    .area-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: #1AB7EA;
+      color: #ffffff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      z-index: 2;
+    }
+
+    .area-card-body {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .area-card-body h3 {
+      font-family: var(--font-headings);
+      color: #015A84;
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0 0 5px 0;
+      line-height: 1.3;
+    }
+
+    .area-meta {
+      color: #64748b;
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .area-divider {
+      border: 0;
+      border-top: 1px solid #f1f5f9;
+      margin: 0 0 15px 0;
+    }
+
+    .area-desc {
+      color: #475569;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin: 0 0 25px 0;
+      flex-grow: 1;
+    }
+
+    .area-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 12px 20px;
+      border: 1.5px solid #1AB7EA;
+      background: transparent;
+      color: #1AB7EA;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-top: auto;
+    }
+
+    .area-card:hover .area-btn {
+      background: #1AB7EA;
+      color: #ffffff;
+    }
+
+    .no-results-msg {
+      display: none;
+      text-align: center;
+      padding: 50px;
+      color: var(--color-slate);
+      font-size: 1.1rem;
+      background: var(--color-alabaster-dark);
+      border-radius: var(--border-radius-md);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- GLOBAL HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/logo.png" alt="Suhalaya Travels Logo" style="height: 48px; width: auto; object-fit: contain; vertical-align: middle;">
+      </a>
+      <nav class="nav-container">
+        <ul class="nav-menu">
+          <li><a href="../index.html" class="nav-link">HOME</a></li>
+          <li><a href="../about/index.html" class="nav-link">ABOUT US</a></li>
+          <li><a href="../blog/index.html" class="nav-link">BLOG</a></li>
+          <li><a href="../contact_us/index.html" class="nav-link">CONTACT US</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="/admin/" class="btn btn-primary" style="padding: 8px 24px; font-size: 0.9rem; margin-right: 12px;">LOGIN</a>
+        <button class="nav-toggle" aria-label="Toggle Menu">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- STICKY MOBILE BOTTOM BAR -->
+  <div class="mobile-bottom-bar">
+    <a href="tel:+919900556611">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/919900556611?text=Hello%20Suhalaya%20Travels,%20I%20would%20like%20to%20enquire%20about%20your%20transportation%20services." class="active-cta" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.22 13c-.2.55-1.16 1.07-1.6 1.13-.43.06-.86.29-2.77-.47-2.31-.91-3.79-3.23-3.9-3.39-.12-.16-.94-1.25-.94-2.39 0-1.13.59-1.69.8-1.92.2-.23.45-.29.6-.29.15 0 .3 0 .43.01.14.01.32-.05.5.38.18.43.63 1.53.69 1.64.06.11.1.25.02.41-.08.16-.12.26-.25.41-.12.15-.26.33-.37.44-.12.12-.25.25-.11.49.14.24.61 1.01 1.31 1.63.9.8 1.66 1.05 1.9 1.16.24.12.38.1.52-.06.14-.17.62-.72.79-.97.17-.25.34-.21.57-.12.24.09 1.5.71 1.76.84.26.13.43.19.49.3.06.11.06.66-.14 1.21z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="../booking/index.html">
+      <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+      <span>Get Quote</span>
+    </a>
+  </div>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919900556611?text=Hello%20Suhalaya%20Travels,%20I%20would%20like%20to%20enquire%20about%20your%20transportation%20services." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.22 13c-.2.55-1.16 1.07-1.6 1.13-.43.06-.86.29-2.77-.47-2.31-.91-3.79-3.23-3.9-3.39-.12-.16-.94-1.25-.94-2.39 0-1.13.59-1.69.8-1.92.2-.23.45-.29.6-.29.15 0 .3 0 .43.01.14.01.32-.05.5.38.18.43.63 1.53.69 1.64.06.11.1.25.02.41-.08.16-.12.26-.25.41-.12.15-.26.33-.37.44-.12.12-.25.25-.11.49.14.24.61 1.01 1.31 1.63.9.8 1.66 1.05 1.9 1.16.24.12.38.1.52-.06.14-.17.62-.72.79-.97.17-.25.34-.21.57-.12.24.09 1.5.71 1.76.84.26.13.43.19.49.3.06.11.06.66-.14 1.21z"/></svg>
+  </a>
+
+  <!-- INNER HERO -->
+  <section class="inner-hero" style="background: linear-gradient(135deg, #015A84 0%, #013B58 100%); padding: 130px 0 60px 0; color: #ffffff; text-align: center;">
+    <div class="container">
+      <h1 style="font-size: 2.5rem; margin-bottom: 10px; color: #ffffff; text-transform: uppercase;">REGIONS & TECH PARKS WE SERVE</h1>
+      <ul class="breadcrumbs">
+        <li><a href="../index.html">HOME</a></li>
+        <li>AREAS WE SERVE</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SEARCH & DIRECTORY SECTION -->
+  <section class="section-padding reveal-on-scroll" style="background: #f8fafc; padding: 60px 0 80px 0;">
+    <div class="container areas-container">
+      
+      <!-- Interactive Search -->
+      <div class="areas-search-wrapper">
+        <input type="text" id="directory-search" class="areas-search-input" placeholder="Search tech parks, business zones, or corridors...">
+        <svg class="areas-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </div>
+
+      <!-- No Results Message -->
+      <div id="no-results" class="no-results-msg">
+        No matching tech parks or business zones found. Try searching for "Manyata", "ITPL", or "Electronic City".
+      </div>
+
+      <!-- Grouped Regions Grid -->
+      <div class="directory-grid" id="directory-grid-container">
+
+        <!-- Card 1: Electronic City Tech Park -->
+        <div class="area-card" data-name="Electronic City Tech Park" data-region="south">
+          <div class="area-img-box">
+            <img src="../assets/images/south_bengaluru.png" alt="Electronic City Tech Park">
+            <span class="area-badge">TECH PARK</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Electronic City Tech Park</h3>
+            <div class="area-meta">South Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">Bangalore's primary electronics industrial zone and home to major global IT and tech conglomerates.</p>
+            <a href="../areas/electronic-city/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Global Village Tech Park -->
+        <div class="area-card" data-name="Global Village Tech Park" data-region="south">
+          <div class="area-img-box">
+            <img src="../assets/images/south_bengaluru.png" alt="Global Village Tech Park">
+            <span class="area-badge">TECH PARK</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Global Village Tech Park</h3>
+            <div class="area-meta">South Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A massive IT/ITES business park located on Mysore Road, hosting key corporate campuses.</p>
+            <a href="../areas/global-village/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 3: BIEC Centre -->
+        <div class="area-card" data-name="BIEC Centre Exhibition" data-region="south">
+          <div class="area-img-box">
+            <img src="../assets/images/south_bengaluru.png" alt="BIEC Exhibition Centre">
+            <span class="area-badge">EXHIBITION HUB</span>
+          </div>
+          <div class="area-card-body">
+            <h3>BIEC Exhibition Centre</h3>
+            <div class="area-meta">South Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">India's premier exhibition and conference venue hosting global trade fairs and summits.</p>
+            <a href="../areas/biec/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 4: Bidadi Zone -->
+        <div class="area-card" data-name="Bidadi Industrial Zone" data-region="south">
+          <div class="area-img-box">
+            <img src="../assets/images/south_bengaluru.png" alt="Bidadi">
+            <span class="area-badge">INDUSTRIAL ZONE</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Bidadi Industrial Zone</h3>
+            <div class="area-meta">South Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">Major industrial corridor home to automotive giants and large-scale manufacturing units.</p>
+            <a href="../areas/bidadi/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 5: Bagmane Tech Park -->
+        <div class="area-card" data-name="Bagmane Tech Park" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Bagmane Tech Park">
+            <span class="area-badge">TECH PARK</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Bagmane Tech Park</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A premium business park in CV Raman Nagar featuring modern workspaces and corporate clients.</p>
+            <a href="../areas/bagmane-tech-park/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 6: Ecospace Business Park -->
+        <div class="area-card" data-name="Ecospace Business Park" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Ecospace Business Park">
+            <span class="area-badge">TECH PARK</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Ecospace Business Park</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A bustling IT hub on Outer Ring Road, hosting multiple multinational corporate offices.</p>
+            <a href="../areas/ecospace/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 7: Embassy Tech Park -->
+        <div class="area-card" data-name="Embassy Tech Park" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Embassy Tech Park">
+            <span class="area-badge">TECH PARK</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Embassy Tech Park</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A world-class office space and tech village located in the heart of East Bangalore's IT belt.</p>
+            <a href="../areas/embassy-tech-park/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 8: Brigade Tech Park -->
+        <div class="area-card" data-name="Brigade Tech Park" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Brigade Tech Park">
+            <span class="area-badge">BUSINESS HUB</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Brigade Tech Park</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">Prominent tech park in Whitefield with integrated modern infrastructure for corporate tenants.</p>
+            <a href="../areas/brigade-tech-park/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 9: Mind Comp Tech Park -->
+        <div class="area-card" data-name="Mind Comp Tech Park" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Mind Comp Tech Park">
+            <span class="area-badge">BUSINESS HUB</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Mind Comp Tech Park</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">An established commercial center in Whitefield catering to IT and financial services organizations.</p>
+            <a href="../areas/mind-comp-tech-park/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 10: RMZ Infinity -->
+        <div class="area-card" data-name="RMZ Infinity" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="RMZ Infinity">
+            <span class="area-badge">BUSINESS HUB</span>
+          </div>
+          <div class="area-card-body">
+            <h3>RMZ Infinity</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">An architectural landmark on Old Madras Road housing top multinational enterprises.</p>
+            <a href="../areas/rmz-infinity/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 11: Kalyani Tech Park -->
+        <div class="area-card" data-name="Kalyani Tech Park" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Kalyani Tech Park">
+            <span class="area-badge">BUSINESS HUB</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Kalyani Tech Park</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">Modern corporate office spaces located in the prominent business districts of East Bangalore.</p>
+            <a href="../areas/kalyani-tech-park/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 12: RMZ Ecoworld -->
+        <div class="area-card" data-name="RMZ Ecoworld" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="RMZ Ecoworld">
+            <span class="area-badge">TECH PARK</span>
+          </div>
+          <div class="area-card-body">
+            <h3>RMZ Ecoworld</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A premium business park on Outer Ring Road featuring high-end corporate amenities.</p>
+            <a href="../areas/rmz-ecoworld/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 13: Prestige Tech Park -->
+        <div class="area-card" data-name="Prestige Tech Park" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Prestige Tech Park">
+            <span class="area-badge">TECH PARK</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Prestige Tech Park</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">State-of-the-art corporate park hosting global tech giants in the Marathahalli-ORR stretch.</p>
+            <a href="../areas/prestige-tech-park/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 14: ITPL Bangalore -->
+        <div class="area-card" data-name="ITPL International Tech Park Bangalore" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="ITPL Bangalore">
+            <span class="area-badge">TECH PARK</span>
+          </div>
+          <div class="area-card-body">
+            <h3>ITPL Bangalore</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">One of Bangalore's oldest and most iconic tech parks, situated in the heart of Whitefield.</p>
+            <a href="../areas/itpl/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 15: Cessna Business Park -->
+        <div class="area-card" data-name="Cessna Business Park" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Cessna Business Park">
+            <span class="area-badge">TECH PARK</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Cessna Business Park</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">An aerospace-themed business park housing marquee multinational technology firms.</p>
+            <a href="../areas/cessna-business-park/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 16: Narsapur Zone -->
+        <div class="area-card" data-name="Narasapura Industrial Zone" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Narasapura">
+            <span class="area-badge">INDUSTRIAL ZONE</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Narasapura Industrial Zone</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A major automobile and manufacturing hub located in the eastern industrial corridor.</p>
+            <a href="../areas/narasapura/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 17: Malur Zone -->
+        <div class="area-card" data-name="Malur Industrial Zone" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Malur">
+            <span class="area-badge">INDUSTRIAL ZONE</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Malur Industrial Zone</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A sprawling industrial area hosting manufacturing, logistics, and warehousing complexes.</p>
+            <a href="../employee-transportation/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 18: Hoskote Corridor -->
+        <div class="area-card" data-name="Hoskote Transit Corridor" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Hoskote">
+            <span class="area-badge">TRANSIT CORRIDOR</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Hoskote Corridor</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A fast-growing industrial corridor connecting Bangalore to major highway networks.</p>
+            <a href="../areas/hoskote/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 19: Dyavasandra -->
+        <div class="area-card" data-name="Dyavasandra Industrial" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Dyavasandra">
+            <span class="area-badge">INDUSTRIAL ZONE</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Dyavasandra Layout</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">An established industrial layout in East Bangalore with light manufacturing units.</p>
+            <a href="../areas/dyavasandra/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 20: Vemagal Zone -->
+        <div class="area-card" data-name="Vemagal Industrial Zone" data-region="east">
+          <div class="area-img-box">
+            <img src="../assets/images/east_bengaluru.png" alt="Vemagal">
+            <span class="area-badge">INDUSTRIAL ZONE</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Vemagal Industrial Zone</h3>
+            <div class="area-meta">East Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A modern industrial park hosting food processing and engineering multinational corporations.</p>
+            <a href="../areas/vemagal/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 21: Manyata Embassy Business Park -->
+        <div class="area-card" data-name="Manyata Embassy Business Park" data-region="north">
+          <div class="area-img-box">
+            <img src="../assets/images/north_bengaluru.png" alt="Manyata Embassy Business Park">
+            <span class="area-badge">BUSINESS HUB</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Manyata Embassy Business Park</h3>
+            <div class="area-meta">North Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">One of India's largest and most famous operational tech parks in Nagawara.</p>
+            <a href="../areas/manyata-tech-park/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 22: Kirloskar Business Park -->
+        <div class="area-card" data-name="Kirloskar Business Park" data-region="north">
+          <div class="area-img-box">
+            <img src="../assets/images/north_bengaluru.png" alt="Kirloskar Business Park">
+            <span class="area-badge">BUSINESS HUB</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Kirloskar Business Park</h3>
+            <div class="area-meta">North Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A premier corporate address in Hebbal, hosting executive corporate headquarters.</p>
+            <a href="../areas/kirloskar-tech-park/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 23: Bangalore Aerospace Park -->
+        <div class="area-card" data-name="Bangalore Aerospace Park" data-region="north">
+          <div class="area-img-box">
+            <img src="../assets/images/north_bengaluru.png" alt="Bangalore Aerospace Park">
+            <span class="area-badge">TECH PARK</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Bangalore Aerospace Park</h3>
+            <div class="area-meta">North Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A state-of-the-art aerospace and defense manufacturing zone near BIAL.</p>
+            <a href="../areas/bangalore-aerospace-park/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 24: Yelahanka Hub -->
+        <div class="area-card" data-name="Yelahanka Transit Hub" data-region="north">
+          <div class="area-img-box">
+            <img src="../assets/images/north_bengaluru.png" alt="Yelahanka">
+            <span class="area-badge">TRANSIT HUB</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Yelahanka Transit Hub</h3>
+            <div class="area-meta">North Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A key commercial and residential hub in North Bangalore close to the airport.</p>
+            <a href="../areas/yelahanka/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 25: Doddaballapur Zone -->
+        <div class="area-card" data-name="Doddaballapur Industrial Zone" data-region="north">
+          <div class="area-img-box">
+            <img src="../assets/images/north_bengaluru.png" alt="Doddaballapur">
+            <span class="area-badge">INDUSTRIAL ZONE</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Doddaballapur Industrial</h3>
+            <div class="area-meta">North Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">A large apparel and textile industrial park situated in the northern suburb.</p>
+            <a href="../areas/doddaballapur/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 26: Embassy Golf Links -->
+        <div class="area-card" data-name="Embassy Golf Links Business Park" data-region="central-west">
+          <div class="area-img-box">
+            <img src="../assets/images/central_west_bengaluru.png" alt="Embassy Golf Links Business Park">
+            <span class="area-badge">BUSINESS HUB</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Embassy Golf Links</h3>
+            <div class="area-meta">Central & West Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">Prestige business park located off Intermediate Ring Road with premium corporate clients.</p>
+            <a href="../areas/embassy-golf-links/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 27: Peenya Zone -->
+        <div class="area-card" data-name="Peenya Industrial Area" data-region="central-west">
+          <div class="area-img-box">
+            <img src="../assets/images/central_west_bengaluru.png" alt="Peenya">
+            <span class="area-badge">INDUSTRIAL ZONE</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Peenya Industrial Area</h3>
+            <div class="area-meta">Central & West Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">One of the largest industrial areas in South Asia hosting micro, small, and medium enterprises.</p>
+            <a href="../areas/peenya/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+        <!-- Card 28: Dabuspet Zone -->
+        <div class="area-card" data-name="Dabuspet Industrial Corridor" data-region="central-west">
+          <div class="area-img-box">
+            <img src="../assets/images/central_west_bengaluru.png" alt="Dabuspet">
+            <span class="area-badge">INDUSTRIAL ZONE</span>
+          </div>
+          <div class="area-card-body">
+            <h3>Dabuspet Industrial</h3>
+            <div class="area-meta">Central & West Bengaluru</div>
+            <hr class="area-divider">
+            <p class="area-desc">Major industrial zone on NH-48 hosting heavy engineering and fabrication plants.</p>
+            <a href="../areas/dabuspet/index.html" class="area-btn">View Service Page</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-logo-box">
+          <a href="../index.html" class="logo">
+            <img src="../assets/images/logo.png" alt="Suhalaya Travels Logo" style="height: 48px; width: auto; object-fit: contain; vertical-align: middle;">
+          </a>
+          <p>Bangalore's premier B2B corporate car rental, employee transportation, and luxury chauffeur partner delivering reliability since 1999.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Areas We Serve</h4>
+          <ul class="footer-links">
+            <li><a href="../areas/south-bengaluru/index.html">South Bengaluru</a></li>
+            <li><a href="../areas/east-bengaluru/index.html">East Bengaluru</a></li>
+            <li><a href="../areas/north-bengaluru/index.html">North Bengaluru</a></li>
+            <li><a href="../areas/central-west-bengaluru/index.html">Central & West Bengaluru</a></li>
+          </ul>
+          <a href="../areas/index.html" class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px; background: var(--color-gold); border-color: var(--color-gold); color: #ffffff; font-weight: 600; text-transform: uppercase; text-decoration: none; display: inline-block; margin-top: 10px;">View All Areas &rarr;</a>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/about#services-showcase">Explore Our Services</a></li>
+            <li><a href="/booking">Online Booking</a></li>
+            <li><a href="/terms">Terms & Conditions</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px; height:18px; margin-right:8px; color:var(--color-gold);"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Bangalore, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px; height:18px; margin-right:8px; color:var(--color-gold);"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span>+91 99005 56611</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px; height:18px; margin-right:8px; color:var(--color-gold);"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>swamy@suhalayatravels.in</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="flex-direction: column; text-align: center; justify-content: center; gap: 12px;">
+
+        <p style="margin: 0; text-align: center;">&copy; 2026 Suhalaya Travels Private Limited | Powered by <a href="https://automationlabs.online" target="_blank" style="color: var(--color-gold); text-decoration: none; font-weight: 600;">AI Automation Labs</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const searchInput = document.getElementById('directory-search');
+      const areaCards = document.querySelectorAll('.area-card');
+      const noResults = document.getElementById('no-results');
+
+      searchInput.addEventListener('input', function () {
+        const query = this.value.toLowerCase().trim();
+        let visibleCount = 0;
+
+        areaCards.forEach(card => {
+          const name = card.getAttribute('data-name').toLowerCase();
+          const region = card.getAttribute('data-region').toLowerCase();
+          if (name.includes(query) || region.includes(query)) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (visibleCount > 0) {
+          noResults.style.display = 'none';
+        } else {
+          noResults.style.display = 'block';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

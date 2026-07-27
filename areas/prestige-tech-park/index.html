@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cab Service in Prestige Tech Park | Suhalaya Travels</title>
+  <meta name="description" content="Safe, GPS-tracked employee commuting cabs, executive rentals, and corporate shuttle services in Prestige Tech Park, Marathahalli-Sarjapur ORR, Bangalore.">
+  <link rel="canonical" href="https://www.suhalayatravels.com/areas/prestige-tech-park">
+  <link rel="stylesheet" href="/css/style.css?v=3">
+  
+  <style>
+    .prestige-grid {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .prestige-stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .prestige-stat-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 18px 14px;
+      text-align: center;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .prestige-stat-card:hover {
+      transform: translateY(-4px);
+      border-color: #00AEEF;
+      background: #ffffff;
+      box-shadow: 0 8px 20px rgba(1, 90, 132, 0.06);
+    }
+
+    .prestige-stat-num {
+      font-family: var(--font-headings);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #015A84;
+      line-height: 1.2;
+    }
+
+    .prestige-stat-label {
+      font-size: 0.78rem;
+      color: #64748b;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .prestige-service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+      margin-bottom: 35px;
+    }
+
+    .prestige-service-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #00AEEF;
+      padding: 16px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      color: #0f172a;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .prestige-service-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(1, 90, 132, 0.08);
+      background: #ffffff;
+    }
+
+    .prestige-sidebar-form {
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      position: sticky;
+      top: 100px;
+      box-shadow: 0 10px 30px rgba(1, 90, 132, 0.06);
+    }
+
+    @media (max-width: 992px) {
+      .prestige-grid {
+        grid-template-columns: 1fr;
+      }
+      .prestige-stats-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .prestige-sidebar-form {
+        position: static;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Cab Service in Prestige Tech Park",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Suhalaya Travels Pvt Ltd",
+      "telephone": "+919900556611",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "addressCountry": "IN"
+      }
+    },
+    "areaServed": "Marathahalli-Sarjapur Outer Ring Road, Bangalore",
+    "description": "Safe, GPS-tracked employee commuting cabs, executive rentals, and corporate shuttle services in Prestige Tech Park, Marathahalli-Sarjapur ORR, Bangalore."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- GLOBAL HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="/assets/images/logo.png" alt="Suhalaya Travels Logo" style="height: 48px; width: auto; object-fit: contain; vertical-align: middle;">
+      </a>
+      <nav class="nav-container">
+        <ul class="nav-menu">
+          <li><a href="/" class="nav-link">HOME</a></li>
+          <li><a href="/about" class="nav-link">ABOUT US</a></li>
+          <li><a href="/blog" class="nav-link">BLOG</a></li>
+          <li><a href="/contact_us" class="nav-link">CONTACT US</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="/admin/" class="btn btn-primary" style="padding: 8px 24px; font-size: 0.9rem; margin-right: 12px;">LOGIN</a>
+        <button class="nav-toggle" aria-label="Toggle Menu">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- STICKY MOBILE BOTTOM BAR -->
+  <div class="mobile-bottom-bar">
+    <a href="tel:+919900556611">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/919900556611?text=Hello%20Suhalaya%20Travels,%20I%20would%20like%20to%20enquire%20about%20Prestige%20Tech%20Park%20cab%20services." class="active-cta" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.22 13c-.2.55-1.16 1.07-1.6 1.13-.43.06-.86.29-2.77-.47-2.31-.91-3.79-3.23-3.9-3.39-.12-.16-.94-1.25-.94-2.39 0-1.13.59-1.69.8-1.92.2-.23.45-.29.6-.29.15 0 .3 0 .43.01.14.01.32-.05.5.38.18.43.63 1.53.69 1.64.06.11.1.25.02.41-.08.16-.12.26-.25.41-.12.15-.26.33-.37.44-.12.12-.25.25-.11.49.14.24.61 1.01 1.31 1.63.9.8 1.66 1.05 1.9 1.16.24.12.38.1.52-.06.14-.17.62-.72.79-.97.17-.25.34-.21.57-.12.24.09 1.5.71 1.76.84.26.13.43.19.49.3.06.11.06.66-.14 1.21z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="/booking">
+      <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+      <span>Get Quote</span>
+    </a>
+  </div>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919900556611?text=Hello%20Suhalaya%20Travels,%20I%20would%20like%20to%20enquire%20about%20Prestige%20Tech%20Park%20cab%20services." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.22 13c-.2.55-1.16 1.07-1.6 1.13-.43.06-.86.29-2.77-.47-2.31-.91-3.79-3.23-3.9-3.39-.12-.16-.94-1.25-.94-2.39 0-1.13.59-1.69.8-1.92.2-.23.45-.29.6-.29.15 0 .3 0 .43.01.14.01.32-.05.5.38.18.43.63 1.53.69 1.64.06.11.1.25.02.41-.08.16-.12.26-.25.41-.12.15-.26.33-.37.44-.12.12-.25.25-.11.49.14.24.61 1.01 1.31 1.63.9.8 1.66 1.05 1.9 1.16.24.12.38.1.52-.06.14-.17.62-.72.79-.97.17-.25.34-.21.57-.12.24.09 1.5.71 1.76.84.26.13.43.19.49.3.06.11.06.66-.14 1.21z"/></svg>
+  </a>
+
+  <!-- INNER HERO (COMPACT & SLEEK) -->
+  <section class="inner-hero" style="background: linear-gradient(135deg, #015A84 0%, #013B58 100%); padding: 105px 0 32px 0; color: #ffffff; text-align: center;">
+    <div class="container">
+      <h1 style="font-size: 2.1rem; font-weight: 800; margin-bottom: 8px; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px;">
+        CAB SERVICE IN PRESTIGE TECH PARK
+      </h1>
+      <p style="color: #cbd5e1; max-width: 680px; margin: 0 auto 14px auto; font-size: 1rem; line-height: 1.5;">
+        24/7 Corporate Car Rentals, Executive Commute Shuttles &amp; Airport Express Cabs on Marathahalli-Sarjapur ORR.
+      </p>
+
+      <ul class="breadcrumbs" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; list-style: none; padding: 0; margin: 0; color: #00AEEF; font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">
+        <li><a href="/" style="color: #ffffff; text-decoration: none;">HOME</a></li>
+        <li style="color: #ffffff;">&gt;</li>
+        <li><a href="/areas/index.html" style="color: #ffffff; text-decoration: none;">AREAS WE SERVE</a></li>
+        <li style="color: #ffffff;">&gt;</li>
+        <li><a href="/areas/east-bengaluru" style="color: #ffffff; text-decoration: none;">East Bengaluru</a></li>
+        <li style="color: #ffffff;">&gt;</li>
+        <li style="color: #00AEEF;">Prestige Tech Park</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTENT SECTION WITH FORM -->
+  <section class="section-padding reveal-on-scroll" style="padding: 70px 0; background: #ffffff;">
+    <div class="container">
+      <div class="prestige-grid">
+        
+        <div>
+          <span class="section-label" style="color: #00AEEF; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-size: 0.85rem;">MARATHAHALLI-SARJAPUR ORR CORRIDOR</span>
+          <h2 style="font-family: var(--font-headings); font-size: 2.2rem; font-weight: 800; color: #0f172a; margin-top: 8px; margin-bottom: 24px; line-height: 1.25;">
+            Reliable Corporate Cabs in Prestige Tech Park, Kadubeesanahalli
+          </h2>
+
+          <!-- HERO PHOTO BOX -->
+          <div style="position: relative; margin-bottom: 30px;">
+            <img src="/assets/images/east_bengaluru.png" alt="Prestige Tech Park Kadubeesanahalli Bangalore" style="width: 100%; height: 360px; object-fit: cover; border-radius: 16px; box-shadow: 0 15px 35px rgba(1, 90, 132, 0.12); border: 1px solid rgba(0, 174, 239, 0.2);">
+            
+            <div style="position: absolute; bottom: 20px; left: 20px; background: rgba(15, 23, 42, 0.9); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.15); display: flex; align-items: center; gap: 8px;">
+              <span style="color: #00AEEF;">✨</span> Transport Partner for TCS, Wipro, VMware, Capgemini, Tata Elxsi &amp; Prestige Tenants
+            </div>
+          </div>
+
+          <!-- IMPACT STATS COUNTER -->
+          <div class="prestige-stats-row">
+            <div class="prestige-stat-card">
+              <div class="prestige-stat-num">Kadubeesanahalli</div>
+              <div class="prestige-stat-label">ORR Hub</div>
+            </div>
+            <div class="prestige-stat-card">
+              <div class="prestige-stat-num">45+</div>
+              <div class="prestige-stat-label">Enterprise Clients</div>
+            </div>
+            <div class="prestige-stat-card">
+              <div class="prestige-stat-num">400+</div>
+              <div class="prestige-stat-label">Daily Rides</div>
+            </div>
+            <div class="prestige-stat-card">
+              <div class="prestige-stat-num">99.8%</div>
+              <div class="prestige-stat-label">Punctual SLA</div>
+            </div>
+          </div>
+
+          <div style="color: #475569; font-size: 1.02rem; line-height: 1.8; display: flex; flex-direction: column; gap: 18px;">
+            <p>Located in <strong>Kadubeesanahalli</strong> along the Marathahalli-Sarjapur Outer Ring Road (ORR), <strong>Prestige Tech Park</strong> is home to top IT firms including <strong>TCS, Wipro, VMware, Capgemini, Tata Elxsi, GE Digital, and Canon</strong>.</p>
+
+            <p><strong>Suhalaya Travels Pvt. Ltd.</strong> delivers premium B2B cab fleets, employee shift transportation, and fast airport transfers optimized for Prestige Tech Park campus traffic.</p>
+          </div>
+
+          <!-- SERVICES GRID -->
+          <h3 style="font-family: var(--font-headings); font-size: 1.4rem; color: #0f172a; margin-top: 40px; margin-bottom: 16px; font-weight: 800;">
+            Our Specialized Transportation Services
+          </h3>
+          <div class="prestige-service-grid">
+            <div class="prestige-service-card"><span style="color: #00AEEF;">✓</span> Employee Pickup &amp; Drop</div>
+            <div class="prestige-service-card"><span style="color: #00AEEF;">✓</span> Executive VIP Chauffeurs</div>
+            <div class="prestige-service-card"><span style="color: #00AEEF;">✓</span> Corporate Car Rentals</div>
+            <div class="prestige-service-card"><span style="color: #00AEEF;">✓</span> 24/7 Airport Express Cabs</div>
+            <div class="prestige-service-card"><span style="color: #00AEEF;">✓</span> Staff Bus Shuttles</div>
+            <div class="prestige-service-card"><span style="color: #00AEEF;">✓</span> Monthly Long-Term Fleet</div>
+            <div class="prestige-service-card"><span style="color: #00AEEF;">✓</span> Luxury Car Hire</div>
+            <div class="prestige-service-card"><span style="color: #00AEEF;">✓</span> Corporate Event Mobility</div>
+          </div>
+
+          <!-- WHY CHOOSE SUHALAYA -->
+          <h3 style="font-family: var(--font-headings); font-size: 1.4rem; color: #0f172a; margin-top: 35px; margin-bottom: 16px; font-weight: 800;">
+            Why Choose Suhalaya Travels in Prestige Tech Park?
+          </h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; padding: 0; margin-bottom: 30px;">
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: #334155; font-size: 0.98rem; line-height: 1.6;">
+              <span style="color: #00AEEF; font-weight: bold; font-size: 1.1rem; line-height: 1;">✔</span>
+              <span><strong>Background-Verified Drivers:</strong> Uniformed, background-screened, and courteously trained chauffeurs.</span>
+            </li>
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: #334155; font-size: 0.98rem; line-height: 1.6;">
+              <span style="color: #00AEEF; font-weight: bold; font-size: 1.1rem; line-height: 1;">✔</span>
+              <span><strong>Live Telematics &amp; Safety:</strong> Real-time GPS tracking with emergency SOS assistance.</span>
+            </li>
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: #334155; font-size: 0.98rem; line-height: 1.6;">
+              <span style="color: #00AEEF; font-weight: bold; font-size: 1.1rem; line-height: 1;">✔</span>
+              <span><strong>Punctual SLA Commitment:</strong> Guaranteed on-time pickups across the Marathahalli / ORR corridor.</span>
+            </li>
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: #334155; font-size: 0.98rem; line-height: 1.6;">
+              <span style="color: #00AEEF; font-weight: bold; font-size: 1.1rem; line-height: 1;">✔</span>
+              <span><strong>Transparent B2B Invoicing:</strong> Itemized corporate statements with zero hidden charges.</span>
+            </li>
+          </ul>
+
+          <!-- URGENT BOOKING CALLOUT BOX -->
+          <div style="margin-top: 35px; background: linear-gradient(135deg, #015A84 0%, #0A699D 100%); padding: 28px; border-radius: 16px; color: #ffffff; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; box-shadow: 0 10px 25px rgba(1, 90, 132, 0.18);">
+            <div>
+              <h4 style="color: #ffffff; margin-bottom: 6px; font-size: 1.2rem; font-weight: 800;">Need Cabs for Prestige Tech Park?</h4>
+              <p style="color: rgba(255,255,255,0.9); font-size: 0.95rem; margin: 0;">Reserve corporate sedans, Innova Crysta, or employee shuttles immediately.</p>
+            </div>
+            <a href="/booking" class="btn btn-primary" style="background: #ffffff; color: #015A84; border: none; padding: 14px 28px; border-radius: 10px; font-weight: 800; font-size: 0.95rem; text-decoration: none; white-space: nowrap;">Book Fleet Now &rarr;</a>
+          </div>
+        </div>
+
+        <!-- QUICK INQUIRY FORM SIDEBAR -->
+        <div class="prestige-sidebar-form">
+          <h3 style="font-family: var(--font-headings); color: #0f172a; font-size: 1.35rem; margin-bottom: 8px; font-weight: 800;">Book Cab in Prestige Tech Park</h3>
+          <p style="color: #64748b; font-size: 0.88rem; margin-bottom: 20px;">Fill details below for an instant corporate rate quote.</p>
+
+          <form action="/booking" method="GET">
+            <div style="margin-bottom: 14px;">
+              <label style="display: block; font-size: 0.85rem; font-weight: 600; color: #0f172a; margin-bottom: 6px;">Your Name *</label>
+              <input type="text" name="name" required placeholder="Enter full name" style="width: 100%; padding: 11px 14px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.92rem;">
+            </div>
+
+            <div style="margin-bottom: 14px;">
+              <label style="display: block; font-size: 0.85rem; font-weight: 600; color: #0f172a; margin-bottom: 6px;">Phone Number *</label>
+              <input type="tel" name="phone" required placeholder="Enter 10-digit mobile number" style="width: 100%; padding: 11px 14px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.92rem;">
+            </div>
+
+            <div style="margin-bottom: 14px;">
+              <label style="display: block; font-size: 0.85rem; font-weight: 600; color: #0f172a; margin-bottom: 6px;">Select Service Type</label>
+              <select name="service" style="width: 100%; padding: 11px 14px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.92rem; background: #ffffff;">
+                <option value="Corporate Car Rental">Corporate Car Rental</option>
+                <option value="Employee Transportation">Employee Transportation</option>
+                <option value="Airport Transfer">Airport Pick / Drop</option>
+                <option value="Outstation Rental">Outstation Rental</option>
+                <option value="Luxury Chauffeur">Luxury Chauffeur</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <label style="display: block; font-size: 0.85rem; font-weight: 600; color: #0f172a; margin-bottom: 6px;">Pickup Address / Requirements</label>
+              <textarea name="pickup" rows="3" placeholder="Specify block, building, or gate..." style="width: 100%; padding: 11px 14px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.92rem;"></textarea>
+            </div>
+
+            <button type="submit" style="width: 100%; padding: 13px; background: #015A84; color: #ffffff; border: none; border-radius: 8px; font-weight: 800; font-size: 0.95rem; cursor: pointer; transition: background 0.25s ease;">
+              Proceed to Booking &rarr;
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED LOCATIONS -->
+  <section class="section-padding" style="padding: 60px 0; background: #f8fafc; border-top: 1px solid #e2e8f0;">
+    <div class="container">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto 40px auto;">
+        <span class="section-label" style="color: #00AEEF; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-size: 0.85rem;">CONNECTIVITY MATRIX</span>
+        <h3 style="font-family: var(--font-headings); color: #0f172a; font-size: 1.8rem; margin-top: 6px; margin-bottom: 8px;">Explore Related Service Areas</h3>
+        <p style="color: #64748b; font-size: 0.95rem;">Providing reliable corporate travel and shift shuttle systems across neighboring tech zones.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+        <div style="background: #ffffff; padding: 24px; border-radius: 12px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 15px rgba(1, 90, 132, 0.03);">
+          <div>
+            <h4 style="color: #0f172a; font-size: 1.15rem; margin-bottom: 8px; font-weight: 800;">Embassy TechVillage</h4>
+            <p style="color: #64748b; font-size: 0.9rem; line-height: 1.5; margin: 0 0 16px 0;">Major IT park located along the same Outer Ring Road corridor.</p>
+          </div>
+          <a href="/areas/embassy-tech-park" style="color: #00AEEF; font-weight: 700; font-size: 0.85rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
+            Explore Area &rarr;
+          </a>
+        </div>
+        <div style="background: #ffffff; padding: 24px; border-radius: 12px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 15px rgba(1, 90, 132, 0.03);">
+          <div>
+            <h4 style="color: #0f172a; font-size: 1.15rem; margin-bottom: 8px; font-weight: 800;">Airport Transfers</h4>
+            <p style="color: #64748b; font-size: 0.9rem; line-height: 1.5; margin: 0 0 16px 0;">24/7 dedicated airport corporate cabs and taxi services.</p>
+          </div>
+          <a href="/airport-transfers" style="color: #00AEEF; font-weight: 700; font-size: 0.85rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
+            Explore Area &rarr;
+          </a>
+        </div>
+        <div style="background: #ffffff; padding: 24px; border-radius: 12px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 15px rgba(1, 90, 132, 0.03);">
+          <div>
+            <h4 style="color: #0f172a; font-size: 1.15rem; margin-bottom: 8px; font-weight: 800;">RMZ Ecoworld</h4>
+            <p style="color: #64748b; font-size: 0.9rem; line-height: 1.5; margin: 0 0 16px 0;">Corporate travel solutions covering adjacent premium business hubs in Bellandur.</p>
+          </div>
+          <a href="/areas/rmz-ecoworld" style="color: #00AEEF; font-weight: 700; font-size: 0.85rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
+            Explore Area &rarr;
+          </a>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 35px;">
+        <a href="/areas/index.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 12px 24px; background: #015A84; border-color: #015A84; color: #ffffff; font-weight: 700; text-transform: uppercase; text-decoration: none; display: inline-block; border-radius: 8px;">View All Service Areas &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-logo-box">
+          <a href="/" class="logo">
+            <img src="/assets/images/logo.png" alt="Suhalaya Travels Logo" style="height: 48px; width: auto; object-fit: contain; vertical-align: middle;">
+          </a>
+          <p>Bangalore's premier B2B corporate car rental, employee transportation, and luxury chauffeur partner delivering reliability since 1999.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Areas We Serve</h4>
+          <ul class="footer-links">
+            <li><a href="/areas/south-bengaluru">South Bengaluru</a></li>
+            <li><a href="/areas/east-bengaluru">East Bengaluru</a></li>
+            <li><a href="/areas/north-bengaluru">North Bengaluru</a></li>
+            <li><a href="/areas/central-west-bengaluru">Central & West Bengaluru</a></li>
+          </ul>
+          <a href="/areas/index.html" class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px; background: var(--color-gold); border-color: var(--color-gold); color: #ffffff; font-weight: 600; text-transform: uppercase; text-decoration: none; display: inline-block; margin-top: 10px;">View All Areas &rarr;</a>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/about#services-showcase">Explore Our Services</a></li>
+            <li><a href="/booking">Online Booking</a></li>
+            <li><a href="/terms">Terms & Conditions</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px; height:18px; margin-right:8px; color:var(--color-gold);"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Bangalore, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px; height:18px; margin-right:8px; color:var(--color-gold);"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span>+91 99005 56611</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px; height:18px; margin-right:8px; color:var(--color-gold);"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>swamy@suhalayatravels.in</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="flex-direction: column; text-align: center; justify-content: center; gap: 12px;">
+
+        <p style="margin: 0; text-align: center;">&copy; 2026 Suhalaya Travels Private Limited | Powered by <a href="https://automationlabs.online" target="_blank" style="color: var(--color-gold); text-decoration: none; font-weight: 600;">AI Automation Labs</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

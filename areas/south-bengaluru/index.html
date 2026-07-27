@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Bengaluru Service Coverage & Tech Parks | Suhalaya Travels</title>
+  <meta name="description" content="Explore Suhalaya Travels' corporate cab services and employee transportation coverage across South Bengaluru, including Electronic City, Global Village, BIEC, and Bidadi.">
+  <link rel="stylesheet" href="/css/style.css?v=3">
+  
+  <style>
+    .area-grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .area-card-premium {
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 20px rgba(1, 90, 132, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
+
+    .area-card-premium:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(1, 90, 132, 0.12);
+      border-color: #00AEEF;
+    }
+
+    .area-img-wrap {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .area-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .area-card-premium:hover .area-img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .area-badge-tag {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: rgba(15, 23, 42, 0.85);
+      color: #00AEEF;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(0, 174, 239, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .area-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .area-title {
+      font-family: var(--font-headings);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin: 0 0 8px 0;
+    }
+
+    .area-location-label {
+      color: #00AEEF;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    .area-desc {
+      color: #64748b;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .area-card-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background: #f8fafc;
+      color: #015A84;
+      border: 1px solid #e2e8f0;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      transition: all 0.25s ease;
+    }
+
+    .area-card-premium:hover .area-card-btn {
+      background: #015A84;
+      color: #ffffff;
+      border-color: #015A84;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- GLOBAL HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="/assets/images/logo.png" alt="Suhalaya Travels Logo" style="height: 48px; width: auto; object-fit: contain; vertical-align: middle;">
+      </a>
+      <nav class="nav-container">
+        <ul class="nav-menu">
+          <li><a href="/" class="nav-link">HOME</a></li>
+          <li><a href="/about" class="nav-link">ABOUT US</a></li>
+          <li><a href="/blog" class="nav-link">BLOG</a></li>
+          <li><a href="/contact_us" class="nav-link">CONTACT US</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="/admin/" class="btn btn-primary" style="padding: 8px 24px; font-size: 0.9rem; margin-right: 12px;">LOGIN</a>
+        <button class="nav-toggle" aria-label="Toggle Menu">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- STICKY MOBILE BOTTOM BAR -->
+  <div class="mobile-bottom-bar">
+    <a href="tel:+919900556611">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/919900556611?text=Hello%20Suhalaya%20Travels,%20I%20would%20like%20to%20enquire%20about%20South%20Bengaluru%20services." class="active-cta" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.22 13c-.2.55-1.16 1.07-1.6 1.13-.43.06-.86.29-2.77-.47-2.31-.91-3.79-3.23-3.9-3.39-.12-.16-.94-1.25-.94-2.39 0-1.13.59-1.69.8-1.92.2-.23.45-.29.6-.29.15 0 .3 0 .43.01.14.01.32-.05.5.38.18.43.63 1.53.69 1.64.06.11.1.25.02.41-.08.16-.12.26-.25.41-.12.15-.26.33-.37.44-.12.12-.25.25-.11.49.14.24.61 1.01 1.31 1.63.9.8 1.66 1.05 1.9 1.16.24.12.38.1.52-.06.14-.17.62-.72.79-.97.17-.25.34-.21.57-.12.24.09 1.5.71 1.76.84.26.13.43.19.49.3.06.11.06.66-.14 1.21z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="/booking">
+      <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+      <span>Get Quote</span>
+    </a>
+  </div>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919900556611?text=Hello%20Suhalaya%20Travels,%20I%20would%20like%20to%20enquire%20about%20South%20Bengaluru%20services." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.22 13c-.2.55-1.16 1.07-1.6 1.13-.43.06-.86.29-2.77-.47-2.31-.91-3.79-3.23-3.9-3.39-.12-.16-.94-1.25-.94-2.39 0-1.13.59-1.69.8-1.92.2-.23.45-.29.6-.29.15 0 .3 0 .43.01.14.01.32-.05.5.38.18.43.63 1.53.69 1.64.06.11.1.25.02.41-.08.16-.12.26-.25.41-.12.15-.26.33-.37.44-.12.12-.25.25-.11.49.14.24.61 1.01 1.31 1.63.9.8 1.66 1.05 1.9 1.16.24.12.38.1.52-.06.14-.17.62-.72.79-.97.17-.25.34-.21.57-.12.24.09 1.5.71 1.76.84.26.13.43.19.49.3.06.11.06.66-.14 1.21z"/></svg>
+  </a>
+
+  <!-- INNER HERO -->
+  <section class="inner-hero" style="background: linear-gradient(135deg, #015A84 0%, #013B58 100%); padding: 130px 0 60px 0; color: #ffffff; text-align: center;">
+    <div class="container">
+      <h1 style="font-size: 2.5rem; margin-bottom: 10px; color: #ffffff; text-transform: uppercase;">South Bengaluru Region</h1>
+      <p style="color: #cbd5e1; max-width: 650px; margin: 0 auto 20px auto; font-size: 1.05rem;">Bangalore's primary electronics manufacturing zone, corporate business parks, and major technology hubs including Electronic City, Global Village, and BIEC.</p>
+      
+      <div>
+        <a href="/areas/index.html" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.15); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.3); padding: 10px 22px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">
+          &larr; View All Service Directory
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGIONAL HUBS GRID -->
+  <section class="section-padding reveal-on-scroll" style="padding: 70px 0; background: #ffffff;">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 50px auto;">
+        <span class="section-label" style="color: #00AEEF; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem; display: inline-block; margin-bottom: 10px;">
+          📍 SOUTH BENGALURU HUBS &amp; CORRIDORS
+        </span>
+        <h2 style="font-family: var(--font-headings); font-size: 2.3rem; font-weight: 800; color: #0f172a; margin: 0;">
+          Select Your Technology Park or Suburb
+        </h2>
+      </div>
+
+      <div class="area-grid-container">
+        
+        <!-- Card 1: Electronic City -->
+        <a href="/areas/electronic-city" class="area-card-premium">
+          <div class="area-img-wrap">
+            <img src="/assets/images/electronic_city_park.png" alt="Electronic City Tech Park">
+            <span class="area-badge-tag">Major IT Hub</span>
+          </div>
+          <div class="area-body">
+            <div class="area-location-label">South Bengaluru</div>
+            <h3 class="area-title">Electronic City Tech Park</h3>
+            <p class="area-desc">India's prominent electronics and IT industrial park spread over 800+ acres hosting Infosys, Wipro, TCS, and 200+ global firms.</p>
+            <div class="area-card-btn">
+              <span>View Service Coverage</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2: Global Village -->
+        <a href="/areas/global-village" class="area-card-premium">
+          <div class="area-img-wrap">
+            <img src="/assets/images/south_bengaluru.png" alt="Global Village Tech Park">
+            <span class="area-badge-tag">Software Hub</span>
+          </div>
+          <div class="area-body">
+            <div class="area-location-label">South Bengaluru</div>
+            <h3 class="area-title">Global Village Tech Park</h3>
+            <p class="area-desc">Leading IT park on Mysore Road hosting major software development hubs, multinational IT centers, and R&amp;D campuses.</p>
+            <div class="area-card-btn">
+              <span>View Service Coverage</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3: BIEC -->
+        <a href="/areas/biec" class="area-card-premium">
+          <div class="area-img-wrap">
+            <img src="/assets/images/south_bengaluru.png" alt="BIEC Exhibition Centre">
+            <span class="area-badge-tag">Exhibition Hub</span>
+          </div>
+          <div class="area-body">
+            <div class="area-location-label">South-West Corridor</div>
+            <h3 class="area-title">BIEC (Exhibition Centre)</h3>
+            <p class="area-desc">Premier destination for international trade fairs, global conventions, and industrial exhibitions with high VIP delegate volume.</p>
+            <div class="area-card-btn">
+              <span>View Service Coverage</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 4: Bidadi -->
+        <a href="/areas/bidadi" class="area-card-premium">
+          <div class="area-img-wrap">
+            <img src="/assets/images/industrial_corridors.png" alt="Bidadi Suburb">
+            <span class="area-badge-tag">Industrial Hub</span>
+          </div>
+          <div class="area-body">
+            <div class="area-location-label">Mysore Road Corridor</div>
+            <h3 class="area-title">Bidadi Suburb</h3>
+            <p class="area-desc">Prominent industrial suburb hosting automotive manufacturing plants, heavy industries, and shift employee transportation.</p>
+            <div class="area-card-btn">
+              <span>View Service Coverage</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER (ROYAL BLUE) -->
+  <section class="container" style="margin-top: 20px; margin-bottom: 60px; max-width: 1240px; padding: 0 20px;">
+    <div
+      style="background: linear-gradient(135deg, #015A84 0%, #0A699D 100%); color: #ffffff; padding: 50px 30px; border-radius: var(--border-radius-lg); text-align: center; border: 1px solid rgba(255,255,255,0.15); position: relative; overflow: hidden; box-shadow: 0 15px 40px rgba(1, 90, 132, 0.25);">
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 5px; background-color: #1AB7EA;">
+      </div>
+
+      <span class="section-label"
+        style="color: #ffffff; border-color: rgba(255, 255, 255, 0.4); background: rgba(255,255,255,0.1); font-size: 0.8rem; margin-bottom: 15px;">
+        🚗 CORPORATE MOBILITY SOLUTIONS
+      </span>
+
+      <h2
+        style="font-family: var(--font-headings); font-weight: 700; color: #ffffff; font-size: 2.2rem; margin-bottom: 20px;">
+        Need Dedicated Fleet Operations in South Bengaluru?
+      </h2>
+
+      <p
+        style="color: rgba(255,255,255,0.95); max-width: 800px; margin: 0 auto 25px auto; font-size: 1.1rem; line-height: 1.8;">
+        Whether you require corporate car rentals, employee shift shuttles, or airport transfers in South Bengaluru, <strong>Suhalaya Travels</strong> is your trusted mobility partner.
+      </p>
+
+      <div style="display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap;">
+        <a href="/booking"
+          class="btn btn-primary"
+          style="background-color: #ffffff; border-color: #ffffff; color: #015A84; font-weight: 800; padding: 14px 32px; border-radius: 10px; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+          Book Corporate Fleet
+        </a>
+        <a href="/contact_us" class="btn btn-secondary"
+          style="background-color: #1AB7EA; border-color: #1AB7EA; color: #ffffff; font-weight: 800; padding: 14px 32px; border-radius: 10px; text-decoration: none; box-shadow: 0 4px 15px rgba(26,183,234,0.3);">
+          Contact Regional Desk
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-logo-box">
+          <a href="/" class="logo">
+            <img src="/assets/images/logo.png" alt="Suhalaya Travels Logo"
+              style="height: 48px; width: auto; object-fit: contain; vertical-align: middle;">
+          </a>
+          <p>Bangalore's premier B2B corporate car rental, employee transportation, and luxury chauffeur partner
+            delivering reliability since 1999.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Areas We Serve</h4>
+          <ul class="footer-links">
+            <li><a href="/areas/south-bengaluru">South Bengaluru</a></li>
+            <li><a href="/areas/east-bengaluru">East Bengaluru</a></li>
+            <li><a href="/areas/north-bengaluru">North Bengaluru</a></li>
+            <li><a href="/areas/central-west-bengaluru">Central & West Bengaluru</a></li>
+          </ul>
+          <a href="/areas/index.html" class="btn btn-secondary"
+            style="font-size: 0.8rem; padding: 6px 12px; background: var(--color-gold); border-color: var(--color-gold); color: #ffffff; font-weight: 600; text-transform: uppercase; text-decoration: none; display: inline-block; margin-top: 10px;">View
+            All Areas &rarr;</a>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/about#services-showcase">Explore Our Services</a></li>
+            <li><a href="/booking">Online Booking</a></li>
+            <li><a href="/terms">Terms & Conditions</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"
+              style="width:18px; height:18px; margin-right:8px; color:var(--color-gold);">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+            <span>Bangalore, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"
+              style="width:18px; height:18px; margin-right:8px; color:var(--color-gold);">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+            <span>+91 99005 56611</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"
+              style="width:18px; height:18px; margin-right:8px; color:var(--color-gold);">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+            <span>swamy@suhalayatravels.in</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"
+        style="flex-direction: column; text-align: center; justify-content: center; gap: 12px;">
+
+        <p style="margin: 0; text-align: center;">&copy; 2026 Suhalaya Travels Private Limited | Powered by <a
+            href="https://automationlabs.online" target="_blank"
+            style="color: var(--color-gold); text-decoration: none; font-weight: 600;">AI Automation Labs</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
