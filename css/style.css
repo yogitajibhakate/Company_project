@@ -2873,6 +2873,10 @@ button {
 }
 
 /* --- UNIVERSAL LAPTOP & DESKTOP MEDIA QUERIES FOR HERO PARALLAX CARS --- */
+#booking-section {
+  overflow: visible !important;
+}
+
 @media (min-width: 900px) {
   #car-left, #car-right {
     display: block !important;
@@ -2881,45 +2885,45 @@ button {
 
 @media (min-width: 900px) and (max-width: 1199px) {
   #car-left {
-    left: -120px !important;
-    width: 440px !important;
+    left: -80px !important;
+    width: 420px !important;
   }
   #car-right {
-    right: -120px !important;
-    width: 440px !important;
+    right: -80px !important;
+    width: 420px !important;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
   #car-left {
-    left: -170px !important;
-    width: 540px !important;
+    left: -110px !important;
+    width: 480px !important;
   }
   #car-right {
-    right: -170px !important;
-    width: 540px !important;
+    right: -110px !important;
+    width: 480px !important;
   }
 }
 
 @media (min-width: 1440px) and (max-width: 1679px) {
   #car-left {
-    left: -210px !important;
-    width: 600px !important;
+    left: -130px !important;
+    width: 540px !important;
   }
   #car-right {
-    right: -210px !important;
-    width: 600px !important;
+    right: -130px !important;
+    width: 540px !important;
   }
 }
 
 @media (min-width: 1680px) {
   #car-left {
-    left: -250px !important;
-    width: 650px !important;
+    left: -150px !important;
+    width: 580px !important;
   }
   #car-right {
-    right: -250px !important;
-    width: 650px !important;
+    right: -150px !important;
+    width: 580px !important;
   }
 }
 
