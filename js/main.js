@@ -869,6 +869,35 @@ Details: ${details}`;
 
 
 document.addEventListener("DOMContentLoaded", () => {
+  const section = document.getElementById('booking-section');
+  const leftCar = document.getElementById('car-left');
+  const rightCar = document.getElementById('car-right');
+
+  if (section && leftCar && rightCar) {
+    function updateCarParallax() {
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Calculate scroll progress
+      let progress = (windowHeight - rect.top) / (windowHeight + rect.height / 2);
+      progress = Math.max(0, Math.min(1, progress));
+
+      // Smooth Zoom In / Zoom Out scale between 0.8 and 1.05
+      const scale = 0.8 + (progress * 0.25);
+
+      // Horizontal parallax movement
+      const leftX = (1 - progress) * 60;
+      const rightX = (1 - progress) * -60;
+
+      leftCar.style.transform = `translate(${leftX}px, 0) scale(${scale})`;
+      rightCar.style.transform = `translate(${rightX}px, 0) scale(${scale})`;
+    }
+
+    window.addEventListener('scroll', updateCarParallax, { passive: true });
+    window.addEventListener('resize', updateCarParallax);
+    updateCarParallax();
+  }
+
   // ================= DATE & TIME VALIDATION =================
   const dateInput = document.getElementById('pickupDate');
   const timeInput = document.getElementById('pickupTime');

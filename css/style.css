@@ -2868,6 +2868,59 @@ button {
 
 .parallax-car {
   opacity: 1 !important;
+  transition: transform 0.15s ease-out;
+  will-change: transform;
+}
+
+/* --- UNIVERSAL LAPTOP & DESKTOP MEDIA QUERIES FOR HERO PARALLAX CARS --- */
+@media (min-width: 900px) {
+  #car-left, #car-right {
+    display: block !important;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  #car-left {
+    left: -120px !important;
+    width: 440px !important;
+  }
+  #car-right {
+    right: -120px !important;
+    width: 440px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  #car-left {
+    left: -170px !important;
+    width: 540px !important;
+  }
+  #car-right {
+    right: -170px !important;
+    width: 540px !important;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1679px) {
+  #car-left {
+    left: -210px !important;
+    width: 600px !important;
+  }
+  #car-right {
+    right: -210px !important;
+    width: 600px !important;
+  }
+}
+
+@media (min-width: 1680px) {
+  #car-left {
+    left: -250px !important;
+    width: 650px !important;
+  }
+  #car-right {
+    right: -250px !important;
+    width: 650px !important;
+  }
 }
 
 .line-clamp-1 {

@@ -210,8 +210,8 @@
   </section>
 
   <!-- ================= RESERVE YOUR TAXI (SCROLL ZOOM-IN / PARALLAX SECTION) ================= -->
-  <div class="w-full bg-white">
-    <section id="booking-section" class="w-full max-w-[1600px] mx-auto px-4 pt-4 pb-10 md:py-12 lg:py-16 relative overflow-visible">
+  <div class="w-full bg-white overflow-hidden">
+    <section id="booking-section" class="w-full max-w-[1600px] mx-auto px-4 pt-4 pb-10 md:py-12 lg:py-16 relative">
 
       <div class="text-center mb-8">
         <span class="text-xs font-bold uppercase tracking-widest text-brand bg-sky-50 px-4 py-1.5 rounded-full">
@@ -222,14 +222,14 @@
       <div class="relative flex items-center justify-center">
 
         <!-- Left Car (Black Benz) -->
-        <div id="car-left" class="parallax-car block absolute -left-[60px] sm:-left-[100px] md:-left-[140px] lg:-left-[180px] xl:-left-[220px] w-[300px] sm:w-[380px] md:w-[460px] lg:w-[540px] xl:w-[620px] pointer-events-none"
-          style="z-index: 10; opacity: 1;">
-          <img loading="eager" decoding="async" width="800" height="598" src="./car_left_transparent.png"
-            class="hero-car-zoom-img attachment-large size-large wp-image-193 w-full h-auto" alt="">
+        <div id="car-left" class="parallax-car hidden xl:block absolute -left-[250px] w-[650px] pointer-events-none"
+          style="z-index: 10;">
+          <img loading="lazy" decoding="async" width="800" height="598" src="./car_left_transparent.png"
+            class="attachment-large size-large wp-image-193 w-full h-auto" alt="">
         </div>
 
         <!-- Center Booking Form Card -->
-        <div class="w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl bg-white border border-sky-100 rounded-3xl shadow-2xl p-6 sm:p-10 relative"
+        <div class="w-full max-w-5xl bg-white border border-sky-100 rounded-3xl shadow-2xl p-6 sm:p-10 relative"
           style="z-index: 20;">
 
           <!-- Card Header Title -->
@@ -385,10 +385,10 @@
         </div>
 
         <!-- Right Car -->
-        <div id="car-right" class="parallax-car block absolute -right-[60px] sm:-right-[100px] md:-right-[140px] lg:-right-[180px] xl:-right-[220px] w-[300px] sm:w-[380px] md:w-[460px] lg:w-[540px] xl:w-[620px] pointer-events-none"
-          style="z-index: 10; opacity: 1;">
-          <img loading="eager" decoding="async" width="800" height="598" src="./car_right_transparent.png"
-            class="hero-car-zoom-img attachment-large size-large wp-image-192 w-full h-auto"
+        <div id="car-right" class="parallax-car hidden xl:block absolute -right-[250px] w-[650px] pointer-events-none"
+          style="z-index: 10;">
+          <img loading="lazy" decoding="async" width="800" height="598" src="./car_right_transparent.png"
+            class="attachment-large size-large wp-image-192 w-full h-auto"
             style="filter: hue-rotate(165deg) saturate(1.2) brightness(0.8) contrast(1.2);" alt="">
         </div>
 
