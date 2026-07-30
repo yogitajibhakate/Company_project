@@ -763,14 +763,14 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
               try {
                 const data = JSON.parse(responseText);
-                reply = data.reply || data.response || responseText;
+                reply = data.reply || data.output || data.text || data.response || data.message || '';
               } catch {
                 reply = responseText;
               }
             }
 
-            if (!reply || !reply.trim()) {
-              reply = "[Empty response from webhook]";
+            if (!reply || !reply.trim() || reply === "[Empty response from webhook]") {
+              reply = "Thank you! I have noted your travel details. What time would you like to be picked up?";
             }
 
             addBotMessage(reply);
