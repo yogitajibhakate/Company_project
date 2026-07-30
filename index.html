@@ -56,7 +56,7 @@
             handwriting: ['Caveat', 'cursive'],
           },
           colors: {
-            brand: '#00AEEF',
+            brand: '#0172A7',
             'brand-dark': '#0A589F',
             heading: '#161925',
             body: '#6B7280',
@@ -295,7 +295,7 @@
     <section id="booking-section" class="w-full max-w-[1600px] mx-auto px-4 pt-4 pb-10 md:py-12 lg:py-16 relative">
 
       <div class="text-center mb-8">
-        <span class="text-xs font-bold uppercase tracking-widest text-brand bg-sky-50 px-4 py-1.5 rounded-full">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#0A589F] bg-sky-50 px-4 py-1.5 rounded-full">
           GET IN TOUCH
         </span>
       </div>
@@ -321,7 +321,7 @@
           <!-- Pill Tabs Header -->
           <div class="grid grid-cols-3 gap-2 sm:gap-4 mb-6 max-w-xl">
             <button type="button" id="tab-local" onclick="switchBookingTab('local')"
-              class="booking-tab py-3 px-2 rounded-xl text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 border border-[#00AEEF] bg-[#00AEEF] text-white shadow-md transition cursor-pointer">
+              class="booking-tab py-3 px-2 rounded-xl text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 border border-[#0172A7] bg-[#0172A7] text-white shadow-md transition cursor-pointer">
               <i class="fa-solid fa-car pointer-events-none"></i> LOCAL
             </button>
             <button type="button" id="tab-airport" onclick="switchBookingTab('airport')"
@@ -358,35 +358,35 @@
               <div>
                 <label for="name" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">NAME</label>
                 <input type="text" id="name" name="name" required placeholder="Name"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
 
               <!-- Phone -->
               <div>
                 <label for="phone" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PHONE</label>
                 <input type="tel" id="phone" name="phone" required placeholder="Phone"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
 
               <!-- Email -->
               <div id="emailCol" class="w-full">
                 <label for="email" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">EMAIL</label>
                 <input type="email" id="email" name="email" required placeholder="Email"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
 
               <!-- City (Shown for Local & Airport) -->
               <div id="cityCol" class="w-full">
                 <label for="city" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">CITY</label>
                 <input type="text" id="city" name="city" value="Bangalore"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
 
               <!-- Trip Select (Shown for Airport) -->
               <div id="tripCol" class="hidden w-full">
                 <label for="tripTypeSelect" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">TRIP</label>
                 <select id="tripTypeSelect" name="triptype"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
+                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
                   <option value="" disabled selected>Select Trip Type</option>
                   <option value="Airport Drop (City to Airport)">Airport Drop (City to Airport)</option>
                   <option value="Airport Pickup (Airport to City)">Airport Pickup (Airport to City)</option>
@@ -399,26 +399,26 @@
                 <label
                   class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">ADDRESS</label>
                 <input type="text" id="address" name="pickup" placeholder="Address"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
 
               <!-- From & To (Shown for Outstation) -->
               <div id="fromCol" class="hidden w-full">
                 <label for="fromCity" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">FROM</label>
                 <input type="text" id="fromCity" name="from_city" value="Bangalore" placeholder="From"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
               <div id="toCol" class="hidden w-full">
                 <label for="toCity" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">TO</label>
                 <input type="text" id="toCity" name="to_city" placeholder="Destination"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
 
               <!-- Car Type (Shown for All) -->
               <div id="carTypeCol" class="w-full">
                 <label for="carType" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">CAR TYPE</label>
                 <select id="carType" name="vehicle" required
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
+                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
                   <option value="Economy" selected>Economy</option>
                   <option value="Executive">Executive</option>
                   <option value="SUV">SUV</option>
@@ -431,21 +431,21 @@
               <div>
                 <label for="pickupDate" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PICK UP DATE</label>
                 <input type="date" id="pickupDate" name="date" required
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
+                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
               </div>
 
               <!-- Pick Up At Time -->
               <div>
                 <label for="pickupTime" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PICK UP TIME</label>
                 <input type="time" id="pickupTime" name="time" required
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
+                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
               </div>
 
               <!-- Return Date (Shown for Outstation Round Trip) -->
               <div id="returnDateCol" class="hidden w-full">
                 <label for="returnDate" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">RETURN DATE</label>
                 <input type="date" id="returnDate" name="return_date"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
+                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
               </div>
 
             </div>
@@ -453,7 +453,7 @@
             <!-- Submit Button -->
             <div class="pt-4">
               <button type="submit"
-                class="w-full bg-[#00AEEF] hover:bg-[#0A589F] text-white font-extrabold py-4 rounded-xl shadow-lg transition transform active:scale-[0.99] text-base tracking-wider uppercase">
+                class="w-full bg-[#0172A7] hover:bg-[#0A589F] text-white font-extrabold py-4 rounded-xl shadow-lg transition transform active:scale-[0.99] text-base tracking-wider uppercase">
                 BOOK NOW
               </button>
             </div>
@@ -478,7 +478,7 @@
     <div class="container">
       <div class="section-header text-center" style="margin-bottom: 50px;">
         <span class="section-label"
-          style="color: #1AB7EA; font-weight: 700; letter-spacing: 1.5px; font-size: 0.9rem;">BANGALORE COVERAGE</span>
+          style="color: #0172A7; font-weight: 700; letter-spacing: 1.5px; font-size: 0.9rem;">BANGALORE COVERAGE</span>
         <h2 class="section-title"
           style="color: #000000; text-transform: uppercase; font-size: 2.2rem; margin-top: 8px;">Areas We Serve</h2>
         <p class="section-desc" style="color: #334155; max-width: 650px; margin: 12px auto 0;">Delivering premium
@@ -560,7 +560,7 @@
                    onmouseover="this.style.background='#f8fafc';"
                    onmouseout="this.style.background='transparent';">
                 <div style="font-weight: 600; color: #015A84; font-size: 0.9rem;">${loc.name}</div>
-                <div style="font-size: 0.75rem; color: #1AB7EA; margin-top: 2px;">${loc.region}</div>
+                <div style="font-size: 0.75rem; color: #0172A7; margin-top: 2px;">${loc.region}</div>
               </div>
             `).join('');
             }
