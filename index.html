@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="/css/style.css?v=3">
   <!-- Tailwind CSS CDN & FontAwesome -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
   <script>
     tailwind.config = {
       theme: {
@@ -356,35 +356,35 @@
 
               <!-- Name -->
               <div>
-                <label class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">NAME</label>
+                <label for="name" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">NAME</label>
                 <input type="text" id="name" name="name" required placeholder="Name"
                   class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
 
               <!-- Phone -->
               <div>
-                <label class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PHONE</label>
+                <label for="phone" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PHONE</label>
                 <input type="tel" id="phone" name="phone" required placeholder="Phone"
                   class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
 
               <!-- Email -->
               <div id="emailCol" class="w-full">
-                <label class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">EMAIL</label>
+                <label for="email" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">EMAIL</label>
                 <input type="email" id="email" name="email" required placeholder="Email"
                   class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
 
               <!-- City (Shown for Local & Airport) -->
               <div id="cityCol" class="w-full">
-                <label class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">CITY</label>
+                <label for="city" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">CITY</label>
                 <input type="text" id="city" name="city" value="Bangalore"
                   class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
 
               <!-- Trip Select (Shown for Airport) -->
               <div id="tripCol" class="hidden w-full">
-                <label class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">TRIP</label>
+                <label for="tripTypeSelect" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">TRIP</label>
                 <select id="tripTypeSelect" name="triptype"
                   class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
                   <option value="" disabled selected>Select Trip Type</option>
@@ -404,20 +404,19 @@
 
               <!-- From & To (Shown for Outstation) -->
               <div id="fromCol" class="hidden w-full">
-                <label class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">FROM</label>
+                <label for="fromCity" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">FROM</label>
                 <input type="text" id="fromCity" name="from_city" value="Bangalore" placeholder="From"
                   class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
               <div id="toCol" class="hidden w-full">
-                <label class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">TO</label>
+                <label for="toCity" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">TO</label>
                 <input type="text" id="toCity" name="to_city" placeholder="Destination"
                   class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
               </div>
 
               <!-- Car Type (Shown for All) -->
               <div id="carTypeCol" class="w-full">
-                <label class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">CAR
-                  TYPE</label>
+                <label for="carType" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">CAR TYPE</label>
                 <select id="carType" name="vehicle" required
                   class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
                   <option value="Economy" selected>Economy</option>
@@ -430,24 +429,21 @@
 
               <!-- Pick Up Date -->
               <div>
-                <label class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PICK UP
-                  DATE</label>
+                <label for="pickupDate" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PICK UP DATE</label>
                 <input type="date" id="pickupDate" name="date" required
                   class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
               </div>
 
               <!-- Pick Up At Time -->
               <div>
-                <label class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PICK UP
-                  AT</label>
+                <label for="pickupTime" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PICK UP TIME</label>
                 <input type="time" id="pickupTime" name="time" required
                   class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
               </div>
 
               <!-- Return Date (Shown for Outstation Round Trip) -->
               <div id="returnDateCol" class="hidden w-full">
-                <label class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">RETURN
-                  DATE</label>
+                <label for="returnDate" class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">RETURN DATE</label>
                 <input type="date" id="returnDate" name="return_date"
                   class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
               </div>
@@ -492,7 +488,7 @@
       <!-- Search Bar -->
       <div class="search-container" style="max-width: 500px; margin: -10px auto 40px auto; position: relative;">
         <div style="position: relative; display: flex; align-items: center;">
-          <input type="text" id="area-search-input"
+          <label for="area-search-input" class="sr-only" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Search Areas</label><input type="text" id="area-search-input"
             placeholder="Search tech parks or locations (e.g., Manyata, ITPL, Electronic City...)"
             style="width: 100%; padding: 14px 20px 14px 45px; border: 2px solid rgba(1, 90, 132, 0.15); border-radius: 30px; font-size: 0.95rem; outline: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.02); font-family: inherit;">
           <svg style="position: absolute; left: 16px; color: #64748b;" width="18" height="18" viewBox="0 0 24 24"
@@ -599,7 +595,7 @@
         <!-- Region 1: South Bengaluru -->
         <div class="area-card">
           <div class="area-img-box">
-            <img src="/assets/images/south_bengaluru.webp" alt="South Bengaluru Tech Hub">
+            <img src="/assets/images/south_bengaluru.webp" alt="South Bengaluru Tech Hub" width="800" height="480" loading="lazy">
             <span class="area-badge">South region</span>
           </div>
           <div class="area-card-body">
@@ -615,7 +611,7 @@
         <!-- Region 2: East Bengaluru -->
         <div class="area-card">
           <div class="area-img-box">
-            <img src="/assets/images/east_bengaluru.webp" alt="East Bengaluru IT Corridor">
+            <img src="/assets/images/east_bengaluru.webp" alt="East Bengaluru IT Corridor" width="800" height="480" loading="lazy">
             <span class="area-badge">East region</span>
           </div>
           <div class="area-card-body">
@@ -631,7 +627,7 @@
         <!-- Region 3: North Bengaluru -->
         <div class="area-card">
           <div class="area-img-box">
-            <img src="/assets/images/north_bengaluru.webp" alt="North Bengaluru Airport Corridor">
+            <img src="/assets/images/north_bengaluru.webp" alt="North Bengaluru Airport Corridor" width="800" height="480" loading="lazy">
             <span class="area-badge">North region</span>
           </div>
           <div class="area-card-body">
@@ -647,7 +643,7 @@
         <!-- Region 4: Central & West Bengaluru -->
         <div class="area-card">
           <div class="area-img-box">
-            <img src="/assets/images/central_west_bengaluru.webp" alt="Central Bengaluru Business District">
+            <img src="/assets/images/central_west_bengaluru.webp" alt="Central Bengaluru Business District" width="800" height="480" loading="lazy">
             <span class="area-badge">Central & West</span>
           </div>
           <div class="area-card-body">
@@ -663,7 +659,7 @@
         <!-- Box 5: View All Regions & Tech Parks -->
         <div class="area-card">
           <div class="area-img-box">
-            <img src="/assets/images/all_regions.webp" alt="All Bengaluru Regions & Tech Parks">
+            <img src="/assets/images/all_regions.webp" alt="All Bengaluru Regions & Tech Parks" width="800" height="480" loading="lazy">
             <span class="area-badge" style="background-color: var(--color-gold); color: #ffffff;">ALL REGIONS</span>
           </div>
           <div class="area-card-body">
