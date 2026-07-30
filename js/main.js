@@ -763,14 +763,10 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
               try {
                 const data = JSON.parse(responseText);
-                reply = data.reply || data.output || data.text || data.content || data.message || '';
+                reply = data.reply || data.output || data.text || data.response || responseText;
               } catch {
                 reply = responseText;
               }
-            }
-
-            if (!reply || !reply.trim() || reply === "[Empty response from webhook]") {
-              reply = "Got it! I've logged your travel requirements. Would you like to select a preferred vehicle (e.g., Sedan, SUV, Executive, or Luxury) or receive a direct quotation on WhatsApp/Phone?";
             }
 
             addBotMessage(reply);
