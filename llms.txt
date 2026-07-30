@@ -11,12 +11,67 @@
 * **Luxury Chauffeur Services**: Premium luxury sedans and SUVs (Mercedes-Benz, BMW, Toyota Fortuner, Innova Hycross) for VIPs, executives, and delegates.
 * **Destination Weddings & Event Logistics**: Large-scale fleet management, guest shuttles, and luxury wedding car rentals.
 
-## Key Fleet Options
+## Official Complete Vehicle Fleet List
 
-- **Economy Sedans**: Maruti Suzuki Dzire, Hyundai Aura (4 Seater)
-- **Executive Sedans**: Honda City, Maruti Suzuki Ciaz (4 Seater)
-- **Premium MUVs / SUVs**: Toyota Innova Crysta, Toyota Innova Hycross, Toyota Fortuner (6-7 Seater)
-- **Luxury Coaches & Tempo Travellers**: 12-26 Seater AC Tempo Travellers, 33-50 Seater Luxury Coaches
+### Economy Sedan
+- Maruti Suzuki Dzire
+- Hyundai Aura
+- Hyundai Verna
+
+### Executive
+- Honda City
+- Maruti Suzuki Ciaz
+
+### Premium
+- Toyota Innova Crysta
+- Toyota Innova Hycross
+- Toyota Camry
+- Toyota Fortuner
+
+### Luxury
+- Toyota Vellfire
+- BMW 5 Series
+- Mercedes-Benz E-Class
+- Audi A4
+- BMW 7 Series
+- Audi Q7
+- Mercedes-Benz S-Class
+
+### Multi Passenger Vehicles
+- Toyota Commuter
+- Force Urbania – 9 Seater
+- Force Urbania – 12 Seater
+- Force Urbania – 16 Seater
+- Tata 24 Seater Bus
+- Eicher 24 Seater Bus
+- Ashok Leyland 24 Seater Bus
+- Tata 35 Seater Bus
+- Eicher 35 Seater Bus
+- Ashok Leyland 35 Seater Bus
+- Tata 40 Seater Bus
+- Eicher 40 Seater Bus
+- Ashok Leyland 40 Seater Bus
+- Tata 49 Seater Bus
+- Eicher 49 Seater Bus
+- Ashok Leyland 49 Seater Bus
+- Tata 45 Seater Bus
+- Eicher 45 Seater Bus
+- Ashok Leyland 45 Seater Bus
+- Volvo 45 Seater
+- Mercedes-Benz Glider 45 Seater
+- Volvo 45 Seater (2024 Above Model)
+
+### Employee Transport Vehicles
+- Tata EV Cars
+- Maruti Suzuki Dzire
+- Aura Prime HB
+- Aura Prime SD
+- Toyota Rumion
+- Maruti Ertiga
+- Tempo Traveller 21 Seater Mini Bus
+- 35 Seater Bus
+- 40 Seater Bus
+- 45 Seater Bus
 
 ## Primary Coverage Areas (Bengaluru Hubs)
 
