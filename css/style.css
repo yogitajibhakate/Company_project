@@ -1224,11 +1224,12 @@ button {
 .fleet-tab-btn {
   padding: 12px 24px;
   font-family: var(--font-headings);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.9rem;
   border-radius: 50px;
-  border: 1.5px solid rgba(197, 168, 128, 0.3);
-  color: var(--color-obsidian);
+  border: 1.5px solid #00AEEF;
+  color: #0F172A !important;
+  background-color: #FFFFFF !important;
   transition: var(--transition-smooth);
 }
 
