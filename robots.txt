@@ -1,4 +1,21 @@
+# Suhalaya Travels - Robots.txt
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /*.json$
 
+# Explicitly Allow AI Search Engines (GEO Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap & LLMs Reference
 Sitemap: https://www.suhalayatravels.com/sitemap.xml

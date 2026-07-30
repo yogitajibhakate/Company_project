@@ -19,7 +19,20 @@
   <meta property="og:title" content="Corporate Cab Services Bangalore | Suhalaya Travels">
   <meta property="og:description"
     content="Trusted premium mobility partner for corporate travel, employee transportation, airport transfers, and events in Bangalore. 25+ Years of excellence.">
-  <meta property="og:image" content="assets/images/hero_luxury_sedan.png">
+  <meta property="og:image" content="https://www.suhalayatravels.com/assets/images/hero_luxury_sedan.png">
+
+  <!-- TWITTER CARDS -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Corporate Cab Services Bangalore | Suhalaya Travels">
+  <meta name="twitter:description" content="Premium corporate travel, employee shuttle services, airport transfers, and luxury car rentals in Bangalore.">
+  <meta name="twitter:image" content="https://www.suhalayatravels.com/assets/images/hero_luxury_sedan.png">
+
+  <!-- GEO & THEME META TAGS -->
+  <meta name="geo.region" content="IN-KA">
+  <meta name="geo.placename" content="Bengaluru">
+  <meta name="geo.position" content="12.974912;77.621517">
+  <meta name="ICBM" content="12.974912, 77.621517">
+  <meta name="theme-color" content="#00AEEF">
 
   <!-- Google Fonts: Inter, Plus Jakarta Sans & Caveat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +65,7 @@
     }
   </script>
 
-  <!-- SCHEMA MARKUP (LocalBusiness & Organization) -->
+  <!-- SCHEMA MARKUP (LocalBusiness, TaxiService, AutoRental, FAQPage & Organization) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -62,16 +75,17 @@
         "@id": "https://www.suhalayatravels.com/#organization",
         "name": "Suhalaya Travels Private Limited",
         "url": "https://www.suhalayatravels.com/",
-        "logo": "https://www.suhalayatravels.com/assets/images/hero_luxury_sedan.png",
+        "logo": "https://www.suhalayatravels.com/assets/images/logo.png",
         "sameAs": []
       },
       {
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "TaxiService", "AutoRental"],
         "@id": "https://www.suhalayatravels.com/#localbusiness",
         "name": "Suhalaya Travels Pvt Ltd",
         "image": "https://www.suhalayatravels.com/assets/images/hero_luxury_sedan.png",
         "telephone": "+91-9900556611",
         "email": "swamy@suhalayatravels.in",
+        "priceRange": "₹₹",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "#549, Sri Nilayam, 7th Main road, 2nd Phase Rajeev Gandhi Nagar, NTI Layout",
@@ -86,6 +100,21 @@
           "longitude": "77.6215169"
         },
         "url": "https://www.suhalayatravels.com/",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Bengaluru"
+          },
+          {
+            "@type": "State",
+            "name": "Karnataka"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "3250"
+        },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": [
@@ -100,6 +129,57 @@
           "opens": "00:00",
           "closes": "23:59"
         }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.suhalayatravels.com/#website",
+        "url": "https://www.suhalayatravels.com/",
+        "name": "Suhalaya Travels",
+        "publisher": {
+          "@id": "https://www.suhalayatravels.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.suhalayatravels.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.suhalayatravels.com/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.suhalayatravels.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I book a corporate cab or airport transfer with Suhalaya Travels?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can book directly via our online reservation form on suhalayatravels.com or contact our 24/7 helpdesk at +91-9900556611."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What vehicle options are available in Suhalaya Travels fleet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our fleet includes Economy Sedans (Dzire, Aura), Executive Sedans (Honda City, Ciaz), Premium MUVs (Innova Crysta, Hycross, Fortuner), and AC Tempo Travellers & Luxury Coaches."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Suhalaya Travels provide 24/7 airport transfers in Bangalore?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we provide round-the-clock Kempegowda International Airport (BLR) pickups and drops with flight tracking and zero surge pricing."
+            }
+          }
+        ]
       }
     ]
   }
