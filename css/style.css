@@ -2990,3 +2990,21 @@ button {
 .why-card:hover a {
   background-color: #00AEEF !important;
 }
+/* HIGH CONTRAST FOOTER & ACCESSIBILITY FIXES */
+.footer {
+  background-color: #071C2E !important;
+  color: #F1F5F9 !important;
+}
+.footer-links a {
+  color: #E2E8F0 !important;
+  transition: color 0.2s ease;
+}
+.footer-links a:hover {
+  color: #38BDF8 !important;
+}
+.footer-contact-item span {
+  color: #F1F5F9 !important;
+}
+.footer p {
+  color: #CBD5E1 !important;
+}
