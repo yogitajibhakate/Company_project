@@ -445,26 +445,29 @@ document.addEventListener('DOMContentLoaded', () => {
   let chatSessionId = '';
   let chatHistory = [];
 
-  const loadUserSessionAndHistory = () => {
-    if (!currentUsername) return;
+  const getPhoneKey = (phone) => (phone || '').replace(/\D/g, '');
 
-    // Load session ID
-    chatSessionId = localStorage.getItem('stpl_chat_session_id_' + currentUsername);
+  const loadUserSessionAndHistory = () => {
+    const phoneKey = getPhoneKey(currentPhone);
+    if (!phoneKey) return;
+
+    // Load unique session ID tied to phone number
+    chatSessionId = localStorage.getItem('stpl_chat_session_id_' + phoneKey);
     if (!chatSessionId) {
-      chatSessionId = 'stpl_' + currentUsername.replace(/\s+/g, '_') + '_' + Math.random().toString(36).substring(2, 11);
-      localStorage.setItem('stpl_chat_session_id_' + currentUsername, chatSessionId);
+      chatSessionId = 'stpl_thread_' + phoneKey;
+      localStorage.setItem('stpl_chat_session_id_' + phoneKey, chatSessionId);
     }
 
-    // Load history
-    const storedHistory = localStorage.getItem('stpl_chat_history_' + currentUsername);
+    // Load history tied to phone number
+    const storedHistory = localStorage.getItem('stpl_chat_history_' + phoneKey);
     if (storedHistory) {
       chatHistory = JSON.parse(storedHistory);
     } else {
-      // First welcome greeting
+      // First welcome greeting for this phone number
       chatHistory = [
         {
           sender: 'bot',
-          text: `Namaste ${currentUsername}! Welcome to Suhalaya Travels. How can I help you with your corporate travel, fleet bookings, or employee transportation needs today?`,
+          text: `Namaste ${currentUsername || 'Guest'}! Welcome to Suhalaya Travels. How can I help you with your corporate travel, fleet bookings, or employee transportation needs today?`,
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         }
       ];
@@ -473,8 +476,9 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const saveChatHistory = () => {
-    if (!currentUsername) return;
-    localStorage.setItem('stpl_chat_history_' + currentUsername, JSON.stringify(chatHistory));
+    const phoneKey = getPhoneKey(currentPhone);
+    if (!phoneKey) return;
+    localStorage.setItem('stpl_chat_history_' + phoneKey, JSON.stringify(chatHistory));
   };
 
   const formatChatMessage = (text) => {
@@ -724,8 +728,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const resetBtn = document.getElementById('stplChatReset');
       if (resetBtn) {
         resetBtn.addEventListener('click', () => {
-          localStorage.removeItem('stpl_chat_session_id_' + currentUsername);
-          localStorage.removeItem('stpl_chat_history_' + currentUsername);
+          const phoneKey = getPhoneKey(currentPhone);
+          if (phoneKey) {
+            localStorage.removeItem('stpl_chat_session_id_' + phoneKey);
+            localStorage.removeItem('stpl_chat_history_' + phoneKey);
+          }
           loadUserSessionAndHistory();
           renderChatHistory();
         });
