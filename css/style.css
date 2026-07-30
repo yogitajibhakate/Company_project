@@ -4,7 +4,7 @@ SUHALAYA TRAVELS - PREMIUM REDESIGN STYLESHEET
 ================================================================================
 */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 /* --- DESIGN SYSTEM & CSS VARIABLES --- */
 :root {
@@ -1237,14 +1237,16 @@ button {
 }
 
 .fleet-tab-btn:hover {
-  background-color: var(--color-gold-light);
+  background-color: #00AEEF;
+  border-color: #00AEEF;
+  color: #ffffff;
 }
 
 .fleet-tab-btn.active {
-  background-color: var(--color-gold);
-  border-color: var(--color-gold);
-  color: var(--color-obsidian);
-  box-shadow: var(--box-shadow-gold);
+  background-color: #00AEEF;
+  border-color: #00AEEF;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 174, 239, 0.3);
 }
 
 .fleet-panels-container {
@@ -1321,8 +1323,8 @@ button {
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: var(--color-gold);
-  color: var(--color-obsidian);
+  background-color: #00AEEF;
+  color: #ffffff;
   font-family: var(--font-headings);
   font-weight: 700;
   font-size: 0.7rem;
@@ -2878,7 +2880,9 @@ button {
 }
 
 @media (min-width: 900px) {
-  #car-left, #car-right {
+
+  #car-left,
+  #car-right {
     display: block !important;
   }
 }
@@ -2888,6 +2892,7 @@ button {
     left: -80px !important;
     width: 420px !important;
   }
+
   #car-right {
     right: -80px !important;
     width: 420px !important;
@@ -2899,6 +2904,7 @@ button {
     left: -110px !important;
     width: 480px !important;
   }
+
   #car-right {
     right: -110px !important;
     width: 480px !important;
@@ -2910,6 +2916,7 @@ button {
     left: -130px !important;
     width: 540px !important;
   }
+
   #car-right {
     right: -130px !important;
     width: 540px !important;
@@ -2921,6 +2928,7 @@ button {
     left: -150px !important;
     width: 580px !important;
   }
+
   #car-right {
     right: -150px !important;
     width: 580px !important;
@@ -2990,21 +2998,26 @@ button {
 .why-card:hover a {
   background-color: #00AEEF !important;
 }
+
 /* HIGH CONTRAST FOOTER & ACCESSIBILITY FIXES */
 .footer {
   background-color: #071C2E !important;
   color: #F1F5F9 !important;
 }
+
 .footer-links a {
   color: #E2E8F0 !important;
   transition: color 0.2s ease;
 }
+
 .footer-links a:hover {
   color: #38BDF8 !important;
 }
+
 .footer-contact-item span {
   color: #F1F5F9 !important;
 }
+
 .footer p {
   color: #CBD5E1 !important;
 }
