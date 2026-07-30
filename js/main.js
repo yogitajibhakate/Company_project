@@ -477,6 +477,14 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('stpl_chat_history_' + currentUsername, JSON.stringify(chatHistory));
   };
 
+  const formatChatMessage = (text) => {
+    if (!text) return '';
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.*?)\*/g, '<em>$1</em>')
+      .replace(/\n/g, '<br>');
+  };
+
   const renderChatHistory = () => {
     const messagesContainer = document.getElementById('stplChatMessages');
     if (!messagesContainer) return;
@@ -486,7 +494,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const msgElement = document.createElement('div');
       msgElement.className = `stpl-chat-msg ${msg.sender}`;
       msgElement.innerHTML = `
-        <div class="stpl-chat-bubble">${msg.text}</div>
+        <div class="stpl-chat-bubble">${formatChatMessage(msg.text)}</div>
         <div class="stpl-chat-msg-time">${msg.timestamp}</div>
       `;
       messagesContainer.appendChild(msgElement);
