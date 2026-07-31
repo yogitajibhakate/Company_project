@@ -42,6 +42,10 @@
   <!-- Google Fonts: Inter, Plus Jakarta Sans & Caveat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
@@ -198,7 +202,7 @@
   <header class="header">
     <div class="container">
       <a href="/" class="logo">
-        <img src="/assets/images/logo.webp" alt="Suhalaya Travels Logo"
+        <img src="/assets/images/logo.webp" alt="Suhalaya Travels Logo" width="160" height="48" decoding="async"
           style="height: 48px; width: auto; object-fit: contain; vertical-align: middle;">
       </a>
       <nav class="nav-container">
@@ -245,13 +249,13 @@
         <div class="flex items-center space-x-4 pt-2">
           <!-- User Avatars -->
           <div class="flex -space-x-2 overflow-hidden">
-            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
+            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover" width="40" height="40" loading="lazy" decoding="async"
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
               alt="User 1">
-            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
+            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover" width="40" height="40" loading="lazy" decoding="async"
               src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
               alt="User 2">
-            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
+            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover" width="40" height="40" loading="lazy" decoding="async"
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
               alt="User 3">
           </div>
@@ -1653,7 +1657,7 @@
   </div>
 
   <!-- SCRIPTS -->
-  <script src="/js/main.js?v=5"></script>
+  <script src="/js/main.js?v=5" defer></script>
 </body>
 
 </html>
