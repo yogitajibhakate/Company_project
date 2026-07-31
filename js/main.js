@@ -1045,47 +1045,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.switchBookingTab('local');
 });
 
+// ================= DATE & TIME VALIDATION =================
 document.addEventListener("DOMContentLoaded", () => {
-  const section = document.getElementById('booking-section');
-  const leftCar = document.getElementById('car-left');
-  const rightCar = document.getElementById('car-right');
-
-  function updateCarParallax() {
-    const rect = section.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-
-    // Calculate scroll progress (0.0 = section below screen, 1.0 = centered in view)
-    let progress = (windowHeight - rect.top) / (windowHeight + rect.height / 2);
-
-    // Clamp progress value between 0 and 1
-    progress = Math.max(0, Math.min(1, progress));
-
-    // Scale from 0.5 (small/behind) to 1.0 (full zoom size)
-    const scale = 0.5 + (progress * 0.5);
-
-    // Horizontal offset: cars start inside center and slide out to 0px
-    const leftX = (1 - progress) * 100;   // moves right (inward) when scrolled away
-    const rightX = (1 - progress) * -100; // moves left (inward) when scrolled away
-
-    // Opacity fades in as you scroll towards the section
-    const opacity = Math.min(1, progress * 1.5);
-
-    // Apply dynamic real-time CSS transform
-    leftCar.style.transform = `translate(${leftX}px, 0) scale(${scale})`;
-    leftCar.style.opacity = opacity;
-
-    rightCar.style.transform = `translate(${rightX}px, 0) scale(${scale})`;
-    rightCar.style.opacity = opacity;
-  }
-
-  // Listen for scroll and resize events
-  window.addEventListener('scroll', updateCarParallax, { passive: true });
-  window.addEventListener('resize', updateCarParallax);
-
-  // Initial call
-  updateCarParallax();
-
-  // ================= DATE & TIME VALIDATION =================
   const dateInput = document.getElementById('pickupDate');
   const timeInput = document.getElementById('pickupTime');
   const form = document.getElementById('taxiBookingForm');

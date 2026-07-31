@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Post | Suhalaya Travels</title>
   <meta name="description" content="Read our latest insights and guides.">
+  <!-- FAVICON LOGO FOR BROWSER TABS -->
+  <link rel="icon" type="image/png" href="/assets/images/logo.png">
+  <link rel="shortcut icon" type="image/png" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/logo.png">
   <link rel="stylesheet" href="/css/style.css?v=3">
 </head>
 <body>
@@ -86,7 +90,7 @@
     </div>
   </section>
 
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js?v=5"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const urlParams = new URLSearchParams(window.location.search);
@@ -177,7 +181,96 @@
 
           // Update Meta Tags
           document.title = title + " | Suhalaya Travels";
+          const metaDesc = postRow.c[1] ? postRow.c[1].v : title;
           
+          let descMeta = document.querySelector('meta[name="description"]');
+          if (descMeta) descMeta.setAttribute('content', metaDesc);
+
+          // Inject Open Graph & Twitter Meta Tags for Social & AI Crawlers
+          const metaTagsToUpdate = [
+            { property: 'og:title', content: title + " | Suhalaya Travels" },
+            { property: 'og:description', content: metaDesc },
+            { property: 'og:image', content: imgUrl || 'https://suhalayatravels.in/assets/images/logo.png' },
+            { property: 'og:url', content: window.location.href },
+            { property: 'og:type', content: 'article' },
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { name: 'twitter:title', content: title },
+            { name: 'twitter:description', content: metaDesc },
+            { name: 'twitter:image', content: imgUrl || 'https://suhalayatravels.in/assets/images/logo.png' }
+          ];
+
+          metaTagsToUpdate.forEach(tag => {
+            let el = tag.property 
+              ? document.querySelector(`meta[property="${tag.property}"]`)
+              : document.querySelector(`meta[name="${tag.name}"]`);
+            if (!el) {
+              el = document.createElement('meta');
+              if (tag.property) el.setAttribute('property', tag.property);
+              if (tag.name) el.setAttribute('name', tag.name);
+              document.head.appendChild(el);
+            }
+            el.setAttribute('content', tag.content);
+          });
+
+          // Inject GEO Structured Data (Schema.org JSON-LD for Google & Gemini/ChatGPT)
+          const isEventPost = title.toLowerCase().includes("biec") || title.toLowerCase().includes("expo") || title.toLowerCase().includes("event");
+          const schemaData = isEventPost ? {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": title,
+            "description": metaDesc,
+            "startDate": new Date().toISOString().split('T')[0],
+            "location": {
+              "@type": "Place",
+              "name": "Bangalore International Exhibition Centre (BIEC)",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bengaluru",
+                "addressRegion": "Karnataka",
+                "addressCountry": "IN"
+              }
+            },
+            "image": [imgUrl || "https://suhalayatravels.in/assets/images/logo.png"],
+            "organizer": {
+              "@type": "Organization",
+              "name": "Suhalaya Travels Private Limited",
+              "url": "https://suhalayatravels.in"
+            }
+          } : {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": title,
+            "description": metaDesc,
+            "image": [imgUrl || "https://suhalayatravels.in/assets/images/logo.png"],
+            "datePublished": date,
+            "author": {
+              "@type": "Organization",
+              "name": "Suhalaya Travels Private Limited",
+              "url": "https://suhalayatravels.in"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Suhalaya Travels Private Limited",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://suhalayatravels.in/assets/images/logo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": window.location.href
+            }
+          };
+
+          let scriptSchema = document.getElementById('geo-schema-json');
+          if (!scriptSchema) {
+            scriptSchema = document.createElement('script');
+            scriptSchema.id = 'geo-schema-json';
+            scriptSchema.type = 'application/ld+json';
+            document.head.appendChild(scriptSchema);
+          }
+          scriptSchema.textContent = JSON.stringify(schemaData);
+
           // Update Hero
           document.getElementById('hero-title').textContent = title;
           const catBadge2 = document.getElementById('hero-category-badge');
@@ -186,9 +279,8 @@
           // Build Article DOM
           let articleHtml = `<span class="blog-meta-tags" style="display: inline-block; margin-bottom: 15px;">Published: ${date}</span>`;
           
-          if (imgUrl) {
-            articleHtml += `<img src="${imgUrl}" alt="${imgAlt}" style="width: 100%; border-radius: 8px; margin-bottom: 30px; margin-top: 15px;">`;
-          }
+          const displayImg = imgUrl || "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200";
+          articleHtml += `<img src="${displayImg}" alt="${imgAlt}" style="width: 100%; border-radius: 8px; margin-bottom: 30px; margin-top: 15px;" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200';">`;
           
           articleHtml += `<div class="post-body-content">${bodyHtml}</div>`;
           
