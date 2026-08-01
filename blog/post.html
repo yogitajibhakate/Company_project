@@ -93,6 +93,41 @@
   <script src="/js/main.js?v=5"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
+      const OFFICIAL_CTA_BOX = `
+<div class="blog-cta-box" style="background: linear-gradient(135deg, #091527 0%, #002b49 100%); border-radius: 16px; padding: 32px; color: #ffffff; margin: 40px 0; box-shadow: 0 12px 36px rgba(0, 174, 239, 0.15); border: 1px solid rgba(0, 174, 239, 0.2); position: relative; overflow: hidden;">
+  <div style="position: absolute; right: -20px; bottom: -20px; opacity: 0.06; pointer-events: none;">
+    <svg width="220" height="220" viewBox="0 0 24 24" fill="#ffffff"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.04 3H5.81l1.04-3zM19 17H5v-4h14v4z"/></svg>
+  </div>
+  <div style="position: relative; z-index: 2;">
+    <span style="display: inline-block; background: rgba(0, 174, 239, 0.2); color: #00AEEF; font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; border: 1px solid rgba(0, 174, 239, 0.3);">24/7 Corporate Mobility Desk</span>
+    <h3 style="margin: 0 0 10px 0; color: #ffffff; font-size: 1.35rem; font-weight: 700;">Need Custom Transport Solutions in Bangalore?</h3>
+    <p style="margin: 0 0 24px 0; color: #94a3b8; font-size: 0.95rem; line-height: 1.6; max-width: 600px;">Whether you require corporate employee transportation, airport chauffeur transfers, or luxury event fleets, Suhalaya Travels delivers guaranteed reliability.</p>
+    <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <a href="/contact_us" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #00AEEF; color: #ffffff !important; text-decoration: none !important; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; box-shadow: 0 4px 16px rgba(0, 174, 239, 0.4);">
+        <span>Contact Our Specialists</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="tel:+919900556611" style="display: inline-flex; align-items: center; gap: 12px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.18); color: #ffffff !important; text-decoration: none !important; padding: 8px 18px 8px 10px; border-radius: 10px;">
+        <div style="width: 36px; height: 36px; border-radius: 8px; background: #00AEEF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </div>
+        <div style="text-align: left;">
+          <div style="font-size: 0.68rem; color: #94a3b8; text-transform: uppercase; font-weight: 700; letter-spacing: 0.8px;">Direct Call 24/7</div>
+          <div style="font-size: 1.05rem; font-weight: 800; color: #ffffff; letter-spacing: 0.5px; font-family: system-ui, -apple-system, sans-serif;">+91 99005 56611</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>`;
+
+      function ensureCtaBox(htmlContent) {
+        if (!htmlContent) return OFFICIAL_CTA_BOX;
+        if (htmlContent.includes('blog-cta-box') || htmlContent.includes('+919900556611') || htmlContent.includes('99005 56611')) {
+          return htmlContent;
+        }
+        return htmlContent + OFFICIAL_CTA_BOX;
+      }
+
       const urlParams = new URLSearchParams(window.location.search);
       const slug = urlParams.get('slug');
       const contentContainer = document.getElementById('dynamic-post-content');
@@ -116,7 +151,7 @@
           if (post.imgUrl) {
             articleHtml += `<img src="${post.imgUrl}" alt="${post.imgAlt}" style="width: 100%; border-radius: 8px; margin-bottom: 30px; margin-top: 15px;">`;
           }
-          articleHtml += `<div class="post-body-content">${post.content}</div>`;
+          articleHtml += `<div class="post-body-content">${ensureCtaBox(post.content)}</div>`;
           contentContainer.innerHTML = articleHtml;
           return; // Stop execution, don't fetch from Sheets since we have the preview
         } catch (e) {
@@ -276,13 +311,12 @@
           const catBadge2 = document.getElementById('hero-category-badge');
           if (catBadge2) catBadge2.textContent = category;
 
-          // Build Article DOM
           let articleHtml = `<span class="blog-meta-tags" style="display: inline-block; margin-bottom: 15px;">Published: ${date}</span>`;
           
           const displayImg = imgUrl || "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200";
           articleHtml += `<img src="${displayImg}" alt="${imgAlt}" style="width: 100%; border-radius: 8px; margin-bottom: 30px; margin-top: 15px;" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200';">`;
           
-          articleHtml += `<div class="post-body-content">${bodyHtml}</div>`;
+          articleHtml += `<div class="post-body-content">${ensureCtaBox(bodyHtml)}</div>`;
           
           contentContainer.innerHTML = articleHtml;
         })

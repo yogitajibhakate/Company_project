@@ -1807,6 +1807,56 @@ button {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
+/* --- GLOBAL BLOG CTA BOX STYLING --- */
+.blog-cta-box {
+  background: linear-gradient(135deg, #091527 0%, #002b49 100%) !important;
+  border-left: none !important;
+  border-radius: 16px !important;
+  padding: 32px !important;
+  color: #ffffff !important;
+  margin: 40px 0 !important;
+  box-shadow: 0 12px 36px rgba(0, 174, 239, 0.15) !important;
+  border: 1px solid rgba(0, 174, 239, 0.25) !important;
+}
+
+.blog-cta-box h3 {
+  margin-top: 0 !important;
+  color: #ffffff !important;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+}
+
+.blog-cta-box p {
+  margin-bottom: 20px !important;
+  color: #94a3b8 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+}
+
+.blog-cta-box a.btn,
+.blog-cta-box a[href*="/contact_us"],
+.blog-cta-box a[href*="contact"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #00AEEF !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  font-size: 0.9rem !important;
+  border: none !important;
+  box-shadow: 0 4px 16px rgba(0, 174, 239, 0.4) !important;
+}
+
+.blog-cta-box a[href*="tel:"] {
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 1.05rem !important;
+}
+
 /* FAQ Section in Blog */
 .blog-faq-section {
   margin-top: 60px;
