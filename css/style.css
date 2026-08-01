@@ -3027,6 +3027,8 @@ button {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 220px;
+  aspect-ratio: 800 / 480;
 }
 
 .hero-car-zoom-img {
