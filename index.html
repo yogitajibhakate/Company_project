@@ -41,6 +41,10 @@
   <meta name="theme-color" content="#00AEEF">
 
   <!-- DNS PREFETCH & RESOURCE HINTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
@@ -145,6 +149,33 @@
           ],
           "opens": "00:00",
           "closes": "23:59"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Corporate Mobility & Cab Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Corporate Car Rental"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Employee Transportation Solutions"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Airport Transfers & VIP Chauffeur"
+              }
+            }
+          ]
         }
       },
       {
@@ -154,6 +185,11 @@
         "name": "Suhalaya Travels",
         "publisher": {
           "@id": "https://www.suhalayatravels.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.suhalayatravels.com/blog?s={search_term_string}",
+          "query-input": "required name=search_term_string"
         }
       },
       {
