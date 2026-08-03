@@ -2319,9 +2319,9 @@ button {
 }
 
 .stpl-chat-widget.visible {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: translateY(0) !important;
 }
 
 @media (max-width: 768px) {
