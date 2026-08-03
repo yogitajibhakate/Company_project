@@ -51,16 +51,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- PAGE ROUTING CHECKS ---
+  // --- PAGE ROUTING CHECKS (Mobile & Desktop) ---
   const currentPath = window.location.pathname.toLowerCase();
-  const isHomePage = currentPath === '/' || 
-                     currentPath === '/index.html' || 
-                     (currentPath.endsWith('/index.html') && 
-                      !currentPath.includes('/about/') && 
-                      !currentPath.includes('/contact/') && 
-                      !currentPath.includes('/areas/') && 
-                      !currentPath.includes('/blog/') && 
-                      !currentPath.includes('/booking/'));
+  const isSubFolder = currentPath.includes('/about') || 
+                      currentPath.includes('/contact') || 
+                      currentPath.includes('/areas') || 
+                      currentPath.includes('/blog') || 
+                      currentPath.includes('/booking') || 
+                      currentPath.includes('/terms') || 
+                      currentPath.includes('/privacy') || 
+                      currentPath.includes('/attach') ||
+                      currentPath.includes('/corporate') ||
+                      currentPath.includes('/employee') ||
+                      currentPath.includes('/airport') ||
+                      currentPath.includes('/destination');
+
+  const isHomePage = !isSubFolder;
   const isWhatsAppPage = currentPath.includes('contact') || 
                          currentPath.includes('about') || 
                          currentPath.includes('blog');
