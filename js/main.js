@@ -51,16 +51,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- STICKY HEADER SCROLL EFFECT ---
+  // --- STICKY HEADER & FOOTER CHATBOT VISIBILITY SCROLL EFFECT ---
   const header = document.querySelector('.header');
+  const chatWidget = document.querySelector('.stpl-chat-widget');
+  const footerElement = document.querySelector('.footer');
+
   const handleScroll = () => {
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+    if (header) {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }
+
+    // Show chatbot floating icon ONLY when user scrolls down to Footer
+    if (chatWidget && footerElement) {
+      const footerTop = footerElement.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (footerTop <= windowHeight + 100) {
+        chatWidget.classList.add('visible');
+      } else {
+        chatWidget.classList.remove('visible');
+      }
     }
   };
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll(); // Initial check
 
   // --- MOBILE NAV TOGGLE ---
