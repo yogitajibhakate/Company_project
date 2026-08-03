@@ -61,7 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
                       !currentPath.includes('/areas/') && 
                       !currentPath.includes('/blog/') && 
                       !currentPath.includes('/booking/'));
-  const isContactPage = currentPath.includes('contact');
+  const isWhatsAppPage = currentPath.includes('contact') || 
+                         currentPath.includes('about') || 
+                         currentPath.includes('blog');
 
   // --- STICKY HEADER, CHATBOT & WHATSAPP SCROLL VISIBILITY EFFECT ---
   const header = document.querySelector('.header');
@@ -93,10 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // 2. WhatsApp Floating Icon: Show ONLY on Contact Us Page when scrolling down to Footer
+    // 2. WhatsApp Floating Icon: Show ONLY on Contact Us, About Us & Blog Pages when scrolling down to Footer
     const whatsappFloat = document.querySelector('.whatsapp-float');
     if (whatsappFloat) {
-      if (isContactPage && footerElement) {
+      if (isWhatsAppPage && footerElement) {
         const footerTop = footerElement.getBoundingClientRect().top;
         if (footerTop <= windowHeight + 250) {
           whatsappFloat.classList.add('visible');
