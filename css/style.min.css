@@ -366,6 +366,21 @@ button {
 }
 
 
+/* Mobile specific booking tab styles */
+@media (max-width: 640px) {
+  .booking-tab {
+    padding: 8px 3px !important;
+    font-size: 10.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.2px !important;
+    gap: 3px !important;
+    border-radius: 10px !important;
+  }
+  .booking-tab i {
+    font-size: 10px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .whatsapp-float {
     bottom: 90px;

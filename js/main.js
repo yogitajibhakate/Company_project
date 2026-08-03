@@ -973,8 +973,8 @@ window.switchBookingTab = function (type) {
 
   if (!tabLocal || !tabAirport || !tabOutstation) return;
 
-  const activeTabClass = 'booking-tab active w-full py-2.5 sm:py-3 px-1 sm:px-4 rounded-xl text-[11px] sm:text-sm font-bold sm:font-extrabold flex items-center justify-center gap-1 sm:gap-2 border border-[#0172A7] bg-[#0172A7] text-white shadow-sm transition cursor-pointer';
-  const inactiveTabClass = 'booking-tab w-full py-2.5 sm:py-3 px-1 sm:px-4 rounded-xl text-[11px] sm:text-sm font-bold sm:font-extrabold flex items-center justify-center gap-1 sm:gap-2 border border-gray-200 bg-white text-[#0A589F] hover:bg-sky-50 transition cursor-pointer';
+  const activeTabClass = 'booking-tab active py-3 px-2 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 whitespace-nowrap border border-[#0172A7] bg-[#0172A7] text-white shadow-md transition cursor-pointer';
+  const inactiveTabClass = 'booking-tab py-3 px-2 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 whitespace-nowrap border border-gray-200 bg-white text-[#0A589F] hover:bg-sky-50 transition cursor-pointer';
 
   if (type === 'local') {
     tabLocal.className = activeTabClass;
