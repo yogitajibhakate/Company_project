@@ -51,7 +51,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- STICKY HEADER & FOOTER CHATBOT VISIBILITY SCROLL EFFECT ---
+  // --- PAGE ROUTING CHECKS ---
+  const currentPath = window.location.pathname.toLowerCase();
+  const isHomePage = currentPath === '/' || 
+                     currentPath === '/index.html' || 
+                     (currentPath.endsWith('/index.html') && 
+                      !currentPath.includes('/about/') && 
+                      !currentPath.includes('/contact/') && 
+                      !currentPath.includes('/areas/') && 
+                      !currentPath.includes('/blog/') && 
+                      !currentPath.includes('/booking/'));
+  const isContactPage = currentPath.includes('contact');
+
+  // --- STICKY HEADER, CHATBOT & WHATSAPP SCROLL VISIBILITY EFFECT ---
   const header = document.querySelector('.header');
 
   const handleScroll = () => {
@@ -63,18 +75,36 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // Dynamic lookup of chatbot widget and footer element
-    const chatWidget = document.querySelector('.stpl-chat-widget');
     const footerElement = document.querySelector('.footer');
+    const windowHeight = window.innerHeight;
 
-    if (chatWidget && footerElement) {
-      const footerTop = footerElement.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-
-      if (footerTop <= windowHeight + 250) {
-        chatWidget.classList.add('visible');
+    // 1. AI Chatbot Widget: Show ONLY on Home Page when scrolling down to Footer
+    const chatWidget = document.querySelector('.stpl-chat-widget');
+    if (chatWidget) {
+      if (isHomePage && footerElement) {
+        const footerTop = footerElement.getBoundingClientRect().top;
+        if (footerTop <= windowHeight + 250) {
+          chatWidget.classList.add('visible');
+        } else {
+          chatWidget.classList.remove('visible');
+        }
       } else {
         chatWidget.classList.remove('visible');
+      }
+    }
+
+    // 2. WhatsApp Floating Icon: Show ONLY on Contact Us Page when scrolling down to Footer
+    const whatsappFloat = document.querySelector('.whatsapp-float');
+    if (whatsappFloat) {
+      if (isContactPage && footerElement) {
+        const footerTop = footerElement.getBoundingClientRect().top;
+        if (footerTop <= windowHeight + 250) {
+          whatsappFloat.classList.add('visible');
+        } else {
+          whatsappFloat.classList.remove('visible');
+        }
+      } else {
+        whatsappFloat.classList.remove('visible');
       }
     }
   };
@@ -853,9 +883,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  // Run chatbot injection
-  injectChatbot();
-  initChatListeners();
+  // Run chatbot injection ONLY on Home Page
+  if (isHomePage) {
+    injectChatbot();
+    initChatListeners();
+  }
 
 });
 
