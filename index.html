@@ -12,9 +12,9 @@
   <meta name="keywords"
     content="Corporate car rental Bangalore, Employee transportation Bangalore, Airport transfer Bangalore, Luxury car rental Bangalore, Event transportation Bangalore, Destination wedding transportation, Chauffeur driven cars Bangalore, Outstation car rental Bangalore">
   <!-- FAVICON LOGO FOR BROWSER TABS -->
-  <link rel="icon" type="image/png" href="/assets/images/logo.png">
-  <link rel="shortcut icon" type="image/png" href="/assets/images/logo.png">
-  <link rel="apple-touch-icon" href="/assets/images/logo.png">
+  <link rel="icon" type="image/png" href="/assets/images/logo.webp">
+  <link rel="shortcut icon" type="image/png" href="/assets/images/logo.webp">
+  <link rel="apple-touch-icon" href="/assets/images/logo.webp">
 
   <link rel="canonical" href="https://www.suhalayatravels.com/">
 
@@ -47,41 +47,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-  <link rel="dns-prefetch" href="https://images.unsplash.com">
 
-  <!-- Google Fonts: Inter, Plus Jakarta Sans & Caveat -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  <!-- STYLESHEETS -->
-  <link rel="stylesheet" href="/css/style.css?v=3">
-  <!-- Tailwind CSS CDN & FontAwesome -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Plus Jakarta Sans', 'sans-serif'],
-            handwriting: ['Caveat', 'cursive'],
-          },
-          colors: {
-            brand: '#0172A7',
-            'brand-dark': '#0A589F',
-            heading: '#161925',
-            body: '#6B7280',
-          }
-        }
-      }
-    }
-  </script>
+  <!-- STYLESHEETS (Minified Static CSS + Non-blocking Font Loading) -->
+  <link rel="stylesheet" href="/css/tailwind.min.css?v=1">
+  <link rel="stylesheet" href="/css/style.min.css?v=4">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"></noscript>
 
   <!-- SCHEMA MARKUP (LocalBusiness, TaxiService, AutoRental, FAQPage & Organization) -->
   <script type="application/ld+json">
@@ -290,13 +266,13 @@
           <!-- User Avatars -->
           <div class="flex -space-x-2 overflow-hidden">
             <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+              src="/assets/images/user1.webp"
               alt="User 1" width="40" height="40" loading="lazy" decoding="async">
             <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
+              src="/assets/images/user2.webp"
               alt="User 2" width="40" height="40" loading="lazy" decoding="async">
             <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
+              src="/assets/images/user3.webp"
               alt="User 3" width="40" height="40" loading="lazy" decoding="async">
           </div>
 
@@ -355,8 +331,8 @@
         <!-- Left Car (Black Benz) -->
         <div id="car-left" class="parallax-car hidden xl:block absolute -left-[250px] w-[650px] pointer-events-none"
           style="z-index: 10;">
-          <img loading="lazy" decoding="async" width="800" height="598" src="./car_left_transparent.webp"
-            class="attachment-large size-large wp-image-193 w-full h-auto" alt="">
+          <img loading="lazy" decoding="async" width="800" height="598" src="/car_left_transparent.webp"
+            class="attachment-large size-large wp-image-193 w-full h-auto" alt="Suhalaya Chauffeur Car Left">
         </div>
 
         <!-- Center Booking Form Card -->
@@ -528,9 +504,9 @@
         <!-- Right Car -->
         <div id="car-right" class="parallax-car hidden xl:block absolute -right-[250px] w-[650px] pointer-events-none"
           style="z-index: 10;">
-          <img loading="lazy" decoding="async" width="800" height="598" src="./car_right_transparent.webp"
+          <img loading="lazy" decoding="async" width="800" height="598" src="/car_right_transparent.webp"
             class="attachment-large size-large wp-image-192 w-full h-auto"
-            style="filter: hue-rotate(165deg) saturate(1.2) brightness(0.8) contrast(1.2);" alt="">
+            style="filter: hue-rotate(165deg) saturate(1.2) brightness(0.8) contrast(1.2);" alt="Suhalaya Chauffeur Car Right">
         </div>
 
     </section>
@@ -1719,7 +1695,7 @@
   </div>
 
   <!-- SCRIPTS -->
-  <script src="/js/main.js?v=5"></script>
+  <script src="/js/main.min.js?v=5" defer></script>
 </body>
 
 </html>

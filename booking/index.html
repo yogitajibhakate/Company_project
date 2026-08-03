@@ -6,31 +6,16 @@
   <title>Car Booking & Online Reservation | Suhalaya Travels</title>
   <meta name="description" content="Book your corporate car rental, airport transfers, luxury chauffeur drive, or employee transportation in Bangalore. Instant online booking hub.">
   <link rel="canonical" href="https://www.suhalayatravels.com/booking">
-  <link rel="stylesheet" href="/css/style.css?v=3">
-  <!-- Google Fonts -->
+  <link rel="stylesheet" href="/css/tailwind.min.css?v=1">
+  <link rel="stylesheet" href="/css/style.min.css?v=4">
+  <!-- Google Fonts & FontAwesome (Non-blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Tailwind CSS CDN & FontAwesome -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Plus Jakarta Sans', 'sans-serif'],
-          },
-          colors: {
-            brand: '#00AEEF',
-            'brand-dark': '#0284c7',
-            heading: '#161925',
-            body: '#6B7280',
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans selection:bg-brand selection:text-white">
 
@@ -45,7 +30,7 @@
   <header class="header">
     <div class="container">
       <a href="/" class="logo">
-        <img src="/assets/images/logo.png" alt="Suhalaya Travels Logo" style="height: 48px; width: auto; object-fit: contain; vertical-align: middle;">
+        <img src="/assets/images/logo.webp" alt="Suhalaya Travels Logo" style="height: 48px; width: auto; object-fit: contain; vertical-align: middle;">
       </a>
       <nav class="nav-container">
         <ul class="nav-menu">
@@ -238,7 +223,7 @@
     </div>
   </div>
 
-  <script src="/js/main.js"></script>
+  <script src="/js/main.min.js?v=5" defer></script>
   
   <!-- GLOBAL FOOTER -->
   <footer class="footer">
@@ -246,7 +231,7 @@
       <div class="footer-top">
         <div class="footer-col footer-logo-box">
           <a href="/" class="logo">
-            <img src="/assets/images/logo.png" alt="Suhalaya Travels Logo" style="height: 48px; width: auto; object-fit: contain; vertical-align: middle;">
+            <img src="/assets/images/logo.webp" alt="Suhalaya Travels Logo" style="height: 48px; width: auto; object-fit: contain; vertical-align: middle;">
           </a>
           <p>Bangalore's premier B2B corporate car rental, employee transportation, and luxury chauffeur partner delivering reliability since 1999.</p>
         </div>
