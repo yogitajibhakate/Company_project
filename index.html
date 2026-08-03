@@ -54,10 +54,18 @@
   <!-- STYLESHEETS (Minified Static CSS + Non-blocking Font Loading) -->
   <link rel="stylesheet" href="/css/tailwind.min.css?v=1">
   <link rel="stylesheet" href="/css/style.min.css?v=4">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
+  </noscript>
 
   <!-- SCHEMA MARKUP (LocalBusiness, TaxiService, AutoRental, FAQPage & Organization) -->
   <script type="application/ld+json">
@@ -246,360 +254,360 @@
 
 
 
-  <!-- ================= HERO SECTION ================= -->
-  <section class="max-w-7xl mx-auto px-6 pt-16 sm:pt-24 lg:pt-32 pb-2 sm:pb-8 lg:pb-10 relative">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="max-w-7xl mx-auto px-6 pt-16 sm:pt-24 lg:pt-32 pb-2 sm:pb-8 lg:pb-10 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
 
-      <!-- Left Column: Content -->
-      <div class="lg:col-span-6 space-y-6">
+        <!-- Left Column: Content -->
+        <div class="lg:col-span-6 space-y-6">
 
-        <!-- Badge -->
-        <div class="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-heading">
-          <i class="fa-regular fa-star text-brand text-sm"></i>
-          <span>Premium Taxi & Fleet Services</span>
-        </div>
-
-        <!-- Headline -->
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-heading leading-[1.15] tracking-tight">
-          Fast, Reliable Taxi Rides For Every Journey
-        </h1>
-
-        <!-- Ratings & Social Proof -->
-        <div class="flex items-center space-x-4 pt-2">
-          <!-- User Avatars -->
-          <div class="flex -space-x-2 overflow-hidden">
-            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
-              src="/assets/images/user1.webp"
-              alt="User 1" width="40" height="40" loading="lazy" decoding="async">
-            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
-              src="/assets/images/user2.webp"
-              alt="User 2" width="40" height="40" loading="lazy" decoding="async">
-            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
-              src="/assets/images/user3.webp"
-              alt="User 3" width="40" height="40" loading="lazy" decoding="async">
+          <!-- Badge -->
+          <div class="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-heading">
+            <i class="fa-regular fa-star text-brand text-sm"></i>
+            <span>Premium Taxi & Fleet Services</span>
           </div>
 
-          <!-- Rating Text & Arrow -->
-          <div class="relative flex items-center">
-            <p class="font-handwriting text-xl font-bold text-gray-700 leading-none">
-              Over 300,000 5.0- <br>Star Ratings
-            </p>
-            <svg class="w-12 h-8 text-brand ml-2 -mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-            </svg>
-          </div>
-        </div>
+          <!-- Headline -->
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-heading leading-[1.15] tracking-tight">
+            Fast, Reliable Taxi Rides For Every Journey
+          </h1>
 
-        <!-- Description -->
-        <p class="text-body text-sm sm:text-base leading-relaxed max-w-lg">
-          Book your ride in minutes with professional drivers, comfortable vehicles, and on-time pickups for
-          airport transfers, city rides, and business travel.
-        </p>
-
-        <!-- CTA Buttons -->
-        <div class="flex flex-wrap items-center gap-4 pt-2">
-          <a href="#booking-section"
-            class="bg-brand hover:bg-brand-dark text-white font-bold px-8 py-3.5 rounded-full shadow-md transition transform active:scale-95 text-sm">
-            Book Your Ride
-          </a>
-        </div>
-
-      </div>
-
-      <!-- Right Column: Hero Image Container with Smooth Zoom In / Zoom Out Animation -->
-      <div class="lg:col-span-6 relative flex items-center justify-center">
-        <div class="hero-car-zoom-container relative w-full overflow-visible">
-          <img src="/hero_car_opt.webp" fetchpriority="high" decoding="async" width="800" height="480"
-            alt="Suhalaya Travels Executive Car"
-            class="hero-car-zoom-img w-full h-auto max-h-[220px] sm:max-h-[360px] lg:h-[480px] lg:max-h-none object-contain object-center cursor-pointer" />
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= RESERVE YOUR TAXI (SCROLL ZOOM-IN / PARALLAX SECTION) ================= -->
-  <div class="w-full bg-white overflow-hidden">
-    <section id="booking-section" class="w-full max-w-[1600px] mx-auto px-4 pt-4 pb-10 md:py-12 lg:py-16 relative">
-
-      <div class="text-center mb-8">
-        <span class="text-xs font-bold uppercase tracking-widest text-[#0A589F] bg-sky-50 px-4 py-1.5 rounded-full">
-          GET IN TOUCH
-        </span>
-      </div>
-
-      <div class="relative flex items-center justify-center">
-
-        <!-- Left Car (Black Benz) -->
-        <div id="car-left" class="parallax-car hidden xl:block absolute -left-[250px] w-[650px] pointer-events-none"
-          style="z-index: 10;">
-          <img loading="lazy" decoding="async" width="800" height="598" src="/car_left_transparent.webp"
-            class="attachment-large size-large wp-image-193 w-full h-auto" alt="Suhalaya Chauffeur Car Left">
-        </div>
-
-        <!-- Center Booking Form Card -->
-        <div class="w-full max-w-5xl bg-white border border-sky-100 rounded-3xl shadow-2xl p-6 sm:p-10 relative"
-          style="z-index: 20;">
-
-          <!-- Card Header Title -->
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-black mb-6 text-left">
-            What are you planning?
-          </h2>
-
-          <!-- Pill Tabs Header -->
-          <div class="grid grid-cols-3 gap-2 sm:gap-4 mb-6 max-w-xl">
-            <button type="button" id="tab-local" onclick="switchBookingTab('local')"
-              class="booking-tab py-3 px-2 rounded-xl text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 border border-[#0172A7] bg-[#0172A7] text-white shadow-md transition cursor-pointer">
-              <i class="fa-solid fa-car pointer-events-none"></i> LOCAL
-            </button>
-            <button type="button" id="tab-airport" onclick="switchBookingTab('airport')"
-              class="booking-tab py-3 px-2 rounded-xl text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 border border-gray-200 bg-white text-[#0A589F] hover:bg-sky-50 transition cursor-pointer">
-              <i class="fa-solid fa-plane pointer-events-none"></i> AIRPORT
-            </button>
-            <button type="button" id="tab-outstation" onclick="switchBookingTab('outstation')"
-              class="booking-tab py-3 px-2 rounded-xl text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 border border-gray-200 bg-white text-[#0A589F] hover:bg-sky-50 transition cursor-pointer">
-              <i class="fa-solid fa-house pointer-events-none"></i> OUTSTATION
-            </button>
-          </div>
-
-          <!-- Outstation Trip Mode (One Way / Round Trip Radios) -->
-          <div id="outstationOptions" class="hidden flex items-center gap-6 mb-5 text-sm font-bold text-[#0A589F]">
-            <label class="flex items-center gap-2 cursor-pointer">
-              <input type="radio" id="modeOneWay" name="trip_mode" value="One Way" checked
-                onchange="toggleOutstationTripMode('oneway')" class="w-4 h-4 accent-[#00AEEF]">
-              <span>One Way</span>
-            </label>
-            <label class="flex items-center gap-2 cursor-pointer">
-              <input type="radio" id="modeRoundTrip" name="trip_mode" value="Round Trip"
-                onchange="toggleOutstationTripMode('roundtrip')" class="w-4 h-4 accent-[#00AEEF]">
-              <span>Round Trip</span>
-            </label>
-          </div>
-
-          <!-- Booking Form Body -->
-          <form id="taxiBookingForm" class="space-y-4">
-            <input type="hidden" id="serviceType" name="service" value="Local Cab Booking">
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-
-              <!-- Name -->
-              <div>
-                <label for="name"
-                  class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">NAME</label>
-                <input type="text" id="name" name="name" required placeholder="Name"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
-              </div>
-
-              <!-- Phone -->
-              <div>
-                <label for="phone"
-                  class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PHONE</label>
-                <input type="tel" id="phone" name="phone" required placeholder="Phone"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
-              </div>
-
-              <!-- Email -->
-              <div id="emailCol" class="w-full">
-                <label for="email"
-                  class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">EMAIL</label>
-                <input type="email" id="email" name="email" required placeholder="Email"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
-              </div>
-
-              <!-- City (Shown for Local & Airport) -->
-              <div id="cityCol" class="w-full">
-                <label for="city"
-                  class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">CITY</label>
-                <input type="text" id="city" name="city" value="Bangalore"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
-              </div>
-
-              <!-- Trip Select (Shown for Airport) -->
-              <div id="tripCol" class="hidden w-full">
-                <label for="tripTypeSelect"
-                  class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">TRIP</label>
-                <select id="tripTypeSelect" name="triptype"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
-                  <option value="" disabled selected>Select Trip Type</option>
-                  <option value="Airport Drop (City to Airport)">Airport Drop (City to Airport)</option>
-                  <option value="Airport Pickup (Airport to City)">Airport Pickup (Airport to City)</option>
-                  <option value="Airport Roundtrip">Airport Roundtrip</option>
-                </select>
-              </div>
-
-              <!-- Address (Shown for Airport) -->
-              <div id="addressCol" class="hidden w-full">
-                <label
-                  class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">ADDRESS</label>
-                <input type="text" id="address" name="pickup" placeholder="Address"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
-              </div>
-
-              <!-- From & To (Shown for Outstation) -->
-              <div id="fromCol" class="hidden w-full">
-                <label for="fromCity"
-                  class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">FROM</label>
-                <input type="text" id="fromCity" name="from_city" value="Bangalore" placeholder="From"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
-              </div>
-              <div id="toCol" class="hidden w-full">
-                <label for="toCity"
-                  class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">TO</label>
-                <input type="text" id="toCity" name="to_city" placeholder="Destination"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
-              </div>
-
-              <!-- Car Type (Shown for All) -->
-              <div id="carTypeCol" class="w-full">
-                <label for="carType"
-                  class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">CAR TYPE</label>
-                <select id="carType" name="vehicle" required
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
-                  <option value="Economy" selected>Economy</option>
-                  <option value="Executive">Executive</option>
-                  <option value="SUV">SUV</option>
-                  <option value="MPV">MPV</option>
-                  <option value="Luxury Cars">Luxury Cars</option>
-                </select>
-              </div>
-
-              <!-- Pick Up Date -->
-              <div>
-                <label for="pickupDate"
-                  class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PICK UP
-                  DATE</label>
-                <input type="date" id="pickupDate" name="date" required
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
-              </div>
-
-              <!-- Pick Up At Time -->
-              <div>
-                <label for="pickupTime"
-                  class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PICK UP
-                  TIME</label>
-                <input type="time" id="pickupTime" name="time" required
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
-              </div>
-
-              <!-- Return Date (Shown for Outstation Round Trip) -->
-              <div id="returnDateCol" class="hidden w-full">
-                <label for="returnDate"
-                  class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">RETURN
-                  DATE</label>
-                <input type="date" id="returnDate" name="return_date"
-                  class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
-              </div>
-
+          <!-- Ratings & Social Proof -->
+          <div class="flex items-center space-x-4 pt-2">
+            <!-- User Avatars -->
+            <div class="flex -space-x-2 overflow-hidden">
+              <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
+                src="/assets/images/user1.webp" alt="User 1" width="40" height="40" loading="lazy" decoding="async">
+              <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
+                src="/assets/images/user2.webp" alt="User 2" width="40" height="40" loading="lazy" decoding="async">
+              <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
+                src="/assets/images/user3.webp" alt="User 3" width="40" height="40" loading="lazy" decoding="async">
             </div>
 
-            <!-- Submit Button -->
-            <div class="pt-4">
-              <button type="submit"
-                class="w-full bg-[#0172A7] hover:bg-[#0A589F] text-white font-extrabold py-4 rounded-xl shadow-lg transition transform active:scale-[0.99] text-base tracking-wider uppercase">
-                BOOK NOW
+            <!-- Rating Text & Arrow -->
+            <div class="relative flex items-center">
+              <p class="font-handwriting text-xl font-bold text-gray-700 leading-none">
+                Over 300,000 5.0- <br>Star Ratings
+              </p>
+              <svg class="w-12 h-8 text-brand ml-2 -mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <p class="text-body text-sm sm:text-base leading-relaxed max-w-lg">
+            Book your ride in minutes with professional drivers, comfortable vehicles, and on-time pickups for
+            airport transfers, city rides, and business travel.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#booking-section"
+              class="bg-brand hover:bg-brand-dark text-white font-bold px-8 py-3.5 rounded-full shadow-md transition transform active:scale-95 text-sm">
+              Book Your Ride
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Hero Image Container with Smooth Zoom In / Zoom Out Animation -->
+        <div class="lg:col-span-6 relative flex items-center justify-center">
+          <div class="hero-car-zoom-container relative w-full overflow-visible">
+            <img src="/hero_car_opt.webp" fetchpriority="high" decoding="async" width="800" height="480"
+              alt="Suhalaya Travels Executive Car"
+              class="hero-car-zoom-img w-full h-auto max-h-[220px] sm:max-h-[360px] lg:h-[480px] lg:max-h-none object-contain object-center cursor-pointer" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= RESERVE YOUR TAXI (SCROLL ZOOM-IN / PARALLAX SECTION) ================= -->
+    <div class="w-full bg-white overflow-hidden">
+      <section id="booking-section" class="w-full max-w-[1600px] mx-auto px-4 pt-4 pb-10 md:py-12 lg:py-16 relative">
+
+        <div class="text-center mb-8">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#0A589F] bg-sky-50 px-4 py-1.5 rounded-full">
+            GET IN TOUCH
+          </span>
+        </div>
+
+        <div class="relative flex items-center justify-center">
+
+          <!-- Left Car (Black Benz) -->
+          <div id="car-left" class="parallax-car hidden xl:block absolute -left-[250px] w-[650px] pointer-events-none"
+            style="z-index: 10;">
+            <img loading="lazy" decoding="async" width="800" height="598" src="/car_left_transparent.webp"
+              class="attachment-large size-large wp-image-193 w-full h-auto" alt="Suhalaya Chauffeur Car Left">
+          </div>
+
+          <!-- Center Booking Form Card -->
+          <div class="w-full max-w-5xl bg-white border border-sky-100 rounded-3xl shadow-2xl p-4 sm:p-10 relative"
+            style="z-index: 20;">
+
+            <!-- Card Header Title -->
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-black mb-6 text-left">
+              What are you planning?
+            </h2>
+
+            <!-- Pill Tabs Header -->
+            <div class="grid grid-cols-3 gap-1.5 sm:gap-4 mb-6 max-w-xl">
+              <button type="button" id="tab-local" onclick="switchBookingTab('local')"
+                class="booking-tab active py-2.5 sm:py-3 px-1.5 min-[380px]:px-2 sm:px-4 text-[11px] min-[380px]:text-xs sm:text-sm font-extrabold flex items-center justify-center gap-1 min-[380px]:gap-1.5 sm:gap-2 whitespace-nowrap border border-[#0172A7] bg-[#0172A7] text-white shadow-md transition cursor-pointer">
+                <i class="fa-solid fa-car pointer-events-none text-[11px] sm:text-xs"></i> LOCAL
+              </button>
+              <button type="button" id="tab-airport" onclick="switchBookingTab('airport')"
+                class="booking-tab py-2.5 sm:py-3 px-1.5 min-[380px]:px-2 sm:px-4 text-[11px] min-[380px]:text-xs sm:text-sm font-extrabold flex items-center justify-center gap-1 min-[380px]:gap-1.5 sm:gap-2 whitespace-nowrap border border-gray-200 bg-white text-[#0A589F] hover:bg-sky-50 transition cursor-pointer">
+                <i class="fa-solid fa-plane pointer-events-none text-[11px] sm:text-xs"></i> AIRPORT
+              </button>
+              <button type="button" id="tab-outstation" onclick="switchBookingTab('outstation')"
+                class="booking-tab py-2.5 sm:py-3 px-1.5 min-[380px]:px-2 sm:px-4 text-[11px] min-[380px]:text-xs sm:text-sm font-extrabold flex items-center justify-center gap-1 min-[380px]:gap-1.5 sm:gap-2 whitespace-nowrap border border-gray-200 bg-white text-[#0A589F] hover:bg-sky-50 transition cursor-pointer">
+                <i class="fa-solid fa-house pointer-events-none text-[11px] sm:text-xs"></i> OUTSTATION
               </button>
             </div>
-          </form>
 
+            <!-- Outstation Trip Mode (One Way / Round Trip Radios) -->
+            <div id="outstationOptions" class="hidden flex items-center gap-6 mb-5 text-sm font-bold text-[#0A589F]">
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" id="modeOneWay" name="trip_mode" value="One Way" checked
+                  onchange="toggleOutstationTripMode('oneway')" class="w-4 h-4 accent-[#00AEEF]">
+                <span>One Way</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" id="modeRoundTrip" name="trip_mode" value="Round Trip"
+                  onchange="toggleOutstationTripMode('roundtrip')" class="w-4 h-4 accent-[#00AEEF]">
+                <span>Round Trip</span>
+              </label>
+            </div>
+
+            <!-- Booking Form Body -->
+            <form id="taxiBookingForm" class="space-y-4">
+              <input type="hidden" id="serviceType" name="service" value="Local Cab Booking">
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                <!-- Name -->
+                <div>
+                  <label for="name"
+                    class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">NAME</label>
+                  <input type="text" id="name" name="name" required placeholder="Name"
+                    class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                </div>
+
+                <!-- Phone -->
+                <div>
+                  <label for="phone"
+                    class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PHONE</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="Phone"
+                    class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                </div>
+
+                <!-- Email -->
+                <div id="emailCol" class="w-full">
+                  <label for="email"
+                    class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">EMAIL</label>
+                  <input type="email" id="email" name="email" required placeholder="Email"
+                    class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                </div>
+
+                <!-- City (Shown for Local & Airport) -->
+                <div id="cityCol" class="w-full">
+                  <label for="city"
+                    class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">CITY</label>
+                  <input type="text" id="city" name="city" value="Bangalore"
+                    class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                </div>
+
+                <!-- Trip Select (Shown for Airport) -->
+                <div id="tripCol" class="hidden w-full">
+                  <label for="tripTypeSelect"
+                    class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">TRIP</label>
+                  <select id="tripTypeSelect" name="triptype"
+                    class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
+                    <option value="" disabled selected>Select Trip Type</option>
+                    <option value="Airport Drop (City to Airport)">Airport Drop (City to Airport)</option>
+                    <option value="Airport Pickup (Airport to City)">Airport Pickup (Airport to City)</option>
+                    <option value="Airport Roundtrip">Airport Roundtrip</option>
+                  </select>
+                </div>
+
+                <!-- Address (Shown for Airport) -->
+                <div id="addressCol" class="hidden w-full">
+                  <label
+                    class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">ADDRESS</label>
+                  <input type="text" id="address" name="pickup" placeholder="Address"
+                    class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                </div>
+
+                <!-- From & To (Shown for Outstation) -->
+                <div id="fromCol" class="hidden w-full">
+                  <label for="fromCity"
+                    class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">FROM</label>
+                  <input type="text" id="fromCity" name="from_city" value="Bangalore" placeholder="From"
+                    class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                </div>
+                <div id="toCol" class="hidden w-full">
+                  <label for="toCity"
+                    class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">TO</label>
+                  <input type="text" id="toCity" name="to_city" placeholder="Destination"
+                    class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition">
+                </div>
+
+                <!-- Car Type (Shown for All) -->
+                <div id="carTypeCol" class="w-full">
+                  <label for="carType"
+                    class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">CAR TYPE</label>
+                  <select id="carType" name="vehicle" required
+                    class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
+                    <option value="Economy" selected>Economy</option>
+                    <option value="Executive">Executive</option>
+                    <option value="SUV">SUV</option>
+                    <option value="MPV">MPV</option>
+                    <option value="Luxury Cars">Luxury Cars</option>
+                  </select>
+                </div>
+
+                <!-- Pick Up Date -->
+                <div>
+                  <label for="pickupDate"
+                    class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PICK UP
+                    DATE</label>
+                  <input type="date" id="pickupDate" name="date" required
+                    class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
+                </div>
+
+                <!-- Pick Up At Time -->
+                <div>
+                  <label for="pickupTime"
+                    class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">PICK UP
+                    TIME</label>
+                  <input type="time" id="pickupTime" name="time" required
+                    class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
+                </div>
+
+                <!-- Return Date (Shown for Outstation Round Trip) -->
+                <div id="returnDateCol" class="hidden w-full">
+                  <label for="returnDate"
+                    class="block text-xs font-extrabold uppercase tracking-wider text-[#0A589F] mb-1.5">RETURN
+                    DATE</label>
+                  <input type="date" id="returnDate" name="return_date"
+                    class="w-full px-4 py-3 bg-[#F4F9FD] border border-gray-200 rounded-xl text-sm text-gray-800 focus:outline-none focus:border-[#0172A7] focus:ring-2 focus:ring-[#00AEEF]/20 shadow-sm transition cursor-pointer">
+                </div>
+
+              </div>
+
+              <!-- Submit Button -->
+              <div class="pt-4">
+                <button type="submit"
+                  class="w-full bg-[#0172A7] hover:bg-[#0A589F] text-white font-extrabold py-4 rounded-xl shadow-lg transition transform active:scale-[0.99] text-base tracking-wider uppercase">
+                  BOOK NOW
+                </button>
+              </div>
+            </form>
+
+          </div>
+
+          <!-- Right Car -->
+          <div id="car-right" class="parallax-car hidden xl:block absolute -right-[250px] w-[650px] pointer-events-none"
+            style="z-index: 10;">
+            <img loading="lazy" decoding="async" width="800" height="598" src="/car_right_transparent.webp"
+              class="attachment-large size-large wp-image-192 w-full h-auto"
+              style="filter: hue-rotate(165deg) saturate(1.2) brightness(0.8) contrast(1.2);"
+              alt="Suhalaya Chauffeur Car Right">
+          </div>
+
+      </section>
+    </div>
+
+
+    <!-- AREAS WE SERVE SECTION -->
+    <section id="areas" class="section-padding reveal-on-scroll" style="background-color: #ffffff;">
+      <div class="container">
+        <div class="section-header text-center" style="margin-bottom: 50px;">
+          <span class="section-label"
+            style="color: #0172A7; font-weight: 700; letter-spacing: 1.5px; font-size: 0.9rem;">BANGALORE
+            COVERAGE</span>
+          <h2 class="section-title"
+            style="color: #000000; text-transform: uppercase; font-size: 2.2rem; margin-top: 8px;">Areas We Serve</h2>
+          <p class="section-desc" style="color: #334155; max-width: 650px; margin: 12px auto 0;">Delivering premium
+            corporate mobility and employee shuttles across Bangalore's major business hubs and industrial regions.</p>
         </div>
 
-        <!-- Right Car -->
-        <div id="car-right" class="parallax-car hidden xl:block absolute -right-[250px] w-[650px] pointer-events-none"
-          style="z-index: 10;">
-          <img loading="lazy" decoding="async" width="800" height="598" src="/car_right_transparent.webp"
-            class="attachment-large size-large wp-image-192 w-full h-auto"
-            style="filter: hue-rotate(165deg) saturate(1.2) brightness(0.8) contrast(1.2);" alt="Suhalaya Chauffeur Car Right">
+        <!-- Search Bar -->
+        <div class="search-container" style="max-width: 500px; margin: -10px auto 40px auto; position: relative;">
+          <div style="position: relative; display: flex; align-items: center;">
+            <label for="area-search-input" class="sr-only"
+              style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Search
+              Areas</label><input type="text" id="area-search-input"
+              placeholder="Search tech parks or locations (e.g., Manyata, ITPL, Electronic City...)"
+              style="width: 100%; padding: 14px 20px 14px 45px; border: 2px solid rgba(1, 90, 132, 0.15); border-radius: 30px; font-size: 0.95rem; outline: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.02); font-family: inherit;">
+            <svg style="position: absolute; left: 16px; color: #64748b;" width="18" height="18" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          <!-- Dropdown Search Results -->
+          <div id="search-results-dropdown"
+            style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); z-index: 100; max-height: 250px; overflow-y: auto; margin-top: 8px;">
+          </div>
         </div>
 
-    </section>
-  </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('area-search-input');
+            const resultsDropdown = document.getElementById('search-results-dropdown');
 
+            const locations = [
+              { name: "Electronic City Tech Park", region: "South Bengaluru", url: "/areas/electronic-city" },
+              { name: "Global Village Tech Park", region: "South Bengaluru", url: "/areas/global-village" },
+              { name: "BIEC (Bangalore International Exhibition Centre)", region: "South Bengaluru", url: "/areas/biec" },
+              { name: "Bidadi", region: "South Bengaluru", url: "/areas/bidadi" },
+              { name: "Bagmane Tech Park", region: "East Bengaluru", url: "/areas/bagmane-tech-park" },
+              { name: "Ecospace Business Park", region: "East Bengaluru", url: "/areas/ecospace" },
+              { name: "Embassy Tech Park", region: "East Bengaluru", url: "/areas/embassy-tech-park" },
+              { name: "Brigade Tech Park", region: "East Bengaluru", url: "/areas/brigade-tech-park" },
+              { name: "Mind Comp Tech Park", region: "East Bengaluru", url: "/corporate-transportation" },
+              { name: "RMZ Infinity", region: "East Bengaluru", url: "/areas/rmz-infinity" },
+              { name: "Kalyani Tech Park", region: "East Bengaluru", url: "/areas/kalyani-tech-park" },
+              { name: "RMZ Ecoworld", region: "East Bengaluru", url: "/areas/rmz-ecoworld" },
+              { name: "Prestige Tech Park", region: "East Bengaluru", url: "/areas/prestige-tech-park" },
+              { name: "ITPL (International Tech Park Bangalore)", region: "East Bengaluru", url: "/areas/itpl" },
+              { name: "Cessna Business Park", region: "East Bengaluru", url: "/areas/cessna-business-park" },
+              { name: "Narasapura", region: "East Bengaluru", url: "/areas/narasapura" },
+              { name: "Malur", region: "East Bengaluru", url: "/employee-transportation" },
+              { name: "Hoskote", region: "East Bengaluru", url: "/areas/hoskote" },
+              { name: "Dyavasandra", region: "East Bengaluru", url: "/areas/dyavasandra" },
+              { name: "Vemagal", region: "East Bengaluru", url: "/areas/vemagal" },
+              { name: "Manyata Embassy Business Park", region: "North Bengaluru", url: "/areas/manyata-tech-park" },
+              { name: "Kirloskar Business Park", region: "North Bengaluru", url: "/areas/kirloskar-tech-park" },
+              { name: "Bangalore Aerospace Park", region: "North Bengaluru", url: "/areas/bangalore-aerospace-park" },
+              { name: "Yelahanka", region: "North Bengaluru", url: "/areas/yelahanka" },
+              { name: "Doddaballapur", region: "North Bengaluru", url: "/areas/doddaballapur" },
+              { name: "Embassy Golf Links Business Park", region: "Central & West Bengaluru", url: "/areas/embassy-golf-links" },
+              { name: "Peenya", region: "Central & West Bengaluru", url: "/areas/peenya" },
+              { name: "Dabuspet", region: "Central & West Bengaluru", url: "/areas/dabuspet" }
+            ];
 
-  <!-- AREAS WE SERVE SECTION -->
-  <section id="areas" class="section-padding reveal-on-scroll" style="background-color: #ffffff;">
-    <div class="container">
-      <div class="section-header text-center" style="margin-bottom: 50px;">
-        <span class="section-label"
-          style="color: #0172A7; font-weight: 700; letter-spacing: 1.5px; font-size: 0.9rem;">BANGALORE COVERAGE</span>
-        <h2 class="section-title"
-          style="color: #000000; text-transform: uppercase; font-size: 2.2rem; margin-top: 8px;">Areas We Serve</h2>
-        <p class="section-desc" style="color: #334155; max-width: 650px; margin: 12px auto 0;">Delivering premium
-          corporate mobility and employee shuttles across Bangalore's major business hubs and industrial regions.</p>
-      </div>
+            searchInput.addEventListener('input', function () {
+              const query = this.value.toLowerCase().trim();
+              if (!query) {
+                resultsDropdown.style.display = 'none';
+                return;
+              }
 
-      <!-- Search Bar -->
-      <div class="search-container" style="max-width: 500px; margin: -10px auto 40px auto; position: relative;">
-        <div style="position: relative; display: flex; align-items: center;">
-          <label for="area-search-input" class="sr-only"
-            style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Search
-            Areas</label><input type="text" id="area-search-input"
-            placeholder="Search tech parks or locations (e.g., Manyata, ITPL, Electronic City...)"
-            style="width: 100%; padding: 14px 20px 14px 45px; border: 2px solid rgba(1, 90, 132, 0.15); border-radius: 30px; font-size: 0.95rem; outline: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.02); font-family: inherit;">
-          <svg style="position: absolute; left: 16px; color: #64748b;" width="18" height="18" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </div>
-        <!-- Dropdown Search Results -->
-        <div id="search-results-dropdown"
-          style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); z-index: 100; max-height: 250px; overflow-y: auto; margin-top: 8px;">
-        </div>
-      </div>
+              const matches = locations.filter(loc =>
+                loc.name.toLowerCase().includes(query) ||
+                loc.region.toLowerCase().includes(query)
+              );
 
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const searchInput = document.getElementById('area-search-input');
-          const resultsDropdown = document.getElementById('search-results-dropdown');
-
-          const locations = [
-            { name: "Electronic City Tech Park", region: "South Bengaluru", url: "/areas/electronic-city" },
-            { name: "Global Village Tech Park", region: "South Bengaluru", url: "/areas/global-village" },
-            { name: "BIEC (Bangalore International Exhibition Centre)", region: "South Bengaluru", url: "/areas/biec" },
-            { name: "Bidadi", region: "South Bengaluru", url: "/areas/bidadi" },
-            { name: "Bagmane Tech Park", region: "East Bengaluru", url: "/areas/bagmane-tech-park" },
-            { name: "Ecospace Business Park", region: "East Bengaluru", url: "/areas/ecospace" },
-            { name: "Embassy Tech Park", region: "East Bengaluru", url: "/areas/embassy-tech-park" },
-            { name: "Brigade Tech Park", region: "East Bengaluru", url: "/areas/brigade-tech-park" },
-            { name: "Mind Comp Tech Park", region: "East Bengaluru", url: "/corporate-transportation" },
-            { name: "RMZ Infinity", region: "East Bengaluru", url: "/areas/rmz-infinity" },
-            { name: "Kalyani Tech Park", region: "East Bengaluru", url: "/areas/kalyani-tech-park" },
-            { name: "RMZ Ecoworld", region: "East Bengaluru", url: "/areas/rmz-ecoworld" },
-            { name: "Prestige Tech Park", region: "East Bengaluru", url: "/areas/prestige-tech-park" },
-            { name: "ITPL (International Tech Park Bangalore)", region: "East Bengaluru", url: "/areas/itpl" },
-            { name: "Cessna Business Park", region: "East Bengaluru", url: "/areas/cessna-business-park" },
-            { name: "Narasapura", region: "East Bengaluru", url: "/areas/narasapura" },
-            { name: "Malur", region: "East Bengaluru", url: "/employee-transportation" },
-            { name: "Hoskote", region: "East Bengaluru", url: "/areas/hoskote" },
-            { name: "Dyavasandra", region: "East Bengaluru", url: "/areas/dyavasandra" },
-            { name: "Vemagal", region: "East Bengaluru", url: "/areas/vemagal" },
-            { name: "Manyata Embassy Business Park", region: "North Bengaluru", url: "/areas/manyata-tech-park" },
-            { name: "Kirloskar Business Park", region: "North Bengaluru", url: "/areas/kirloskar-tech-park" },
-            { name: "Bangalore Aerospace Park", region: "North Bengaluru", url: "/areas/bangalore-aerospace-park" },
-            { name: "Yelahanka", region: "North Bengaluru", url: "/areas/yelahanka" },
-            { name: "Doddaballapur", region: "North Bengaluru", url: "/areas/doddaballapur" },
-            { name: "Embassy Golf Links Business Park", region: "Central & West Bengaluru", url: "/areas/embassy-golf-links" },
-            { name: "Peenya", region: "Central & West Bengaluru", url: "/areas/peenya" },
-            { name: "Dabuspet", region: "Central & West Bengaluru", url: "/areas/dabuspet" }
-          ];
-
-          searchInput.addEventListener('input', function () {
-            const query = this.value.toLowerCase().trim();
-            if (!query) {
-              resultsDropdown.style.display = 'none';
-              return;
-            }
-
-            const matches = locations.filter(loc =>
-              loc.name.toLowerCase().includes(query) ||
-              loc.region.toLowerCase().includes(query)
-            );
-
-            if (matches.length === 0) {
-              resultsDropdown.innerHTML = '<div style="padding: 12px 16px; color: #64748b; font-size: 0.9rem; text-align: center;">No locations found</div>';
-            } else {
-              resultsDropdown.innerHTML = matches.map(loc => `
+              if (matches.length === 0) {
+                resultsDropdown.innerHTML = '<div style="padding: 12px 16px; color: #64748b; font-size: 0.9rem; text-align: center;">No locations found</div>';
+              } else {
+                resultsDropdown.innerHTML = matches.map(loc => `
               <div style="padding: 12px 16px; border-bottom: 1px solid #f1f5f9; cursor: pointer; transition: background 0.2s;" 
                    onclick="window.location.href='${loc.url}'"
                    onmouseover="this.style.background='#f8fafc';"
@@ -608,1004 +616,1079 @@
                 <div style="font-size: 0.75rem; color: #0172A7; margin-top: 2px;">${loc.region}</div>
               </div>
             `).join('');
-            }
+              }
 
-            resultsDropdown.style.display = 'block';
-          });
-
-          // Close dropdown on click outside
-          document.addEventListener('click', function (e) {
-            if (!searchInput.contains(e.target) && !resultsDropdown.contains(e.target)) {
-              resultsDropdown.style.display = 'none';
-            }
-          });
-
-          // Focus input opens dropdown if query is present
-          searchInput.addEventListener('focus', function () {
-            if (this.value.trim()) {
               resultsDropdown.style.display = 'block';
-            }
+            });
+
+            // Close dropdown on click outside
+            document.addEventListener('click', function (e) {
+              if (!searchInput.contains(e.target) && !resultsDropdown.contains(e.target)) {
+                resultsDropdown.style.display = 'none';
+              }
+            });
+
+            // Focus input opens dropdown if query is present
+            searchInput.addEventListener('focus', function () {
+              if (this.value.trim()) {
+                resultsDropdown.style.display = 'block';
+              }
+            });
+
+            // Clear input and hide dropdown when page is loaded/restored from history (back button)
+            window.addEventListener('pageshow', function () {
+              searchInput.value = '';
+              resultsDropdown.style.display = 'none';
+            });
           });
+        </script>
 
-          // Clear input and hide dropdown when page is loaded/restored from history (back button)
-          window.addEventListener('pageshow', function () {
-            searchInput.value = '';
-            resultsDropdown.style.display = 'none';
-          });
-        });
-      </script>
+        <div class="grid-4" style="gap: 24px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
 
-      <div class="grid-4" style="gap: 24px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
-
-        <!-- Region 1: South Bengaluru -->
-        <div class="area-card">
-          <div class="area-img-box">
-            <img src="/assets/images/south_bengaluru.webp" alt="South Bengaluru Tech Hub" width="800" height="480"
-              loading="lazy">
-            <span class="area-badge">South region</span>
+          <!-- Region 1: South Bengaluru -->
+          <div class="area-card">
+            <div class="area-img-box">
+              <img src="/assets/images/south_bengaluru.webp" alt="South Bengaluru Tech Hub" width="800" height="480"
+                loading="lazy">
+              <span class="area-badge">South region</span>
+            </div>
+            <div class="area-card-body">
+              <h3>South Bengaluru</h3>
+              <div class="area-meta">Electronic City, Mysore Road & Industrial Belts</div>
+              <hr class="area-divider">
+              <p class="area-desc">Bangalore's primary electronics manufacturing zone, residential suburbs, and major
+                business parks including Electronic City and Global Village.</p>
+              <a href="/areas/south-bengaluru" class="area-btn">Explore Region</a>
+            </div>
           </div>
-          <div class="area-card-body">
-            <h3>South Bengaluru</h3>
-            <div class="area-meta">Electronic City, Mysore Road & Industrial Belts</div>
-            <hr class="area-divider">
-            <p class="area-desc">Bangalore's primary electronics manufacturing zone, residential suburbs, and major
-              business parks including Electronic City and Global Village.</p>
-            <a href="/areas/south-bengaluru" class="area-btn">Explore Region</a>
+
+          <!-- Region 2: East Bengaluru -->
+          <div class="area-card">
+            <div class="area-img-box">
+              <img src="/assets/images/east_bengaluru.webp" alt="East Bengaluru IT Corridor" width="800" height="480"
+                loading="lazy">
+              <span class="area-badge">East region</span>
+            </div>
+            <div class="area-card-body">
+              <h3>East Bengaluru</h3>
+              <div class="area-meta">Whitefield, Bellandur & Outer Ring Road (ORR)</div>
+              <hr class="area-divider">
+              <p class="area-desc">The city's largest IT/tech corridor featuring global corporate giants in RMZ
+                Ecospace,
+                Embassy Tech Village, and Bagmane Tech Park.</p>
+              <a href="/areas/east-bengaluru" class="area-btn">Explore Region</a>
+            </div>
           </div>
+
+          <!-- Region 3: North Bengaluru -->
+          <div class="area-card">
+            <div class="area-img-box">
+              <img src="/assets/images/north_bengaluru.webp" alt="North Bengaluru Airport Corridor" width="800"
+                height="480" loading="lazy">
+              <span class="area-badge">North region</span>
+            </div>
+            <div class="area-card-body">
+              <h3>North Bengaluru</h3>
+              <div class="area-meta">Hebbal, Nagawara & Airport Road</div>
+              <hr class="area-divider">
+              <p class="area-desc">Rapidly expanding corridor driven by airport proximity and flagship tech parks like
+                Manyata Embassy Business Park and Aerospace Park.</p>
+              <a href="/areas/north-bengaluru" class="area-btn">Explore Region</a>
+            </div>
+          </div>
+
+          <!-- Region 4: Central & West Bengaluru -->
+          <div class="area-card">
+            <div class="area-img-box">
+              <img src="/assets/images/central_west_bengaluru.webp" alt="Central Bengaluru Business District"
+                width="800" height="480" loading="lazy">
+              <span class="area-badge">Central & West</span>
+            </div>
+            <div class="area-card-body">
+              <h3>Central & West Bengaluru</h3>
+              <div class="area-meta">Domlur, Intermediate Ring Road & Peenya</div>
+              <hr class="area-divider">
+              <p class="area-desc">Established commercial hubs, enterprise workspaces, and major legacy zones including
+                Embassy Golf Links and Peenya industrial zone.</p>
+              <a href="/areas/central-west-bengaluru" class="area-btn">Explore Region</a>
+            </div>
+          </div>
+
+          <!-- Box 5: View All Regions & Tech Parks -->
+          <div class="area-card">
+            <div class="area-img-box">
+              <img src="/assets/images/all_regions.webp" alt="All Bengaluru Regions & Tech Parks" width="800"
+                height="480" loading="lazy">
+              <span class="area-badge" style="background-color: var(--color-gold); color: #ffffff;">ALL REGIONS</span>
+            </div>
+            <div class="area-card-body">
+              <h3>All Regions & Tech Parks</h3>
+              <div class="area-meta">27+ Enterprise Locations</div>
+              <hr class="area-divider">
+              <p class="area-desc">Explore our entire B2B corporate transportation network across all industrial zones,
+                tech hubs, and tech parks in Bengaluru.</p>
+              <a href="/areas/index.html" class="area-btn"
+                style="background: #0172A7; border-color: #0172A7; color: #ffffff; text-decoration: none;">Explore
+                All Areas</a>
+            </div>
+          </div>
+
         </div>
-
-        <!-- Region 2: East Bengaluru -->
-        <div class="area-card">
-          <div class="area-img-box">
-            <img src="/assets/images/east_bengaluru.webp" alt="East Bengaluru IT Corridor" width="800" height="480"
-              loading="lazy">
-            <span class="area-badge">East region</span>
-          </div>
-          <div class="area-card-body">
-            <h3>East Bengaluru</h3>
-            <div class="area-meta">Whitefield, Bellandur & Outer Ring Road (ORR)</div>
-            <hr class="area-divider">
-            <p class="area-desc">The city's largest IT/tech corridor featuring global corporate giants in RMZ Ecospace,
-              Embassy Tech Village, and Bagmane Tech Park.</p>
-            <a href="/areas/east-bengaluru" class="area-btn">Explore Region</a>
-          </div>
-        </div>
-
-        <!-- Region 3: North Bengaluru -->
-        <div class="area-card">
-          <div class="area-img-box">
-            <img src="/assets/images/north_bengaluru.webp" alt="North Bengaluru Airport Corridor" width="800"
-              height="480" loading="lazy">
-            <span class="area-badge">North region</span>
-          </div>
-          <div class="area-card-body">
-            <h3>North Bengaluru</h3>
-            <div class="area-meta">Hebbal, Nagawara & Airport Road</div>
-            <hr class="area-divider">
-            <p class="area-desc">Rapidly expanding corridor driven by airport proximity and flagship tech parks like
-              Manyata Embassy Business Park and Aerospace Park.</p>
-            <a href="/areas/north-bengaluru" class="area-btn">Explore Region</a>
-          </div>
-        </div>
-
-        <!-- Region 4: Central & West Bengaluru -->
-        <div class="area-card">
-          <div class="area-img-box">
-            <img src="/assets/images/central_west_bengaluru.webp" alt="Central Bengaluru Business District" width="800"
-              height="480" loading="lazy">
-            <span class="area-badge">Central & West</span>
-          </div>
-          <div class="area-card-body">
-            <h3>Central & West Bengaluru</h3>
-            <div class="area-meta">Domlur, Intermediate Ring Road & Peenya</div>
-            <hr class="area-divider">
-            <p class="area-desc">Established commercial hubs, enterprise workspaces, and major legacy zones including
-              Embassy Golf Links and Peenya industrial zone.</p>
-            <a href="/areas/central-west-bengaluru" class="area-btn">Explore Region</a>
-          </div>
-        </div>
-
-        <!-- Box 5: View All Regions & Tech Parks -->
-        <div class="area-card">
-          <div class="area-img-box">
-            <img src="/assets/images/all_regions.webp" alt="All Bengaluru Regions & Tech Parks" width="800" height="480"
-              loading="lazy">
-            <span class="area-badge" style="background-color: var(--color-gold); color: #ffffff;">ALL REGIONS</span>
-          </div>
-          <div class="area-card-body">
-            <h3>All Regions & Tech Parks</h3>
-            <div class="area-meta">27+ Enterprise Locations</div>
-            <hr class="area-divider">
-            <p class="area-desc">Explore our entire B2B corporate transportation network across all industrial zones,
-              tech hubs, and tech parks in Bengaluru.</p>
-            <a href="/areas/index.html" class="area-btn"
-              style="background: #0172A7; border-color: #0172A7; color: #ffffff; text-decoration: none;">Explore
-              All Areas</a>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- FLEET PREVIEW SHOWCASE -->
-  <section id="fleet" class="section-padding reveal-on-scroll">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-label">Luxury Showroom</span>
-        <h2 class="section-title" style="color: #000000; font-weight: 800;">Our Premium Fleet Categories</h2>
-        <p class="section-desc">From fuel-efficient corporate hatchbacks to high-profile executive sedans and large
-          capacity A/C coaches.</p>
+    <!-- FLEET PREVIEW SHOWCASE -->
+    <section id="fleet" class="section-padding reveal-on-scroll">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label">Luxury Showroom</span>
+          <h2 class="section-title" style="color: #000000; font-weight: 800;">Our Premium Fleet Categories</h2>
+          <p class="section-desc">From fuel-efficient corporate hatchbacks to high-profile executive sedans and large
+            capacity A/C coaches.</p>
+        </div>
+
+        <div class="fleet-tabs">
+          <button class="fleet-tab-btn active" data-category="economy">Economy Sedans</button>
+          <button class="fleet-tab-btn" data-category="executive">Executive</button>
+          <button class="fleet-tab-btn" data-category="premium">Premium</button>
+          <button class="fleet-tab-btn" data-category="luxury">Luxury</button>
+          <button class="fleet-tab-btn" data-category="mpv">Multi Passenger Vehicles</button>
+        </div>
+
+        <!-- Fleet Grid -->
+        <div class="fleet-panels-container">
+
+          <!-- ================= ECONOMY CATEGORY ================= -->
+          <!-- Maruti Suzuki Dzire -->
+          <div class="fleet-panel active" data-panel="economy">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/dzire.webp?v=2" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Maruti Suzuki Dzire">
+                <span class="fleet-category-badge">Economy Sedan</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Maruti Suzuki Dzire</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>4 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Comfortable A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Maruti Suzuki Dzire">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hyundai Aura -->
+          <div class="fleet-panel active" data-panel="economy">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/hyundai-aura.webp?v=2" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Hyundai Aura">
+                <span class="fleet-category-badge">Economy Sedan</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Hyundai Aura</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>4 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Comfortable A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Hyundai Aura">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hyundai Verna -->
+          <div class="fleet-panel active" data-panel="economy">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/verna.webp?v=2" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Hyundai Verna">
+                <span class="fleet-category-badge">Economy Sedan</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Hyundai Verna</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>4 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Comfortable A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Hyundai Verna">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= EXECUTIVE CATEGORY ================= -->
+          <!-- Honda City -->
+          <div class="fleet-panel" data-panel="executive">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/honda-city.webp?v=5" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Honda City">
+                <span class="fleet-category-badge">Executive Sedan</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Honda City</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>4 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Executive Sedan</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Honda City">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Maruti Suzuki Ciaz -->
+          <div class="fleet-panel" data-panel="executive">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/ciaz.webp?v=2" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Maruti Suzuki Ciaz">
+                <span class="fleet-category-badge">Executive Sedan</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Maruti Suzuki Ciaz</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>4 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Executive Sedan</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Maruti Suzuki Ciaz">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= PREMIUM CATEGORY ================= -->
+          <!-- Toyota Innova Crysta -->
+          <div class="fleet-panel" data-panel="premium">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/innova-crysta.webp?v=2" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Toyota Innova Crysta">
+                <span class="fleet-category-badge">Premium MUV</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Toyota Innova Crysta</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>6-7 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Premium Comfort</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Toyota Innova Crysta">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toyota Innova Hycross -->
+          <div class="fleet-panel" data-panel="premium">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/innova-hycross.webp?v=8" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Toyota Innova Hycross">
+                <span class="fleet-category-badge">Premium</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Toyota Innova Hycross</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>6-7 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Hybrid Luxury</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Toyota Innova Hycross">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toyota Fortuner -->
+          <div class="fleet-panel" data-panel="premium">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/fortuner.webp?v=2" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Toyota Fortuner">
+                <span class="fleet-category-badge">Premium</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Toyota Fortuner</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>7 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Premium SUV</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Toyota Fortuner">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toyota Camry -->
+          <div class="fleet-panel" data-panel="premium">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/camry.webp?v=5" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Toyota Camry">
+                <span class="fleet-category-badge">Premium</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Toyota Camry</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>4 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Luxury Hybrid Sedan</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Toyota Camry">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= LUXURY CATEGORY ================= -->
+          <!-- Toyota Vellfire -->
+          <div class="fleet-panel" data-panel="luxury">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/vellfire.webp?v=2" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Toyota Vellfire">
+                <span class="fleet-category-badge">Luxury VIP</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Toyota Vellfire</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>7 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Ultra Luxury Lounge</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Toyota Vellfire">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BMW 5 Series -->
+          <div class="fleet-panel" data-panel="luxury">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/bmw.webp?v=2" loading="lazy" decoding="async" width="800" height="480"
+                  alt="BMW 5 Series">
+                <span class="fleet-category-badge">Luxury VIP</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>BMW 5 Series</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>4 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Executive Luxury</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for BMW 5 Series">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mercedes-Benz E-Class -->
+          <div class="fleet-panel" data-panel="luxury">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/mercedes-e-class.webp?v=2" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Mercedes-Benz E-Class">
+                <span class="fleet-category-badge">Luxury VIP</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Mercedes-Benz E-Class</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>4 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Executive Luxury</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Mercedes-Benz E-Class">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Audi A4 -->
+          <div class="fleet-panel" data-panel="luxury">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/audi.webp?v=2" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Audi A4">
+                <span class="fleet-category-badge">Luxury VIP</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Audi A4</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>4 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Executive Luxury</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Audi A4">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BMW 7 Series -->
+          <div class="fleet-panel" data-panel="luxury">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/bmw-7-series.webp?v=2" loading="lazy" decoding="async" width="800" height="480"
+                  alt="BMW 7 Series">
+                <span class="fleet-category-badge">Super Luxury VIP</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>BMW 7 Series</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>4 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>VIP Chauffeur</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for BMW 7 Series">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mercedes-Benz S-Class -->
+          <div class="fleet-panel" data-panel="luxury">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/mercedes-s-class.webp?v=2" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Mercedes-Benz S-Class">
+                <span class="fleet-category-badge">Super Luxury VIP</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Mercedes-Benz S-Class</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>4 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>VIP Chauffeur</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Mercedes-Benz S-Class">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Audi Q7 -->
+          <div class="fleet-panel" data-panel="luxury">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/audi-a7.webp?v=2" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Audi Q7">
+                <span class="fleet-category-badge">Super Luxury SUV</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Audi Q7</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>7 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Super Luxury SUV</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Audi Q7">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toyota Commuter -->
+          <div class="fleet-panel" data-panel="luxury">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/toyota-commuter.webp?v=2" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Toyota Commuter">
+                <span class="fleet-category-badge">Luxury VIP</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Toyota Commuter</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>10-14 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>VIP Van</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Toyota Commuter">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= MULTI PASSENGER / MPV CATEGORY ================= -->
+          <!-- Force Urbania - 9 Seater -->
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/force-urbania.webp?v=2" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Force Urbania - 9 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Force Urbania - 9 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>9 Seater (1x1)</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Luxury Monocoque</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Force Urbania - 9 Seater">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Force Urbania - 12 Seater -->
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/urbania-12-seater.webp?v=2" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Force Urbania - 12 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Force Urbania - 12 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>12 Seater (1x1)</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Luxury Monocoque</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Force Urbania - 12 Seater">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Force Urbania - 16 Seater -->
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/urbania-16-seater.webp?v=2" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Force Urbania - 16 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Force Urbania - 16 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>16 Seater (2x1)</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Luxury Monocoque</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Force Urbania - 16 Seater">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 24 Seater Coaches (Split) -->
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/bus-24-seater.webp" loading="lazy" decoding="async" width="800" height="480"
+                  alt="TATA - 24 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>TATA - 24 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>24 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Executive A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for TATA - 24 Seater">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/eicher-24-seater.webp" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Eicher - 24 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Eicher - 24 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>24 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Executive A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Eicher - 24 Seater">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/ashok-leyland-24-seater.webp?v=2" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Ashok Leyland - 24 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Ashok Leyland - 24 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>24 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Executive A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Ashok Leyland - 24 Seater">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 35 Seater Coaches (Split) -->
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/bus-35-seater.webp" loading="lazy" decoding="async" width="800" height="480"
+                  alt="TATA - 35 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>TATA - 35 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>35 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Deluxe A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for TATA - 35 Seater">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/eicher-35-seater.webp" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Eicher - 35 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Eicher - 35 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>35 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Deluxe A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Eicher - 35 Seater">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/ashok-leyland-35-seater.webp" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Ashok Leyland - 35 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Ashok Leyland - 35 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>35 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Deluxe A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Ashok Leyland - 35 Seater">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 40 Seater Coaches (Split) -->
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/tata-40-seater.webp" loading="lazy" decoding="async" width="800" height="480"
+                  alt="TATA - 40 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>TATA - 40 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>40 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Deluxe A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for TATA - 40 Seater">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/eicher-40-seater.webp" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Eicher - 40 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Eicher - 40 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>40 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Deluxe A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Eicher - 40 Seater">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/ashok-leyland-40-seater.webp" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Ashok Leyland - 40 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Ashok Leyland - 40 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>40 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Deluxe A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Ashok Leyland - 40 Seater">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 45 Seater Coaches (Split) -->
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/tata-45-seater.webp" loading="lazy" decoding="async" width="800" height="480"
+                  alt="TATA - 45 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>TATA - 45 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>45 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Deluxe A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for TATA - 45 Seater">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/eicher-45-seater.webp" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Eicher - 45 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Eicher - 45 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>45 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Deluxe A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Eicher - 45 Seater">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/ashok-leyland-45-seater.webp" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Ashok Leyland - 45 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Ashok Leyland - 45 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>45 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Deluxe A/C</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Ashok Leyland - 45 Seater">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 49 Seater Coaches (Split) -->
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/bus-49-seater.webp" loading="lazy" decoding="async" width="800" height="480"
+                  alt="TATA - 49 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>TATA - 49 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>49 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Large Capacity Coach</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for TATA - 49 Seater">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/eicher-49-seater.webp" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Eicher - 49 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Eicher - 49 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>49 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Large Capacity Coach</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Eicher - 49 Seater">Request
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/ashok-leyland-49-seater.webp" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Ashok Leyland - 49 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Ashok Leyland - 49 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>49 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Large Capacity Coach</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Ashok Leyland - 49 Seater">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Volvo / Benz Glider 45 Seater (Split) -->
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/volvo-glider-45.webp" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Volvo Glider - 45 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Volvo Glider - 45 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>45 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Super Luxury Bus</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Volvo Glider - 45 Seater">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/mercedes-glider-45.webp" loading="lazy" decoding="async" width="800"
+                  height="480" alt="Mercedes-Benz Glider - 45 Seater">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Mercedes-Benz Glider - 45 Seater</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>45 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Super Luxury Bus</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Mercedes-Benz Glider - 45 Seater">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Volvo - 45 Seater (2024 Above Model) -->
+          <div class="fleet-panel" data-panel="mpv">
+            <div class="fleet-card">
+              <div class="fleet-img-box">
+                <img src="/assets/images/volvo-2024-45.webp" loading="lazy" decoding="async" width="800" height="480"
+                  alt="Volvo - 45 Seater (2024 Above Model)">
+                <span class="fleet-category-badge">Multi Passenger</span>
+              </div>
+              <div class="fleet-card-body">
+                <h3>Volvo - 45 Seater (2024 Above Model)</h3>
+                <div class="fleet-meta">
+                  <div class="fleet-meta-item">
+                    <span>45 Seater</span>
+                  </div>
+                  <div class="fleet-meta-item">
+                    <span>Latest 2024+ Premium Volvo</span>
+                  </div>
+                </div>
+                <a href="/booking" class="btn btn-secondary"
+                  aria-label="Request Quote for Volvo - 45 Seater (2024 Above Model)">Request Quote</a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div class="text-center" style="margin-top: 50px;">
+          <a href="/booking" class="btn btn-dark">Book Fleet Now</a>
+        </div>
       </div>
+    </section>
 
-      <div class="fleet-tabs">
-        <button class="fleet-tab-btn active" data-category="economy">Economy Sedans</button>
-        <button class="fleet-tab-btn" data-category="executive">Executive</button>
-        <button class="fleet-tab-btn" data-category="premium">Premium</button>
-        <button class="fleet-tab-btn" data-category="luxury">Luxury</button>
-        <button class="fleet-tab-btn" data-category="mpv">Multi Passenger Vehicles</button>
+
+    <!-- FOOTER BANNER CTA -->
+    <section class="container" style="margin-top: 80px;">
+      <div class="footer-cta-banner" style="background: var(--color-obsidian); color: var(--color-white);">
+        <div class="footer-cta-text">
+          <h3 style="color: var(--color-white); margin-bottom: 8px;">Ready to Move Better?</h3>
+          <p style="color: rgba(255, 255, 255, 0.85); margin: 0;">Talk to our corporate mobility coordinators to design
+            a
+            seamless transportation solution.</p>
+        </div>
+        <a href="https://wa.me/919900556611?text=Hello%20Suhalaya%20Travels,%20I%20would%20like%20to%20enquire%20about%20your%20transportation%20services."
+          class="btn btn-primary" target="_blank">Talk to Suhalaya Travels</a>
       </div>
-
-      <!-- Fleet Grid -->
-      <div class="fleet-panels-container">
-
-        <!-- ================= ECONOMY CATEGORY ================= -->
-        <!-- Maruti Suzuki Dzire -->
-        <div class="fleet-panel active" data-panel="economy">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/dzire.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Maruti Suzuki Dzire">
-              <span class="fleet-category-badge">Economy Sedan</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Maruti Suzuki Dzire</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>4 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Comfortable A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Maruti Suzuki Dzire">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hyundai Aura -->
-        <div class="fleet-panel active" data-panel="economy">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/hyundai-aura.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Hyundai Aura">
-              <span class="fleet-category-badge">Economy Sedan</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Hyundai Aura</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>4 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Comfortable A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Hyundai Aura">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hyundai Verna -->
-        <div class="fleet-panel active" data-panel="economy">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/verna.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Hyundai Verna">
-              <span class="fleet-category-badge">Economy Sedan</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Hyundai Verna</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>4 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Comfortable A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Hyundai Verna">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- ================= EXECUTIVE CATEGORY ================= -->
-        <!-- Honda City -->
-        <div class="fleet-panel" data-panel="executive">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/honda-city.webp?v=5" loading="lazy" decoding="async" width="800" height="480" alt="Honda City">
-              <span class="fleet-category-badge">Executive Sedan</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Honda City</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>4 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Executive Sedan</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Honda City">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Maruti Suzuki Ciaz -->
-        <div class="fleet-panel" data-panel="executive">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/ciaz.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Maruti Suzuki Ciaz">
-              <span class="fleet-category-badge">Executive Sedan</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Maruti Suzuki Ciaz</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>4 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Executive Sedan</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Maruti Suzuki Ciaz">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- ================= PREMIUM CATEGORY ================= -->
-        <!-- Toyota Innova Crysta -->
-        <div class="fleet-panel" data-panel="premium">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/innova-crysta.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Toyota Innova Crysta">
-              <span class="fleet-category-badge">Premium MUV</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Toyota Innova Crysta</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>6-7 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Premium Comfort</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Toyota Innova Crysta">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Toyota Innova Hycross -->
-        <div class="fleet-panel" data-panel="premium">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/innova-hycross.webp?v=8" loading="lazy" decoding="async" width="800" height="480" alt="Toyota Innova Hycross">
-              <span class="fleet-category-badge">Premium</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Toyota Innova Hycross</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>6-7 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Hybrid Luxury</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Toyota Innova Hycross">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Toyota Fortuner -->
-        <div class="fleet-panel" data-panel="premium">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/fortuner.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Toyota Fortuner">
-              <span class="fleet-category-badge">Premium</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Toyota Fortuner</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>7 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Premium SUV</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Toyota Fortuner">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Toyota Camry -->
-        <div class="fleet-panel" data-panel="premium">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/camry.webp?v=5" loading="lazy" decoding="async" width="800" height="480" alt="Toyota Camry">
-              <span class="fleet-category-badge">Premium</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Toyota Camry</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>4 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Luxury Hybrid Sedan</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Toyota Camry">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- ================= LUXURY CATEGORY ================= -->
-        <!-- Toyota Vellfire -->
-        <div class="fleet-panel" data-panel="luxury">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/vellfire.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Toyota Vellfire">
-              <span class="fleet-category-badge">Luxury VIP</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Toyota Vellfire</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>7 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Ultra Luxury Lounge</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Toyota Vellfire">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- BMW 5 Series -->
-        <div class="fleet-panel" data-panel="luxury">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/bmw.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="BMW 5 Series">
-              <span class="fleet-category-badge">Luxury VIP</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>BMW 5 Series</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>4 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Executive Luxury</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for BMW 5 Series">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mercedes-Benz E-Class -->
-        <div class="fleet-panel" data-panel="luxury">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/mercedes-e-class.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Mercedes-Benz E-Class">
-              <span class="fleet-category-badge">Luxury VIP</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Mercedes-Benz E-Class</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>4 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Executive Luxury</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Mercedes-Benz E-Class">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Audi A4 -->
-        <div class="fleet-panel" data-panel="luxury">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/audi.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Audi A4">
-              <span class="fleet-category-badge">Luxury VIP</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Audi A4</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>4 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Executive Luxury</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Audi A4">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- BMW 7 Series -->
-        <div class="fleet-panel" data-panel="luxury">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/bmw-7-series.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="BMW 7 Series">
-              <span class="fleet-category-badge">Super Luxury VIP</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>BMW 7 Series</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>4 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>VIP Chauffeur</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for BMW 7 Series">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mercedes-Benz S-Class -->
-        <div class="fleet-panel" data-panel="luxury">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/mercedes-s-class.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Mercedes-Benz S-Class">
-              <span class="fleet-category-badge">Super Luxury VIP</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Mercedes-Benz S-Class</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>4 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>VIP Chauffeur</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Mercedes-Benz S-Class">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Audi Q7 -->
-        <div class="fleet-panel" data-panel="luxury">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/audi-a7.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Audi Q7">
-              <span class="fleet-category-badge">Super Luxury SUV</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Audi Q7</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>7 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Super Luxury SUV</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Audi Q7">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Toyota Commuter -->
-        <div class="fleet-panel" data-panel="luxury">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/toyota-commuter.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Toyota Commuter">
-              <span class="fleet-category-badge">Luxury VIP</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Toyota Commuter</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>10-14 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>VIP Van</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Toyota Commuter">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- ================= MULTI PASSENGER / MPV CATEGORY ================= -->
-        <!-- Force Urbania - 9 Seater -->
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/force-urbania.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Force Urbania - 9 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Force Urbania - 9 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>9 Seater (1x1)</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Luxury Monocoque</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Force Urbania - 9 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Force Urbania - 12 Seater -->
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/urbania-12-seater.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Force Urbania - 12 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Force Urbania - 12 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>12 Seater (1x1)</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Luxury Monocoque</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Force Urbania - 12 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Force Urbania - 16 Seater -->
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/urbania-16-seater.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Force Urbania - 16 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Force Urbania - 16 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>16 Seater (2x1)</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Luxury Monocoque</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Force Urbania - 16 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 24 Seater Coaches (Split) -->
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/bus-24-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="TATA - 24 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>TATA - 24 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>24 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Executive A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for TATA - 24 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/eicher-24-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="Eicher - 24 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Eicher - 24 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>24 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Executive A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Eicher - 24 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/ashok-leyland-24-seater.webp?v=2" loading="lazy" decoding="async" width="800" height="480" alt="Ashok Leyland - 24 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Ashok Leyland - 24 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>24 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Executive A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Ashok Leyland - 24 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 35 Seater Coaches (Split) -->
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/bus-35-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="TATA - 35 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>TATA - 35 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>35 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Deluxe A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for TATA - 35 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/eicher-35-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="Eicher - 35 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Eicher - 35 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>35 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Deluxe A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Eicher - 35 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/ashok-leyland-35-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="Ashok Leyland - 35 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Ashok Leyland - 35 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>35 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Deluxe A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Ashok Leyland - 35 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 40 Seater Coaches (Split) -->
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/tata-40-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="TATA - 40 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>TATA - 40 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>40 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Deluxe A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for TATA - 40 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/eicher-40-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="Eicher - 40 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Eicher - 40 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>40 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Deluxe A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Eicher - 40 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/ashok-leyland-40-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="Ashok Leyland - 40 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Ashok Leyland - 40 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>40 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Deluxe A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Ashok Leyland - 40 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 45 Seater Coaches (Split) -->
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/tata-45-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="TATA - 45 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>TATA - 45 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>45 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Deluxe A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for TATA - 45 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/eicher-45-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="Eicher - 45 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Eicher - 45 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>45 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Deluxe A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Eicher - 45 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/ashok-leyland-45-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="Ashok Leyland - 45 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Ashok Leyland - 45 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>45 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Deluxe A/C</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Ashok Leyland - 45 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 49 Seater Coaches (Split) -->
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/bus-49-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="TATA - 49 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>TATA - 49 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>49 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Large Capacity Coach</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for TATA - 49 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/eicher-49-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="Eicher - 49 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Eicher - 49 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>49 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Large Capacity Coach</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Eicher - 49 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/ashok-leyland-49-seater.webp" loading="lazy" decoding="async" width="800" height="480" alt="Ashok Leyland - 49 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Ashok Leyland - 49 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>49 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Large Capacity Coach</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Ashok Leyland - 49 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Volvo / Benz Glider 45 Seater (Split) -->
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/volvo-glider-45.webp" loading="lazy" decoding="async" width="800" height="480" alt="Volvo Glider - 45 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Volvo Glider - 45 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>45 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Super Luxury Bus</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Volvo Glider - 45 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/mercedes-glider-45.webp" loading="lazy" decoding="async" width="800" height="480" alt="Mercedes-Benz Glider - 45 Seater">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Mercedes-Benz Glider - 45 Seater</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>45 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Super Luxury Bus</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Mercedes-Benz Glider - 45 Seater">Request Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Volvo - 45 Seater (2024 Above Model) -->
-        <div class="fleet-panel" data-panel="mpv">
-          <div class="fleet-card">
-            <div class="fleet-img-box">
-              <img src="/assets/images/volvo-2024-45.webp" loading="lazy" decoding="async" width="800" height="480" alt="Volvo - 45 Seater (2024 Above Model)">
-              <span class="fleet-category-badge">Multi Passenger</span>
-            </div>
-            <div class="fleet-card-body">
-              <h3>Volvo - 45 Seater (2024 Above Model)</h3>
-              <div class="fleet-meta">
-                <div class="fleet-meta-item">
-                  <span>45 Seater</span>
-                </div>
-                <div class="fleet-meta-item">
-                  <span>Latest 2024+ Premium Volvo</span>
-                </div>
-              </div>
-              <a href="/booking" class="btn btn-secondary" aria-label="Request Quote for Volvo - 45 Seater (2024 Above Model)">Request Quote</a>
-            </div>
-          </div>
-        </div>
+    </section>
 
 
-
-      </div>
-
-      <div class="text-center" style="margin-top: 50px;">
-        <a href="/booking" class="btn btn-dark">Book Fleet Now</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- FOOTER BANNER CTA -->
-  <section class="container" style="margin-top: 80px;">
-    <div class="footer-cta-banner" style="background: var(--color-obsidian); color: var(--color-white);">
-      <div class="footer-cta-text">
-        <h3 style="color: var(--color-white); margin-bottom: 8px;">Ready to Move Better?</h3>
-        <p style="color: rgba(255, 255, 255, 0.85); margin: 0;">Talk to our corporate mobility coordinators to design a
-          seamless transportation solution.</p>
-      </div>
-      <a href="https://wa.me/919900556611?text=Hello%20Suhalaya%20Travels,%20I%20would%20like%20to%20enquire%20about%20your%20transportation%20services."
-        class="btn btn-primary" target="_blank">Talk to Suhalaya Travels</a>
-    </div>
-  </section>
-
-
-  <!-- GLOBAL FOOTER -->
+    <!-- GLOBAL FOOTER -->
   </main>
 
   <!-- GLOBAL FOOTER -->
@@ -1614,7 +1697,8 @@
       <div class="footer-top">
         <div class="footer-col footer-logo-box">
           <a href="/" class="logo" aria-label="Suhalaya Travels Homepage">
-            <img src="/assets/images/logo.webp" loading="lazy" decoding="async" width="800" height="480" alt="Suhalaya Travels Logo"
+            <img src="/assets/images/logo.webp" loading="lazy" decoding="async" width="800" height="480"
+              alt="Suhalaya Travels Logo"
               style="height: 48px; width: auto; object-fit: contain; vertical-align: middle;">
           </a>
           <p>Bangalore's premier B2B corporate car rental, employee transportation, and luxury chauffeur partner

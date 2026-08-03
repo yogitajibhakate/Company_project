@@ -365,6 +365,7 @@ button {
   transform: rotate(10deg);
 }
 
+
 @media (max-width: 768px) {
   .whatsapp-float {
     bottom: 90px;
@@ -374,17 +375,9 @@ button {
     height: 50px;
   }
 
-  .whatsapp-float::before {
-    right: 62px;
-    padding: 6px 12px;
-    font-size: 0.75rem;
-  }
-
+  .whatsapp-float::before,
   .whatsapp-float::after {
-    right: 55px;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 7px solid #0f172a;
+    display: none !important;
   }
 
   .whatsapp-float svg {
