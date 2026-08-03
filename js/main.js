@@ -53,8 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- STICKY HEADER & FOOTER CHATBOT VISIBILITY SCROLL EFFECT ---
   const header = document.querySelector('.header');
-  const chatWidget = document.querySelector('.stpl-chat-widget');
-  const footerElement = document.querySelector('.footer');
 
   const handleScroll = () => {
     if (header) {
@@ -65,12 +63,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // Show chatbot floating icon ONLY when user scrolls down to Footer
+    // Dynamic lookup of chatbot widget and footer element
+    const chatWidget = document.querySelector('.stpl-chat-widget');
+    const footerElement = document.querySelector('.footer');
+
     if (chatWidget && footerElement) {
       const footerTop = footerElement.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
 
-      if (footerTop <= windowHeight + 100) {
+      if (footerTop <= windowHeight + 250) {
         chatWidget.classList.add('visible');
       } else {
         chatWidget.classList.remove('visible');
